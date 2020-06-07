@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>类型转换 | 学习笔记</title>
+    <meta name="description" content="学习笔记">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.7524e105.css" as="style"><link rel="preload" href="/assets/js/app.5310ab68.js" as="script"><link rel="preload" href="/assets/js/2.b5308052.js" as="script"><link rel="preload" href="/assets/js/31.c826760b.js" as="script"><link rel="prefetch" href="/assets/js/10.0e490b04.js"><link rel="prefetch" href="/assets/js/11.2319d79a.js"><link rel="prefetch" href="/assets/js/12.f4c86af1.js"><link rel="prefetch" href="/assets/js/13.7b4407c6.js"><link rel="prefetch" href="/assets/js/14.4ad81f90.js"><link rel="prefetch" href="/assets/js/15.b14aacee.js"><link rel="prefetch" href="/assets/js/16.91287ce1.js"><link rel="prefetch" href="/assets/js/17.d558e0ec.js"><link rel="prefetch" href="/assets/js/18.efb885a8.js"><link rel="prefetch" href="/assets/js/19.efb1726f.js"><link rel="prefetch" href="/assets/js/20.f7aff000.js"><link rel="prefetch" href="/assets/js/21.ea86f624.js"><link rel="prefetch" href="/assets/js/22.1c2650ff.js"><link rel="prefetch" href="/assets/js/23.e8bc3cd9.js"><link rel="prefetch" href="/assets/js/24.c2d23742.js"><link rel="prefetch" href="/assets/js/25.f10fa85d.js"><link rel="prefetch" href="/assets/js/26.5125b986.js"><link rel="prefetch" href="/assets/js/27.adeea37c.js"><link rel="prefetch" href="/assets/js/28.0c648059.js"><link rel="prefetch" href="/assets/js/29.776d4755.js"><link rel="prefetch" href="/assets/js/3.e4621c71.js"><link rel="prefetch" href="/assets/js/30.f8c05386.js"><link rel="prefetch" href="/assets/js/32.2335a729.js"><link rel="prefetch" href="/assets/js/33.6c519add.js"><link rel="prefetch" href="/assets/js/34.60256bfd.js"><link rel="prefetch" href="/assets/js/35.481bfcc1.js"><link rel="prefetch" href="/assets/js/36.4af5eac6.js"><link rel="prefetch" href="/assets/js/37.e0f778b7.js"><link rel="prefetch" href="/assets/js/38.0782f6c7.js"><link rel="prefetch" href="/assets/js/39.a57fb6dd.js"><link rel="prefetch" href="/assets/js/4.39fb9149.js"><link rel="prefetch" href="/assets/js/40.083e743f.js"><link rel="prefetch" href="/assets/js/41.65ce4309.js"><link rel="prefetch" href="/assets/js/42.b2429e93.js"><link rel="prefetch" href="/assets/js/43.49c30d30.js"><link rel="prefetch" href="/assets/js/44.080f3eb1.js"><link rel="prefetch" href="/assets/js/45.146f5e46.js"><link rel="prefetch" href="/assets/js/46.80e719ea.js"><link rel="prefetch" href="/assets/js/47.711c870d.js"><link rel="prefetch" href="/assets/js/48.3cf7ced8.js"><link rel="prefetch" href="/assets/js/49.8a4ccce3.js"><link rel="prefetch" href="/assets/js/5.a84c6190.js"><link rel="prefetch" href="/assets/js/50.101ca6d5.js"><link rel="prefetch" href="/assets/js/51.537d7ac6.js"><link rel="prefetch" href="/assets/js/52.7790c0f3.js"><link rel="prefetch" href="/assets/js/53.52c898af.js"><link rel="prefetch" href="/assets/js/54.2096abfd.js"><link rel="prefetch" href="/assets/js/55.0bee0844.js"><link rel="prefetch" href="/assets/js/6.5afa03c6.js"><link rel="prefetch" href="/assets/js/7.0fe5da7e.js"><link rel="prefetch" href="/assets/js/8.9f3b73b3.js"><link rel="prefetch" href="/assets/js/9.b574fb9c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7524e105.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/javascript/知识体系.html" class="sidebar-link">知识体系</a></li><li><a href="/javascript/作用域跟闭包..html" class="sidebar-link">作用域跟闭包.</a></li><li><a href="/javascript/值类型、引用类型、深拷贝.html" class="sidebar-link">值类型、引用类型、深拷贝</a></li><li><a href="/javascript/类型转换.html" class="active sidebar-link">类型转换</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javascript/类型转换.html#类型转换" class="sidebar-link">类型转换</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javascript/类型转换.html#字符串拼接" class="sidebar-link">字符串拼接</a></li><li class="sidebar-sub-header"><a href="/javascript/类型转换.html#" class="sidebar-link">==</a></li><li class="sidebar-sub-header"><a href="/javascript/类型转换.html#if-语句和逻辑运算" class="sidebar-link">if 语句和逻辑运算</a></li></ul></li></ul></li><li><a href="/javascript/class、原型与原型链.html" class="sidebar-link">class、原型与原型链</a></li><li><a href="/javascript/this.html" class="sidebar-link">this</a></li><li><a href="/javascript/同步跟异步.html" class="sidebar-link">同步跟异步</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="类型转换"><a href="#类型转换" class="header-anchor">#</a> 类型转换</h2> <h3 id="字符串拼接"><a href="#字符串拼接" class="header-anchor">#</a> 字符串拼接</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> b <span class="token operator">=</span> <span class="token number">100</span> <span class="token operator">+</span> <span class="token string">'10'</span> <span class="token comment">// '10010'</span>
+<span class="token keyword">const</span> c <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token operator">+</span> <span class="token string">'10'</span> <span class="token comment">// 'true10'</span>
+<span class="token keyword">const</span> d <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token comment">// 2'</span>
+</code></pre></div><h3 id=""><a href="#" class="header-anchor">#</a> ==</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token number">100</span> <span class="token operator">==</span> <span class="token string">'100'</span> <span class="token comment">// true</span>
+<span class="token number">0</span> <span class="token operator">==</span> <span class="token string">''</span> <span class="token comment">// true</span>
+<span class="token number">0</span> <span class="token operator">==</span> <span class="token boolean">false</span> <span class="token comment">// true</span>
+<span class="token string">''</span> <span class="token operator">==</span> <span class="token boolean">false</span> <span class="token comment">// true</span>
+<span class="token keyword">null</span> <span class="token operator">==</span> <span class="token keyword">undefined</span> <span class="token comment">// true</span>
+
+<span class="token comment">// 除了 == null 之外，其他都一律用 === ，例如</span>
+<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> x<span class="token operator">:</span> <span class="token number">100</span> <span class="token punctuation">}</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>obj<span class="token punctuation">.</span>a <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token comment">// 相当于</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>obj<span class="token punctuation">.</span>a <span class="token operator">===</span> <span class="token keyword">null</span> <span class="token operator">||</span> obj<span class="token punctuation">.</span>a <span class="token operator">===</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><h3 id="if-语句和逻辑运算"><a href="#if-语句和逻辑运算" class="header-anchor">#</a> if 语句和逻辑运算</h3> <p>if 判断的就是 truly 或者 falsely 变量；逻辑判断也遵循。</p> <ul><li>truly 变量：!!a === true 的变量</li> <li>falsely 变量：!!a === false 的变量</li></ul> <p>以下是 falsely 变量，除此之外都是 truly 变量</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">!</span><span class="token operator">!</span> <span class="token number">0</span> <span class="token operator">===</span> <span class="token boolean">false</span>
+<span class="token operator">!</span><span class="token operator">!</span> <span class="token number">NaN</span> <span class="token operator">===</span> <span class="token boolean">false</span>
+<span class="token operator">!</span><span class="token operator">!</span> <span class="token string">''</span> <span class="token operator">===</span> <span class="token boolean">false</span>
+<span class="token operator">!</span><span class="token operator">!</span> <span class="token keyword">null</span> <span class="token operator">===</span> <span class="token boolean">false</span>
+<span class="token operator">!</span><span class="token operator">!</span> <span class="token keyword">undefined</span> <span class="token operator">===</span> <span class="token boolean">false</span>
+<span class="token operator">!</span><span class="token operator">!</span> <span class="token boolean">false</span> <span class="token operator">===</span> <span class="token boolean">false</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/javascript/值类型、引用类型、深拷贝.html" class="prev">
+        值类型、引用类型、深拷贝
+      </a></span> <span class="next"><a href="/javascript/class、原型与原型链.html">
+        class、原型与原型链
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5310ab68.js" defer></script><script src="/assets/js/2.b5308052.js" defer></script><script src="/assets/js/31.c826760b.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>日志按照时间进行拆分 | 学习笔记</title>
+    <meta name="description" content="学习笔记">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.7524e105.css" as="style"><link rel="preload" href="/assets/js/app.5310ab68.js" as="script"><link rel="preload" href="/assets/js/2.b5308052.js" as="script"><link rel="preload" href="/assets/js/36.4af5eac6.js" as="script"><link rel="prefetch" href="/assets/js/10.0e490b04.js"><link rel="prefetch" href="/assets/js/11.2319d79a.js"><link rel="prefetch" href="/assets/js/12.f4c86af1.js"><link rel="prefetch" href="/assets/js/13.7b4407c6.js"><link rel="prefetch" href="/assets/js/14.4ad81f90.js"><link rel="prefetch" href="/assets/js/15.b14aacee.js"><link rel="prefetch" href="/assets/js/16.91287ce1.js"><link rel="prefetch" href="/assets/js/17.d558e0ec.js"><link rel="prefetch" href="/assets/js/18.efb885a8.js"><link rel="prefetch" href="/assets/js/19.efb1726f.js"><link rel="prefetch" href="/assets/js/20.f7aff000.js"><link rel="prefetch" href="/assets/js/21.ea86f624.js"><link rel="prefetch" href="/assets/js/22.1c2650ff.js"><link rel="prefetch" href="/assets/js/23.e8bc3cd9.js"><link rel="prefetch" href="/assets/js/24.c2d23742.js"><link rel="prefetch" href="/assets/js/25.f10fa85d.js"><link rel="prefetch" href="/assets/js/26.5125b986.js"><link rel="prefetch" href="/assets/js/27.adeea37c.js"><link rel="prefetch" href="/assets/js/28.0c648059.js"><link rel="prefetch" href="/assets/js/29.776d4755.js"><link rel="prefetch" href="/assets/js/3.e4621c71.js"><link rel="prefetch" href="/assets/js/30.f8c05386.js"><link rel="prefetch" href="/assets/js/31.c826760b.js"><link rel="prefetch" href="/assets/js/32.2335a729.js"><link rel="prefetch" href="/assets/js/33.6c519add.js"><link rel="prefetch" href="/assets/js/34.60256bfd.js"><link rel="prefetch" href="/assets/js/35.481bfcc1.js"><link rel="prefetch" href="/assets/js/37.e0f778b7.js"><link rel="prefetch" href="/assets/js/38.0782f6c7.js"><link rel="prefetch" href="/assets/js/39.a57fb6dd.js"><link rel="prefetch" href="/assets/js/4.39fb9149.js"><link rel="prefetch" href="/assets/js/40.083e743f.js"><link rel="prefetch" href="/assets/js/41.65ce4309.js"><link rel="prefetch" href="/assets/js/42.b2429e93.js"><link rel="prefetch" href="/assets/js/43.49c30d30.js"><link rel="prefetch" href="/assets/js/44.080f3eb1.js"><link rel="prefetch" href="/assets/js/45.146f5e46.js"><link rel="prefetch" href="/assets/js/46.80e719ea.js"><link rel="prefetch" href="/assets/js/47.711c870d.js"><link rel="prefetch" href="/assets/js/48.3cf7ced8.js"><link rel="prefetch" href="/assets/js/49.8a4ccce3.js"><link rel="prefetch" href="/assets/js/5.a84c6190.js"><link rel="prefetch" href="/assets/js/50.101ca6d5.js"><link rel="prefetch" href="/assets/js/51.537d7ac6.js"><link rel="prefetch" href="/assets/js/52.7790c0f3.js"><link rel="prefetch" href="/assets/js/53.52c898af.js"><link rel="prefetch" href="/assets/js/54.2096abfd.js"><link rel="prefetch" href="/assets/js/55.0bee0844.js"><link rel="prefetch" href="/assets/js/6.5afa03c6.js"><link rel="prefetch" href="/assets/js/7.0fe5da7e.js"><link rel="prefetch" href="/assets/js/8.9f3b73b3.js"><link rel="prefetch" href="/assets/js/9.b574fb9c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7524e105.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/node/基础知识.html" class="sidebar-link">基础知识</a></li><li><a href="/node/安全.html" class="sidebar-link">安全</a></li><li><a href="/node/log日志.html" class="active sidebar-link">log日志</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/node/log日志.html#日志按照时间进行拆分" class="sidebar-link">日志按照时间进行拆分</a></li></ul></li><li><a href="/node/nginx相关.html" class="sidebar-link">nginx相关</a></li><li><a href="/node/session与cookie.html" class="sidebar-link">session与cookie</a></li><li><a href="/node/mysql连接.html" class="sidebar-link">mysql连接</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="日志按照时间进行拆分"><a href="#日志按照时间进行拆分" class="header-anchor">#</a> 日志按照时间进行拆分</h2> <p><code>linux</code>的<code>crontab</code>命令，即定时任务。
+<code>*</code>代表：分钟小时日期月份星期
+设置定时任务，格式:<code>*****command</code>
+将<code>access.log</code>拷贝并重命名为<code>日期+access.log</code>
+清空<code>access.log</code>文件，继续积累日志</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/node/安全.html" class="prev">
+        安全
+      </a></span> <span class="next"><a href="/node/nginx相关.html">
+        nginx相关
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5310ab68.js" defer></script><script src="/assets/js/2.b5308052.js" defer></script><script src="/assets/js/36.4af5eac6.js" defer></script>
+  </body>
+</html>

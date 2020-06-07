@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nginx | 学习笔记</title>
+    <meta name="description" content="学习笔记">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.7524e105.css" as="style"><link rel="preload" href="/assets/js/app.5310ab68.js" as="script"><link rel="preload" href="/assets/js/2.b5308052.js" as="script"><link rel="preload" href="/assets/js/38.0782f6c7.js" as="script"><link rel="prefetch" href="/assets/js/10.0e490b04.js"><link rel="prefetch" href="/assets/js/11.2319d79a.js"><link rel="prefetch" href="/assets/js/12.f4c86af1.js"><link rel="prefetch" href="/assets/js/13.7b4407c6.js"><link rel="prefetch" href="/assets/js/14.4ad81f90.js"><link rel="prefetch" href="/assets/js/15.b14aacee.js"><link rel="prefetch" href="/assets/js/16.91287ce1.js"><link rel="prefetch" href="/assets/js/17.d558e0ec.js"><link rel="prefetch" href="/assets/js/18.efb885a8.js"><link rel="prefetch" href="/assets/js/19.efb1726f.js"><link rel="prefetch" href="/assets/js/20.f7aff000.js"><link rel="prefetch" href="/assets/js/21.ea86f624.js"><link rel="prefetch" href="/assets/js/22.1c2650ff.js"><link rel="prefetch" href="/assets/js/23.e8bc3cd9.js"><link rel="prefetch" href="/assets/js/24.c2d23742.js"><link rel="prefetch" href="/assets/js/25.f10fa85d.js"><link rel="prefetch" href="/assets/js/26.5125b986.js"><link rel="prefetch" href="/assets/js/27.adeea37c.js"><link rel="prefetch" href="/assets/js/28.0c648059.js"><link rel="prefetch" href="/assets/js/29.776d4755.js"><link rel="prefetch" href="/assets/js/3.e4621c71.js"><link rel="prefetch" href="/assets/js/30.f8c05386.js"><link rel="prefetch" href="/assets/js/31.c826760b.js"><link rel="prefetch" href="/assets/js/32.2335a729.js"><link rel="prefetch" href="/assets/js/33.6c519add.js"><link rel="prefetch" href="/assets/js/34.60256bfd.js"><link rel="prefetch" href="/assets/js/35.481bfcc1.js"><link rel="prefetch" href="/assets/js/36.4af5eac6.js"><link rel="prefetch" href="/assets/js/37.e0f778b7.js"><link rel="prefetch" href="/assets/js/39.a57fb6dd.js"><link rel="prefetch" href="/assets/js/4.39fb9149.js"><link rel="prefetch" href="/assets/js/40.083e743f.js"><link rel="prefetch" href="/assets/js/41.65ce4309.js"><link rel="prefetch" href="/assets/js/42.b2429e93.js"><link rel="prefetch" href="/assets/js/43.49c30d30.js"><link rel="prefetch" href="/assets/js/44.080f3eb1.js"><link rel="prefetch" href="/assets/js/45.146f5e46.js"><link rel="prefetch" href="/assets/js/46.80e719ea.js"><link rel="prefetch" href="/assets/js/47.711c870d.js"><link rel="prefetch" href="/assets/js/48.3cf7ced8.js"><link rel="prefetch" href="/assets/js/49.8a4ccce3.js"><link rel="prefetch" href="/assets/js/5.a84c6190.js"><link rel="prefetch" href="/assets/js/50.101ca6d5.js"><link rel="prefetch" href="/assets/js/51.537d7ac6.js"><link rel="prefetch" href="/assets/js/52.7790c0f3.js"><link rel="prefetch" href="/assets/js/53.52c898af.js"><link rel="prefetch" href="/assets/js/54.2096abfd.js"><link rel="prefetch" href="/assets/js/55.0bee0844.js"><link rel="prefetch" href="/assets/js/6.5afa03c6.js"><link rel="prefetch" href="/assets/js/7.0fe5da7e.js"><link rel="prefetch" href="/assets/js/8.9f3b73b3.js"><link rel="prefetch" href="/assets/js/9.b574fb9c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7524e105.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/node/基础知识.html" class="sidebar-link">基础知识</a></li><li><a href="/node/安全.html" class="sidebar-link">安全</a></li><li><a href="/node/log日志.html" class="sidebar-link">log日志</a></li><li><a href="/node/nginx相关.html" class="active sidebar-link">nginx相关</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/node/nginx相关.html#nginx" class="sidebar-link">nginx</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/node/nginx相关.html#配置" class="sidebar-link">配置</a></li><li class="sidebar-sub-header"><a href="/node/nginx相关.html#nginx对应的操作命令" class="sidebar-link">nginx对应的操作命令</a></li></ul></li></ul></li><li><a href="/node/session与cookie.html" class="sidebar-link">session与cookie</a></li><li><a href="/node/mysql连接.html" class="sidebar-link">mysql连接</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="nginx"><a href="#nginx" class="header-anchor">#</a> nginx</h2> <h3 id="配置"><a href="#配置" class="header-anchor">#</a> 配置</h3> <p>打开安装目录：<code>\nginx-1.16.1\conf</code>中的<code>nginx.conf</code>文件进行配置：</p> <div class="language-js extra-class"><pre class="language-js"><code>
+#user  nobody<span class="token punctuation">;</span>
+<span class="token comment">// 这里是进程数，默认是1</span>
+worker_processes  <span class="token number">2</span><span class="token punctuation">;</span>
+
+#error_log  logs<span class="token operator">/</span>error<span class="token punctuation">.</span>log<span class="token punctuation">;</span>
+#error_log  logs<span class="token operator">/</span>error<span class="token punctuation">.</span>log  notice<span class="token punctuation">;</span>
+#error_log  logs<span class="token operator">/</span>error<span class="token punctuation">.</span>log  info<span class="token punctuation">;</span>
+
+#pid        logs<span class="token operator">/</span>nginx<span class="token punctuation">.</span>pid<span class="token punctuation">;</span>
+
+
+events <span class="token punctuation">{</span>
+    worker_connections  <span class="token number">1024</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+http <span class="token punctuation">{</span>
+    include       mime<span class="token punctuation">.</span>types<span class="token punctuation">;</span>
+    default_type  application<span class="token operator">/</span>octet<span class="token operator">-</span>stream<span class="token punctuation">;</span>
+
+    #log_format  main  <span class="token string">'$remote_addr - $remote_user [$time_local] &quot;$request&quot; '</span>
+    #                  <span class="token string">'$status $body_bytes_sent &quot;$http_referer&quot; '</span>
+    #                  <span class="token string">'&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;'</span><span class="token punctuation">;</span>
+
+    #access_log  logs<span class="token operator">/</span>access<span class="token punctuation">.</span>log  main<span class="token punctuation">;</span>
+
+    sendfile        on<span class="token punctuation">;</span>
+    #tcp_nopush     on<span class="token punctuation">;</span>
+
+    #keepalive_timeout  <span class="token number">0</span><span class="token punctuation">;</span>
+    keepalive_timeout  <span class="token number">65</span><span class="token punctuation">;</span>
+
+    #gzip  on<span class="token punctuation">;</span>
+
+    server <span class="token punctuation">{</span>
+        <span class="token comment">// 这里是nginx访问的端口</span>
+        listen       <span class="token number">8090</span><span class="token punctuation">;</span>
+        server_name  localhost<span class="token punctuation">;</span>
+
+        #charset koi8<span class="token operator">-</span>r<span class="token punctuation">;</span>
+
+        #access_log  logs<span class="token operator">/</span>host<span class="token punctuation">.</span>access<span class="token punctuation">.</span>log  main<span class="token punctuation">;</span>
+
+#        location <span class="token operator">/</span> <span class="token punctuation">{</span>
+#            root   html<span class="token punctuation">;</span>
+#            index  index<span class="token punctuation">.</span>html index<span class="token punctuation">.</span>htm<span class="token punctuation">;</span>
+#        <span class="token punctuation">}</span>
+        <span class="token comment">/* 
+        主要的配置 /就是访问页面的端口，配置服务器地址，/api就是接口的地址，
+        在页面中直接使用axios.get('/api/blog/list')进行获取数据
+        然后我们在浏览器中，直接输入nginx监听的端口就可以了比如我的是localhost:8090
+        */</span>
+		location <span class="token operator">/</span> <span class="token punctuation">{</span>
+		  proxy_pass http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">8001</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		location <span class="token operator">/</span>api<span class="token operator">/</span> <span class="token punctuation">{</span>
+		  proxy_pass http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">8000</span><span class="token punctuation">;</span>
+		  proxy_set_header Host $host<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+
+        #error_page  <span class="token number">404</span>              <span class="token operator">/</span><span class="token number">404.</span>html<span class="token punctuation">;</span>
+
+        # redirect server error pages to the <span class="token keyword">static</span> page <span class="token operator">/</span><span class="token number">50</span>x<span class="token punctuation">.</span>html
+        #
+        error_page   <span class="token number">500</span> <span class="token number">502</span> <span class="token number">503</span> <span class="token number">504</span>  <span class="token operator">/</span><span class="token number">50</span>x<span class="token punctuation">.</span>html<span class="token punctuation">;</span>
+        location <span class="token operator">=</span> <span class="token operator">/</span><span class="token number">50</span>x<span class="token punctuation">.</span>html <span class="token punctuation">{</span>
+            root   html<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        # proxy the <span class="token constant">PHP</span> scripts to Apache listening on <span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span><span class="token operator">:</span><span class="token number">80</span>
+        #
+        #location <span class="token operator">~</span> \<span class="token punctuation">.</span>php$ <span class="token punctuation">{</span>
+        #    proxy_pass   http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span><span class="token punctuation">;</span>
+        #<span class="token punctuation">}</span>
+
+        # pass the <span class="token constant">PHP</span> scripts to FastCGI server listening on <span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span><span class="token operator">:</span><span class="token number">9000</span>
+        #
+        #location <span class="token operator">~</span> \<span class="token punctuation">.</span>php$ <span class="token punctuation">{</span>
+        #    root           html<span class="token punctuation">;</span>
+        #    fastcgi_pass   <span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span><span class="token operator">:</span><span class="token number">9000</span><span class="token punctuation">;</span>
+        #    fastcgi_index  index<span class="token punctuation">.</span>php<span class="token punctuation">;</span>
+        #    fastcgi_param  <span class="token constant">SCRIPT_FILENAME</span>  <span class="token operator">/</span>scripts$fastcgi_script_name<span class="token punctuation">;</span>
+        #    include        fastcgi_params<span class="token punctuation">;</span>
+        #<span class="token punctuation">}</span>
+
+        # deny access to <span class="token punctuation">.</span>htaccess files<span class="token punctuation">,</span> <span class="token keyword">if</span> Apache's document root
+        # concurs <span class="token keyword">with</span> nginx's one
+        #
+        #location <span class="token operator">~</span> <span class="token operator">/</span>\<span class="token punctuation">.</span>ht <span class="token punctuation">{</span>
+        #    deny  all<span class="token punctuation">;</span>
+        #<span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+
+    # another virtual host using mix <span class="token keyword">of</span> <span class="token constant">IP</span><span class="token operator">-</span><span class="token punctuation">,</span> name<span class="token operator">-</span><span class="token punctuation">,</span> and port<span class="token operator">-</span>based configuration
+    #
+    #server <span class="token punctuation">{</span>
+    #    listen       <span class="token number">8000</span><span class="token punctuation">;</span>
+    #    listen       somename<span class="token operator">:</span><span class="token number">8080</span><span class="token punctuation">;</span>
+    #    server_name  somename  alias  another<span class="token punctuation">.</span>alias<span class="token punctuation">;</span>
+
+    #    location <span class="token operator">/</span> <span class="token punctuation">{</span>
+    #        root   html<span class="token punctuation">;</span>
+    #        index  index<span class="token punctuation">.</span>html index<span class="token punctuation">.</span>htm<span class="token punctuation">;</span>
+    #    <span class="token punctuation">}</span>
+    #<span class="token punctuation">}</span>
+
+
+    # <span class="token constant">HTTPS</span> server
+    #
+    #server <span class="token punctuation">{</span>
+    #    listen       <span class="token number">443</span> ssl<span class="token punctuation">;</span>
+    #    server_name  localhost<span class="token punctuation">;</span>
+
+    #    ssl_certificate      cert<span class="token punctuation">.</span>pem<span class="token punctuation">;</span>
+    #    ssl_certificate_key  cert<span class="token punctuation">.</span>key<span class="token punctuation">;</span>
+
+    #    ssl_session_cache    shared<span class="token operator">:</span><span class="token constant">SSL</span><span class="token operator">:</span><span class="token number">1</span>m<span class="token punctuation">;</span>
+    #    ssl_session_timeout  <span class="token number">5</span>m<span class="token punctuation">;</span>
+
+    #    ssl_ciphers  <span class="token constant">HIGH</span><span class="token operator">:</span><span class="token operator">!</span>aNULL<span class="token operator">:</span><span class="token operator">!</span><span class="token constant">MD5</span><span class="token punctuation">;</span>
+    #    ssl_prefer_server_ciphers  on<span class="token punctuation">;</span>
+
+    #    location <span class="token operator">/</span> <span class="token punctuation">{</span>
+    #        root   html<span class="token punctuation">;</span>
+    #        index  index<span class="token punctuation">.</span>html index<span class="token punctuation">.</span>htm<span class="token punctuation">;</span>
+    #    <span class="token punctuation">}</span>
+    #<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="nginx对应的操作命令"><a href="#nginx对应的操作命令" class="header-anchor">#</a> nginx对应的操作命令</h3> <p>测试配置文件格式是否正确 nginx -t
+启动 nginx
+重启：nginx -s reload
+停止: nginx -s stop</p> <blockquote><p>注意在Windows环境下，需要使用管理员权限打开cmd然后进行操作。</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/node/log日志.html" class="prev">
+        log日志
+      </a></span> <span class="next"><a href="/node/session与cookie.html">
+        session与cookie
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5310ab68.js" defer></script><script src="/assets/js/2.b5308052.js" defer></script><script src="/assets/js/38.0782f6c7.js" defer></script>
+  </body>
+</html>
