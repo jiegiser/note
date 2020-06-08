@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>坐标系相关 | 学习笔记</title>
+    <meta name="description" content="学习笔记">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/note/assets/css/0.styles.cddcced0.css" as="style"><link rel="preload" href="/note/assets/js/app.cb7cb5e1.js" as="script"><link rel="preload" href="/note/assets/js/2.b5308052.js" as="script"><link rel="preload" href="/note/assets/js/60.2750c7e5.js" as="script"><link rel="prefetch" href="/note/assets/js/10.afe4cb5e.js"><link rel="prefetch" href="/note/assets/js/11.dc2470fe.js"><link rel="prefetch" href="/note/assets/js/12.8b32a8d1.js"><link rel="prefetch" href="/note/assets/js/13.cef6ddd8.js"><link rel="prefetch" href="/note/assets/js/14.f53460d9.js"><link rel="prefetch" href="/note/assets/js/15.816196ae.js"><link rel="prefetch" href="/note/assets/js/16.91287ce1.js"><link rel="prefetch" href="/note/assets/js/17.d558e0ec.js"><link rel="prefetch" href="/note/assets/js/18.efb885a8.js"><link rel="prefetch" href="/note/assets/js/19.27419c9b.js"><link rel="prefetch" href="/note/assets/js/20.cd5b2439.js"><link rel="prefetch" href="/note/assets/js/21.ee8e4d43.js"><link rel="prefetch" href="/note/assets/js/22.84162b45.js"><link rel="prefetch" href="/note/assets/js/23.a45e94ed.js"><link rel="prefetch" href="/note/assets/js/24.b6be4e7c.js"><link rel="prefetch" href="/note/assets/js/25.e1c33638.js"><link rel="prefetch" href="/note/assets/js/26.5125b986.js"><link rel="prefetch" href="/note/assets/js/27.5a45ccb2.js"><link rel="prefetch" href="/note/assets/js/28.2f3d6ae2.js"><link rel="prefetch" href="/note/assets/js/29.0d6a5a7c.js"><link rel="prefetch" href="/note/assets/js/3.b1296003.js"><link rel="prefetch" href="/note/assets/js/30.00a4cd55.js"><link rel="prefetch" href="/note/assets/js/31.dd4e239e.js"><link rel="prefetch" href="/note/assets/js/32.cbdd1bc9.js"><link rel="prefetch" href="/note/assets/js/33.7d2f2267.js"><link rel="prefetch" href="/note/assets/js/34.0b65e9b3.js"><link rel="prefetch" href="/note/assets/js/35.6de9b309.js"><link rel="prefetch" href="/note/assets/js/36.ad20f675.js"><link rel="prefetch" href="/note/assets/js/37.88bec6be.js"><link rel="prefetch" href="/note/assets/js/38.f03cf9e9.js"><link rel="prefetch" href="/note/assets/js/39.39674cb1.js"><link rel="prefetch" href="/note/assets/js/4.1a3b23f8.js"><link rel="prefetch" href="/note/assets/js/40.46a96d21.js"><link rel="prefetch" href="/note/assets/js/41.bdce91dc.js"><link rel="prefetch" href="/note/assets/js/42.38052e01.js"><link rel="prefetch" href="/note/assets/js/43.0c89552c.js"><link rel="prefetch" href="/note/assets/js/44.57b4f0a3.js"><link rel="prefetch" href="/note/assets/js/45.e90b49d8.js"><link rel="prefetch" href="/note/assets/js/46.c1e6ec8f.js"><link rel="prefetch" href="/note/assets/js/47.c039746f.js"><link rel="prefetch" href="/note/assets/js/48.892fc7f1.js"><link rel="prefetch" href="/note/assets/js/49.dcd34cf0.js"><link rel="prefetch" href="/note/assets/js/5.5545183b.js"><link rel="prefetch" href="/note/assets/js/50.1b99bffd.js"><link rel="prefetch" href="/note/assets/js/51.6bd3b943.js"><link rel="prefetch" href="/note/assets/js/52.d4453adf.js"><link rel="prefetch" href="/note/assets/js/53.427d49f9.js"><link rel="prefetch" href="/note/assets/js/54.b4506ed5.js"><link rel="prefetch" href="/note/assets/js/55.de678afe.js"><link rel="prefetch" href="/note/assets/js/56.4c2dd934.js"><link rel="prefetch" href="/note/assets/js/57.ee74719c.js"><link rel="prefetch" href="/note/assets/js/58.9e7b3f8d.js"><link rel="prefetch" href="/note/assets/js/59.fc4f86da.js"><link rel="prefetch" href="/note/assets/js/6.4803ee9c.js"><link rel="prefetch" href="/note/assets/js/61.c3396e78.js"><link rel="prefetch" href="/note/assets/js/62.ac7598cf.js"><link rel="prefetch" href="/note/assets/js/63.e64c3169.js"><link rel="prefetch" href="/note/assets/js/64.4685d279.js"><link rel="prefetch" href="/note/assets/js/7.258c3cfb.js"><link rel="prefetch" href="/note/assets/js/8.ada473d4.js"><link rel="prefetch" href="/note/assets/js/9.c651cfd9.js">
+    <link rel="stylesheet" href="/note/assets/css/0.styles.cddcced0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/note/webgis/坐标系相关.html" class="active sidebar-link">坐标系相关</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/webgis/坐标系相关.html#web-端常见的坐标系" class="sidebar-link">web 端常见的坐标系</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/webgis/坐标系相关.html#epsg-4326" class="sidebar-link">EPSG:4326</a></li><li class="sidebar-sub-header"><a href="/note/webgis/坐标系相关.html#epsg-3857" class="sidebar-link">EPSG:3857</a></li></ul></li></ul></li><li><a href="/note/webgis/openlayers.html" class="sidebar-link">openlayers</a></li><li><a href="/note/webgis/arcgis-api-3.x.html" class="sidebar-link">arcgis-api-3.x</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="坐标系相关"><a href="#坐标系相关" class="header-anchor">#</a> 坐标系相关</h1> <h2 id="web-端常见的坐标系"><a href="#web-端常见的坐标系" class="header-anchor">#</a> web 端常见的坐标系</h2> <h3 id="epsg-4326"><a href="#epsg-4326" class="header-anchor">#</a> EPSG:4326</h3> <p>一个地理坐标系（也叫大地坐标系），用于描述WGS84坐标系，其是从1984年开始在GPS中使用的全球地理坐标系统；也就是通常说的经纬度坐标；</p> <p>该坐标系是大地坐标系（Geodectic coordinate system），单位是度（角度单位），角度用来测量长度和面积是不合适的，但可用于定位，而且它的范围又覆盖了全球，所以很适合全球定位（GPS卫星定位的坐标系用的就是它）</p> <h3 id="epsg-3857"><a href="#epsg-3857" class="header-anchor">#</a> EPSG:3857</h3> <p>EPSG:3857是一个投影坐标系（Projected coordinate system），在WGS84坐标系基础上进行了伪墨卡托投影（Pseudo-Mercator）。球形墨卡托地图、谷歌地图、osm地图、bing地图、ArcGIS、ESRI会常用该坐标系。
+投影坐标系（Projected coordinate system）是在大地坐标系（Geodectic coordinate system）的基础上，经过数学运算，把大地坐标系的曲面坐标映射到平面上产生的一种平面坐标系。
+虽然EPSG:3857是平面坐标系，单位是长度（米），但是他用了一个长度和面积都不靠谱的投影坐标系：Pseudo-Mercator（伪墨卡托投影，该投影是正轴等角切圆柱投影，在高纬度地区形变的非常严重）。原来高德地图和谷歌地图上面画的东东都是变形的！没错，就是变形的，你看到的这些互联网地图用的都是类似的投影，他们在高纬度地区都是拉伸严重的，远比他的实地面积要大。但是正轴墨卡托投影有个优点：投影后角度不变形，所以用来导航和定位非常合适。</p> <p>CGCS2000与WGS84的基本定义是一致的，采用的参考椭球bai非常相近，椭球常数中仅扁率有细微差别，du虽然因此会造成同一点在两个坐标系中的值会有zhi微小差异，但是，在当前测量精度水平下这种微小差值dao是可以忽略回的，因此，可以认为CGCS2000和WGS84是相容的，在坐标系的实现精度范围答内两种坐标系下的坐标是一致的。</p> <p>CGCS 2k和WGS 84经纬度可以说完全一致（毫米级别差别），但是二者的方里网坐标差别就大了去了。因为</p> <p>1）二者中央经线在6度带时一样，CGCS 2k有3度带坐标，UTM WGS84只有6度带方里网坐标。</p> <p>2）二者投影方法不一样，CGCS 2k是Gauss-Kruger投影 TM投影，UTM WGS 84顾名思义当然是UTM投影了。</p> <blockquote><p>epsg参数的含义：https://yq.aliyun.com/articles/399279</p></blockquote> <blockquote><p>度分秒转换: https://www.23bei.com/tool-135.html</p></blockquote> <blockquote><p>openlayers例子: http://60.174.203.118:8018/water/index.html</p></blockquote> <blockquote><p>墨卡托投影、高斯-克吕格投影、UTM投影及我国分带方法: http://tian0226.blog.sohu.com/142843049.html</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/note/webgis/openlayers.html">
+        openlayers
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/note/assets/js/app.cb7cb5e1.js" defer></script><script src="/note/assets/js/2.b5308052.js" defer></script><script src="/note/assets/js/60.2750c7e5.js" defer></script>
+  </body>
+</html>
