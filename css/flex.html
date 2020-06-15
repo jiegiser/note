@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Flex 布局 | 学习笔记</title>
+    <meta name="description" content="学习笔记">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/note/assets/css/0.styles.cddcced0.css" as="style"><link rel="preload" href="/note/assets/js/app.6ffd3175.js" as="script"><link rel="preload" href="/note/assets/js/2.b5308052.js" as="script"><link rel="preload" href="/note/assets/js/24.fd4beee8.js" as="script"><link rel="prefetch" href="/note/assets/js/10.74e11f14.js"><link rel="prefetch" href="/note/assets/js/11.afbab838.js"><link rel="prefetch" href="/note/assets/js/12.341cec54.js"><link rel="prefetch" href="/note/assets/js/13.6f95d2a8.js"><link rel="prefetch" href="/note/assets/js/14.2da81244.js"><link rel="prefetch" href="/note/assets/js/15.056e615d.js"><link rel="prefetch" href="/note/assets/js/16.91287ce1.js"><link rel="prefetch" href="/note/assets/js/17.6bc2ed14.js"><link rel="prefetch" href="/note/assets/js/18.470810fd.js"><link rel="prefetch" href="/note/assets/js/19.b0646b4e.js"><link rel="prefetch" href="/note/assets/js/20.f7aff000.js"><link rel="prefetch" href="/note/assets/js/21.82fcf53a.js"><link rel="prefetch" href="/note/assets/js/22.f397110c.js"><link rel="prefetch" href="/note/assets/js/23.788ec944.js"><link rel="prefetch" href="/note/assets/js/25.363fd20d.js"><link rel="prefetch" href="/note/assets/js/26.8248da1c.js"><link rel="prefetch" href="/note/assets/js/27.362768a1.js"><link rel="prefetch" href="/note/assets/js/28.941d298c.js"><link rel="prefetch" href="/note/assets/js/29.9de16008.js"><link rel="prefetch" href="/note/assets/js/3.9e3db743.js"><link rel="prefetch" href="/note/assets/js/30.5b43a1a7.js"><link rel="prefetch" href="/note/assets/js/31.e25523df.js"><link rel="prefetch" href="/note/assets/js/32.6cef3390.js"><link rel="prefetch" href="/note/assets/js/33.e3540638.js"><link rel="prefetch" href="/note/assets/js/34.04808833.js"><link rel="prefetch" href="/note/assets/js/35.02b9835a.js"><link rel="prefetch" href="/note/assets/js/36.278e6499.js"><link rel="prefetch" href="/note/assets/js/37.892a3f70.js"><link rel="prefetch" href="/note/assets/js/38.f8dc6202.js"><link rel="prefetch" href="/note/assets/js/39.bfd89ae7.js"><link rel="prefetch" href="/note/assets/js/4.0da519f9.js"><link rel="prefetch" href="/note/assets/js/40.a13052f2.js"><link rel="prefetch" href="/note/assets/js/41.e4a0ed3f.js"><link rel="prefetch" href="/note/assets/js/42.3376a4a6.js"><link rel="prefetch" href="/note/assets/js/43.49ea0602.js"><link rel="prefetch" href="/note/assets/js/44.a4ab6d17.js"><link rel="prefetch" href="/note/assets/js/45.9d6fd907.js"><link rel="prefetch" href="/note/assets/js/46.3e97e54c.js"><link rel="prefetch" href="/note/assets/js/47.9e54ca54.js"><link rel="prefetch" href="/note/assets/js/48.61499fe2.js"><link rel="prefetch" href="/note/assets/js/49.a5245eaa.js"><link rel="prefetch" href="/note/assets/js/5.2f97c2f2.js"><link rel="prefetch" href="/note/assets/js/50.8092007d.js"><link rel="prefetch" href="/note/assets/js/51.8964acb6.js"><link rel="prefetch" href="/note/assets/js/52.75f9595a.js"><link rel="prefetch" href="/note/assets/js/53.402198c8.js"><link rel="prefetch" href="/note/assets/js/54.97d95fda.js"><link rel="prefetch" href="/note/assets/js/55.403bcdc1.js"><link rel="prefetch" href="/note/assets/js/56.f14973ce.js"><link rel="prefetch" href="/note/assets/js/57.de853e15.js"><link rel="prefetch" href="/note/assets/js/58.f03ecc13.js"><link rel="prefetch" href="/note/assets/js/59.dbfdb82c.js"><link rel="prefetch" href="/note/assets/js/6.02e247e4.js"><link rel="prefetch" href="/note/assets/js/60.407f16e6.js"><link rel="prefetch" href="/note/assets/js/61.5fc6b2df.js"><link rel="prefetch" href="/note/assets/js/62.cba949e3.js"><link rel="prefetch" href="/note/assets/js/63.82c70609.js"><link rel="prefetch" href="/note/assets/js/64.f2a7ec4a.js"><link rel="prefetch" href="/note/assets/js/65.ce48eb7f.js"><link rel="prefetch" href="/note/assets/js/66.42315759.js"><link rel="prefetch" href="/note/assets/js/7.06713c9b.js"><link rel="prefetch" href="/note/assets/js/8.ada473d4.js"><link rel="prefetch" href="/note/assets/js/9.4759b8dd.js">
+    <link rel="stylesheet" href="/note/assets/css/0.styles.cddcced0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/note/css/html常见元素.html" class="sidebar-link">html常见元素</a></li><li><a href="/note/css/css基础.html" class="sidebar-link">css基础</a></li><li><a href="/note/css/css布局.html" class="sidebar-link">css布局</a></li><li><a href="/note/css/flex.html" class="active sidebar-link">flex</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/css/flex.html#flex-布局是什么" class="sidebar-link">Flex 布局是什么</a></li><li class="sidebar-sub-header"><a href="/note/css/flex.html#容器的属性" class="sidebar-link">容器的属性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/css/flex.html#flex-direction" class="sidebar-link">flex-direction</a></li><li class="sidebar-sub-header"><a href="/note/css/flex.html#flex-wrap" class="sidebar-link">flex-wrap</a></li><li class="sidebar-sub-header"><a href="/note/css/flex.html#flex-flow" class="sidebar-link">flex-flow</a></li><li class="sidebar-sub-header"><a href="/note/css/flex.html#justify-content" class="sidebar-link">justify-content</a></li><li class="sidebar-sub-header"><a href="/note/css/flex.html#align-items" class="sidebar-link">align-items</a></li><li class="sidebar-sub-header"><a href="/note/css/flex.html#align-content" class="sidebar-link">align-content</a></li></ul></li><li class="sidebar-sub-header"><a href="/note/css/flex.html#项目的属性" class="sidebar-link">项目的属性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/css/flex.html#order" class="sidebar-link">order</a></li><li class="sidebar-sub-header"><a href="/note/css/flex.html#flex-grow" class="sidebar-link">flex-grow</a></li><li class="sidebar-sub-header"><a href="/note/css/flex.html#flex-shrink" class="sidebar-link">flex-shrink</a></li><li class="sidebar-sub-header"><a href="/note/css/flex.html#flex-basis" class="sidebar-link">flex-basis</a></li><li class="sidebar-sub-header"><a href="/note/css/flex.html#flex" class="sidebar-link">flex</a></li><li class="sidebar-sub-header"><a href="/note/css/flex.html#align-self" class="sidebar-link">align-self</a></li></ul></li></ul></li><li><a href="/note/css/css动画.html" class="sidebar-link">css动画</a></li><li><a href="/note/css/css效果实现.html" class="sidebar-link">css效果实现</a></li><li><a href="/note/css/css预处理器.html" class="sidebar-link">css预处理器</a></li><li><a href="/note/css/css工程化.html" class="sidebar-link">css工程化</a></li><li><a href="/note/css/框架中的css.html" class="sidebar-link">框架中的css</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="flex-布局"><a href="#flex-布局" class="header-anchor">#</a> Flex 布局</h1> <h2 id="flex-布局是什么"><a href="#flex-布局是什么" class="header-anchor">#</a> Flex 布局是什么</h2> <p>Flex 也就是弹性布局，用来为盒状模型提供最大的灵活性。
+任何一个容器都可以指定为 Flex 布局：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>如果为行内元素：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-flex<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>需要注意的是，如果为 Flex 布局以后，子元素的 float、clear 和 vertical-align 属性将失效。</p></blockquote> <h2 id="容器的属性"><a href="#容器的属性" class="header-anchor">#</a> 容器的属性</h2> <ul><li>flex-direction</li> <li>flex-wrap</li> <li>flex-flow</li> <li>justify-content</li> <li>align-items</li> <li>align-content</li></ul> <h3 id="flex-direction"><a href="#flex-direction" class="header-anchor">#</a> flex-direction</h3> <p>flex-direction 属性决定主轴的方向（即项目的排列方向）。
+有四个可选值：</p> <ul><li>row（默认值）：主轴为水平方向，起点在左端。</li> <li>row-reverse：主轴为水平方向，起点在右端。</li> <li>column：主轴为垂直方向，起点在上沿。</li> <li>column-reverse：主轴为垂直方向，起点在下沿。</li></ul> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">flex-direction</span><span class="token punctuation">:</span> row | row-reverse | column | column-reverse<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="flex-wrap"><a href="#flex-wrap" class="header-anchor">#</a> flex-wrap</h3> <p>默认情况下，项目都排在一条线（又称&quot;轴线&quot;）上。flex-wrap 属性定义，如果一条轴线排不下，如何换行。
+有三个可选值：</p> <ul><li>nowrap：（默认）不换行。</li> <li>wrap：换行，第一行在上方。</li> <li>wrap-reverse：换行，第一行在下方</li></ul> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">flex-wrap</span><span class="token punctuation">:</span> nowrap | wrap | wrap-reverse
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="flex-flow"><a href="#flex-flow" class="header-anchor">#</a> flex-flow</h3> <p>flex-flow 属性是 flex-direction 属性和 flex-wrap 属性的简写形式，默认值为 row nowrap。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">flex-flow</span><span class="token punctuation">:</span> &lt;flex-direction&gt; || &lt;flex-wrap&gt;
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="justify-content"><a href="#justify-content" class="header-anchor">#</a> justify-content</h3> <p>justify-content 属性定义了项目在主轴上的对齐方式。
+有五个可选值：</p> <ul><li>flex-start：（默认值）左对齐</li> <li>flex-end：右对齐</li> <li>center：居中</li> <li>space-between：两端对齐，项目之间的间隔都相等。</li> <li>space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。</li></ul> <h3 id="align-items"><a href="#align-items" class="header-anchor">#</a> align-items</h3> <p>align-items 属性定义项目在交叉轴上如何对齐
+有五个可选的属性：</p> <ul><li>flex-start：交叉轴的起点对齐</li> <li>flex-end：交叉轴的终点对齐</li> <li>center：交叉轴的中点对齐</li> <li>baseline：项目的第一行文字的基线对齐</li> <li>stretch（默认值）：如果项目未设置高度或设为 auto，将占满整个容器的高度</li></ul> <p>如果每个项目的高度都是一样的，设置 align-items 属性是没有变化的，他是根据项目中元素的高度进行对齐。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">align-items</span><span class="token punctuation">:</span> flex-start | flex-end | center | baseline | stretch
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="align-content"><a href="#align-content" class="header-anchor">#</a> align-content</h3> <p>align-content 属性定义了多根轴线的对齐方式。如果项目中只有一根轴线，该属性不起作用；
+有六个可选属性</p> <ul><li>flex-start：与交叉轴的起点对齐</li> <li>flex-end：与交叉轴的终点对齐</li> <li>center：与交叉轴的中点对齐</li> <li>space-between：与交叉轴两端对齐，轴线之间的间隔平均分布</li> <li>space-around：每根轴线两侧禅道间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍
+stretch（默认值）：轴线占满整个交叉轴</li></ul> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+  <span class="token property">align-content</span><span class="token punctuation">:</span> flex-start | flex-end | center | space-between | space-around | stretch
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="项目的属性"><a href="#项目的属性" class="header-anchor">#</a> 项目的属性</h2> <p>项目的属性主要有下面几种：</p> <ul><li>order</li> <li>flex-grow</li> <li>flex-shrink</li> <li>flex-basis</li> <li>flex</li> <li>align-self</li></ul> <h3 id="order"><a href="#order" class="header-anchor">#</a> order</h3> <p>order 属性定义项目的排列顺序。数值越小，排列越靠前，默认为 0</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.item</span> <span class="token punctuation">{</span>
+  <span class="token property">order</span><span class="token punctuation">:</span> &lt;integer&gt;
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="flex-grow"><a href="#flex-grow" class="header-anchor">#</a> flex-grow</h3> <p>flex-grow 属性定义项目的放大比例，默认为 0，即如果存在剩余空间，也不放大；
+如果所项目的 flex-grow 属性都为 1，则他们将等分剩余空间（如果有的话），如果一个项目的 flex-grow 属性为 2，其他项目都为 1，
+则前者占据的剩余空间将比其他项多一倍；</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.item</span> <span class="token punctuation">{</span>
+  <span class="token property">flex-grow</span><span class="token punctuation">:</span> &lt;number&gt; <span class="token comment">/* default 0 */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="flex-shrink"><a href="#flex-shrink" class="header-anchor">#</a> flex-shrink</h3> <p>flex-shrink 属性定义了项目的缩小比例，默认为 1，即如果空间不足，该项目将缩小；
+如果所有的项目的 flex-shrink 属性都为 1，当空间不足时，都将等比例缩小，如果一个项目的 flex-shrink 属性为 0，其他项目都为 1，则空间不足时，前者不缩小。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.item</span> <span class="token punctuation">{</span>
+  <span class="token property">flex-shrink</span><span class="token punctuation">:</span> &lt;number&gt; <span class="token comment">/* default 1 */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="flex-basis"><a href="#flex-basis" class="header-anchor">#</a> flex-basis</h3> <p>flex-basis 属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。他的默认值为 auto，即项目的本来大小；
+他可以设置 width 或者 height 属性一样的值，则项目将占据固定空间。
+设置固定值，则浏览器窗口缩小的时候，项目的占据的空间就是设置的值，不会等比例缩小。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.item</span> <span class="token punctuation">{</span>
+  <span class="token property">flex-basis</span><span class="token punctuation">:</span> &lt;length&gt; | auto<span class="token punctuation">;</span> <span class="token comment">/* default auto*/</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="flex"><a href="#flex" class="header-anchor">#</a> flex</h3> <p>flex 属性是 flex-grow、flex-shrink 和 flex-basis 的简写；默认值为 0 1 auto。<code>后面两个属性可选</code>。</p> <blockquote><p>该属性有两个快捷值：auto （1 1 auto）和 none （0 0 auto）；建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。</p></blockquote> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.item</span> <span class="token punctuation">{</span>
+  <span class="token property">flex</span><span class="token punctuation">:</span> none | [&lt;<span class="token string">'flex-grow'</span>&gt;<span class="token punctuation">,</span> &lt;<span class="token string">'flex-shrink'</span>&gt;? || &lt;<span class="token string">'flex-basis'</span>&gt;]
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="align-self"><a href="#align-self" class="header-anchor">#</a> align-self</h3> <p>align-self 属性允许单个项目有与其他项目不一样的对齐方式，可覆盖 align-items 属性。默认值为 auto，表示继承父元素的 align-items 属性，
+如果没有父元素，则等同于 stretch。</p> <p>该属性有六个可选属性值，除了 auto，其他都与 align-items 属性完全一致；</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note/css/css布局.html" class="prev">
+        css布局
+      </a></span> <span class="next"><a href="/note/css/css动画.html">
+        css动画
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/note/assets/js/app.6ffd3175.js" defer></script><script src="/note/assets/js/2.b5308052.js" defer></script><script src="/note/assets/js/24.fd4beee8.js" defer></script>
+  </body>
+</html>
