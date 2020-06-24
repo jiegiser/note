@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>事件 | 学习笔记</title>
+    <meta name="description" content="学习笔记">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/note/assets/css/0.styles.cddcced0.css" as="style"><link rel="preload" href="/note/assets/js/app.c5584eb9.js" as="script"><link rel="preload" href="/note/assets/js/2.06f73c5a.js" as="script"><link rel="preload" href="/note/assets/js/34.bbce4bac.js" as="script"><link rel="prefetch" href="/note/assets/js/10.0a1784d3.js"><link rel="prefetch" href="/note/assets/js/11.8e23c590.js"><link rel="prefetch" href="/note/assets/js/12.4806c39b.js"><link rel="prefetch" href="/note/assets/js/13.532614d0.js"><link rel="prefetch" href="/note/assets/js/14.94947b3c.js"><link rel="prefetch" href="/note/assets/js/15.04da3ebe.js"><link rel="prefetch" href="/note/assets/js/16.da15b5e7.js"><link rel="prefetch" href="/note/assets/js/17.e09841c0.js"><link rel="prefetch" href="/note/assets/js/18.d957f7af.js"><link rel="prefetch" href="/note/assets/js/19.7e816971.js"><link rel="prefetch" href="/note/assets/js/20.653b832b.js"><link rel="prefetch" href="/note/assets/js/21.a925c3b2.js"><link rel="prefetch" href="/note/assets/js/22.71f20467.js"><link rel="prefetch" href="/note/assets/js/23.e1aff2f3.js"><link rel="prefetch" href="/note/assets/js/24.eb9dffd1.js"><link rel="prefetch" href="/note/assets/js/25.7fd5fe35.js"><link rel="prefetch" href="/note/assets/js/26.dea62609.js"><link rel="prefetch" href="/note/assets/js/27.62db804a.js"><link rel="prefetch" href="/note/assets/js/28.4cb193dc.js"><link rel="prefetch" href="/note/assets/js/29.618c7b73.js"><link rel="prefetch" href="/note/assets/js/3.aed843e5.js"><link rel="prefetch" href="/note/assets/js/30.35b48f76.js"><link rel="prefetch" href="/note/assets/js/31.6bf08624.js"><link rel="prefetch" href="/note/assets/js/32.3a53bd93.js"><link rel="prefetch" href="/note/assets/js/33.e3f37fb0.js"><link rel="prefetch" href="/note/assets/js/35.1cd0ed20.js"><link rel="prefetch" href="/note/assets/js/36.ce4b6a51.js"><link rel="prefetch" href="/note/assets/js/37.e6805254.js"><link rel="prefetch" href="/note/assets/js/38.4915b2a5.js"><link rel="prefetch" href="/note/assets/js/39.c85128f3.js"><link rel="prefetch" href="/note/assets/js/4.0d37eff8.js"><link rel="prefetch" href="/note/assets/js/40.2e130e4c.js"><link rel="prefetch" href="/note/assets/js/41.b8469915.js"><link rel="prefetch" href="/note/assets/js/42.89c4d8d5.js"><link rel="prefetch" href="/note/assets/js/43.c8551411.js"><link rel="prefetch" href="/note/assets/js/44.339bbc66.js"><link rel="prefetch" href="/note/assets/js/45.0a47c15c.js"><link rel="prefetch" href="/note/assets/js/46.69be83f9.js"><link rel="prefetch" href="/note/assets/js/47.28b25be0.js"><link rel="prefetch" href="/note/assets/js/48.a5904394.js"><link rel="prefetch" href="/note/assets/js/49.87239ac5.js"><link rel="prefetch" href="/note/assets/js/5.c49de537.js"><link rel="prefetch" href="/note/assets/js/50.88089d2b.js"><link rel="prefetch" href="/note/assets/js/51.6edf79e5.js"><link rel="prefetch" href="/note/assets/js/52.c776d725.js"><link rel="prefetch" href="/note/assets/js/53.5ca151d1.js"><link rel="prefetch" href="/note/assets/js/54.08cb9725.js"><link rel="prefetch" href="/note/assets/js/55.a839f5fc.js"><link rel="prefetch" href="/note/assets/js/56.91114aeb.js"><link rel="prefetch" href="/note/assets/js/57.6211df7c.js"><link rel="prefetch" href="/note/assets/js/58.5373a64e.js"><link rel="prefetch" href="/note/assets/js/59.0c03d7d5.js"><link rel="prefetch" href="/note/assets/js/6.128974de.js"><link rel="prefetch" href="/note/assets/js/60.d45343cb.js"><link rel="prefetch" href="/note/assets/js/61.fa332072.js"><link rel="prefetch" href="/note/assets/js/62.bb721b02.js"><link rel="prefetch" href="/note/assets/js/63.e325457f.js"><link rel="prefetch" href="/note/assets/js/64.60e5f68a.js"><link rel="prefetch" href="/note/assets/js/65.908650dc.js"><link rel="prefetch" href="/note/assets/js/66.55a31c77.js"><link rel="prefetch" href="/note/assets/js/67.82a52fc9.js"><link rel="prefetch" href="/note/assets/js/68.d5a51e09.js"><link rel="prefetch" href="/note/assets/js/69.18277093.js"><link rel="prefetch" href="/note/assets/js/7.51d6c139.js"><link rel="prefetch" href="/note/assets/js/70.eaf299d8.js"><link rel="prefetch" href="/note/assets/js/71.be6701d0.js"><link rel="prefetch" href="/note/assets/js/72.a38dd709.js"><link rel="prefetch" href="/note/assets/js/73.ad7a469f.js"><link rel="prefetch" href="/note/assets/js/74.afd46c38.js"><link rel="prefetch" href="/note/assets/js/8.327ef728.js"><link rel="prefetch" href="/note/assets/js/9.aa921f67.js">
+    <link rel="stylesheet" href="/note/assets/css/0.styles.cddcced0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/note/javascript/知识体系.html" class="sidebar-link">知识体系</a></li><li><a href="/note/javascript/作用域跟闭包..html" class="sidebar-link">作用域跟闭包.</a></li><li><a href="/note/javascript/值类型、引用类型、深拷贝.html" class="sidebar-link">值类型、引用类型、深拷贝</a></li><li><a href="/note/javascript/类型转换.html" class="sidebar-link">类型转换</a></li><li><a href="/note/javascript/class、原型与原型链.html" class="sidebar-link">class、原型与原型链</a></li><li><a href="/note/javascript/this.html" class="sidebar-link">this</a></li><li><a href="/note/javascript/同步跟异步.html" class="sidebar-link">同步跟异步</a></li><li><a href="/note/javascript/es6.html" class="sidebar-link">es6</a></li><li><a href="/note/javascript/存储.html" class="sidebar-link">存储</a></li><li><a href="/note/javascript/事件.html" class="active sidebar-link">事件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/javascript/事件.html#事件" class="sidebar-link">事件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/javascript/事件.html#事件绑定" class="sidebar-link">事件绑定</a></li><li class="sidebar-sub-header"><a href="/note/javascript/事件.html#事件冒泡" class="sidebar-link">事件冒泡</a></li><li class="sidebar-sub-header"><a href="/note/javascript/事件.html#事件代理" class="sidebar-link">事件代理</a></li></ul></li></ul></li><li><a href="/note/javascript/页面加载和渲染过程.html" class="sidebar-link">页面加载和渲染过程</a></li><li><a href="/note/javascript/性能优化.html" class="sidebar-link">性能优化</a></li><li><a href="/note/javascript/ajax.html" class="sidebar-link">ajax</a></li><li><a href="/note/javascript/js-web-API.html" class="sidebar-link">js-web-API</a></li><li><a href="/note/javascript/linux.html" class="sidebar-link">linux</a></li><li><a href="/note/javascript/前端笔记.html" class="sidebar-link">前端笔记</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="事件"><a href="#事件" class="header-anchor">#</a> 事件</h2> <h3 id="事件绑定"><a href="#事件绑定" class="header-anchor">#</a> 事件绑定</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 通用的事件绑定函数</span>
+<span class="token keyword">function</span> <span class="token function">bindEvent</span><span class="token punctuation">(</span><span class="token parameter">elem<span class="token punctuation">,</span> type<span class="token punctuation">,</span> selector<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>fn <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    fn <span class="token operator">=</span> selector
+    selector <span class="token operator">=</span> <span class="token keyword">null</span>
+  <span class="token punctuation">}</span>
+  elem<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span>type<span class="token punctuation">,</span> <span class="token parameter">event</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> target <span class="token operator">=</span> event<span class="token punctuation">.</span>target
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>selector<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 代理绑定</span>
+      <span class="token comment">// target.matches dom 元素是不是符合 css 选择器</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>target<span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span>selector<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> event<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 普通绑定</span>
+      <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> event<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> btn1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'btn1'</span><span class="token punctuation">)</span>
+<span class="token function">bindEvent</span><span class="token punctuation">(</span>btn1<span class="token punctuation">,</span> <span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 获取触发的元素</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">)</span>
+  event<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 阻止默认行为</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'clicked'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="事件冒泡"><a href="#事件冒泡" class="header-anchor">#</a> 事件冒泡</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">bindEvent</span><span class="token punctuation">(</span><span class="token parameter">elem<span class="token punctuation">,</span> type<span class="token punctuation">,</span> selector<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>fn <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    fn <span class="token operator">=</span> selector
+    selector <span class="token operator">=</span> <span class="token keyword">null</span>
+  <span class="token punctuation">}</span>
+  elem<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span>type<span class="token punctuation">,</span> <span class="token parameter">event</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> target <span class="token operator">=</span> event<span class="token punctuation">.</span>target
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>selector<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 代理绑定</span>
+      <span class="token comment">// target.matches dom 元素是不是符合 css 选择器</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>target<span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span>selector<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> event<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 普通绑定</span>
+      <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> event<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> btn1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'btn1'</span><span class="token punctuation">)</span>
+<span class="token function">bindEvent</span><span class="token punctuation">(</span>btn1<span class="token punctuation">,</span> <span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 获取触发的元素</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">)</span>
+  event<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 阻止默认行为</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>innerHTML<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> p1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'p1'</span><span class="token punctuation">)</span>
+<span class="token function">bindEvent</span><span class="token punctuation">(</span>p1<span class="token punctuation">,</span> <span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 阻止事件冒泡</span>
+  e<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'激活'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> body <span class="token operator">=</span> document<span class="token punctuation">.</span>body
+<span class="token function">bindEvent</span><span class="token punctuation">(</span>body<span class="token punctuation">,</span> <span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'body clicked'</span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>target<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> div2 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'div2'</span><span class="token punctuation">)</span>
+<span class="token function">bindEvent</span><span class="token punctuation">(</span>div2<span class="token punctuation">,</span> <span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'div2 clicked'</span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="事件代理"><a href="#事件代理" class="header-anchor">#</a> 事件代理</h3> <ul><li>代码简洁</li> <li>减少浏览器内存占用</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 事件代理</span>
+<span class="token comment">// 通过事件冒泡</span>
+<span class="token comment">// 给 id 为 div3 的 div 中的所有的 a 标签绑定一个点击事件</span>
+<span class="token keyword">const</span> div3 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'div3'</span><span class="token punctuation">)</span>
+<span class="token function">bindEvent</span><span class="token punctuation">(</span>div3<span class="token punctuation">,</span> <span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> target <span class="token operator">=</span> e<span class="token punctuation">.</span>target
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>target<span class="token punctuation">.</span>nodeName <span class="token operator">===</span> <span class="token string">'A'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span>target<span class="token punctuation">.</span>innerHTML<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note/javascript/存储.html" class="prev">
+        存储
+      </a></span> <span class="next"><a href="/note/javascript/页面加载和渲染过程.html">
+        页面加载和渲染过程
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/note/assets/js/app.c5584eb9.js" defer></script><script src="/note/assets/js/2.06f73c5a.js" defer></script><script src="/note/assets/js/34.bbce4bac.js" defer></script>
+  </body>
+</html>

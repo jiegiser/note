@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>linux 简单操作 | 学习笔记</title>
+    <meta name="description" content="学习笔记">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/note/assets/css/0.styles.cddcced0.css" as="style"><link rel="preload" href="/note/assets/js/app.c5584eb9.js" as="script"><link rel="preload" href="/note/assets/js/2.06f73c5a.js" as="script"><link rel="preload" href="/note/assets/js/32.3a53bd93.js" as="script"><link rel="prefetch" href="/note/assets/js/10.0a1784d3.js"><link rel="prefetch" href="/note/assets/js/11.8e23c590.js"><link rel="prefetch" href="/note/assets/js/12.4806c39b.js"><link rel="prefetch" href="/note/assets/js/13.532614d0.js"><link rel="prefetch" href="/note/assets/js/14.94947b3c.js"><link rel="prefetch" href="/note/assets/js/15.04da3ebe.js"><link rel="prefetch" href="/note/assets/js/16.da15b5e7.js"><link rel="prefetch" href="/note/assets/js/17.e09841c0.js"><link rel="prefetch" href="/note/assets/js/18.d957f7af.js"><link rel="prefetch" href="/note/assets/js/19.7e816971.js"><link rel="prefetch" href="/note/assets/js/20.653b832b.js"><link rel="prefetch" href="/note/assets/js/21.a925c3b2.js"><link rel="prefetch" href="/note/assets/js/22.71f20467.js"><link rel="prefetch" href="/note/assets/js/23.e1aff2f3.js"><link rel="prefetch" href="/note/assets/js/24.eb9dffd1.js"><link rel="prefetch" href="/note/assets/js/25.7fd5fe35.js"><link rel="prefetch" href="/note/assets/js/26.dea62609.js"><link rel="prefetch" href="/note/assets/js/27.62db804a.js"><link rel="prefetch" href="/note/assets/js/28.4cb193dc.js"><link rel="prefetch" href="/note/assets/js/29.618c7b73.js"><link rel="prefetch" href="/note/assets/js/3.aed843e5.js"><link rel="prefetch" href="/note/assets/js/30.35b48f76.js"><link rel="prefetch" href="/note/assets/js/31.6bf08624.js"><link rel="prefetch" href="/note/assets/js/33.e3f37fb0.js"><link rel="prefetch" href="/note/assets/js/34.bbce4bac.js"><link rel="prefetch" href="/note/assets/js/35.1cd0ed20.js"><link rel="prefetch" href="/note/assets/js/36.ce4b6a51.js"><link rel="prefetch" href="/note/assets/js/37.e6805254.js"><link rel="prefetch" href="/note/assets/js/38.4915b2a5.js"><link rel="prefetch" href="/note/assets/js/39.c85128f3.js"><link rel="prefetch" href="/note/assets/js/4.0d37eff8.js"><link rel="prefetch" href="/note/assets/js/40.2e130e4c.js"><link rel="prefetch" href="/note/assets/js/41.b8469915.js"><link rel="prefetch" href="/note/assets/js/42.89c4d8d5.js"><link rel="prefetch" href="/note/assets/js/43.c8551411.js"><link rel="prefetch" href="/note/assets/js/44.339bbc66.js"><link rel="prefetch" href="/note/assets/js/45.0a47c15c.js"><link rel="prefetch" href="/note/assets/js/46.69be83f9.js"><link rel="prefetch" href="/note/assets/js/47.28b25be0.js"><link rel="prefetch" href="/note/assets/js/48.a5904394.js"><link rel="prefetch" href="/note/assets/js/49.87239ac5.js"><link rel="prefetch" href="/note/assets/js/5.c49de537.js"><link rel="prefetch" href="/note/assets/js/50.88089d2b.js"><link rel="prefetch" href="/note/assets/js/51.6edf79e5.js"><link rel="prefetch" href="/note/assets/js/52.c776d725.js"><link rel="prefetch" href="/note/assets/js/53.5ca151d1.js"><link rel="prefetch" href="/note/assets/js/54.08cb9725.js"><link rel="prefetch" href="/note/assets/js/55.a839f5fc.js"><link rel="prefetch" href="/note/assets/js/56.91114aeb.js"><link rel="prefetch" href="/note/assets/js/57.6211df7c.js"><link rel="prefetch" href="/note/assets/js/58.5373a64e.js"><link rel="prefetch" href="/note/assets/js/59.0c03d7d5.js"><link rel="prefetch" href="/note/assets/js/6.128974de.js"><link rel="prefetch" href="/note/assets/js/60.d45343cb.js"><link rel="prefetch" href="/note/assets/js/61.fa332072.js"><link rel="prefetch" href="/note/assets/js/62.bb721b02.js"><link rel="prefetch" href="/note/assets/js/63.e325457f.js"><link rel="prefetch" href="/note/assets/js/64.60e5f68a.js"><link rel="prefetch" href="/note/assets/js/65.908650dc.js"><link rel="prefetch" href="/note/assets/js/66.55a31c77.js"><link rel="prefetch" href="/note/assets/js/67.82a52fc9.js"><link rel="prefetch" href="/note/assets/js/68.d5a51e09.js"><link rel="prefetch" href="/note/assets/js/69.18277093.js"><link rel="prefetch" href="/note/assets/js/7.51d6c139.js"><link rel="prefetch" href="/note/assets/js/70.eaf299d8.js"><link rel="prefetch" href="/note/assets/js/71.be6701d0.js"><link rel="prefetch" href="/note/assets/js/72.a38dd709.js"><link rel="prefetch" href="/note/assets/js/73.ad7a469f.js"><link rel="prefetch" href="/note/assets/js/74.afd46c38.js"><link rel="prefetch" href="/note/assets/js/8.327ef728.js"><link rel="prefetch" href="/note/assets/js/9.aa921f67.js">
+    <link rel="stylesheet" href="/note/assets/css/0.styles.cddcced0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/note/javascript/知识体系.html" class="sidebar-link">知识体系</a></li><li><a href="/note/javascript/作用域跟闭包..html" class="sidebar-link">作用域跟闭包.</a></li><li><a href="/note/javascript/值类型、引用类型、深拷贝.html" class="sidebar-link">值类型、引用类型、深拷贝</a></li><li><a href="/note/javascript/类型转换.html" class="sidebar-link">类型转换</a></li><li><a href="/note/javascript/class、原型与原型链.html" class="sidebar-link">class、原型与原型链</a></li><li><a href="/note/javascript/this.html" class="sidebar-link">this</a></li><li><a href="/note/javascript/同步跟异步.html" class="sidebar-link">同步跟异步</a></li><li><a href="/note/javascript/es6.html" class="sidebar-link">es6</a></li><li><a href="/note/javascript/存储.html" class="sidebar-link">存储</a></li><li><a href="/note/javascript/事件.html" class="sidebar-link">事件</a></li><li><a href="/note/javascript/页面加载和渲染过程.html" class="sidebar-link">页面加载和渲染过程</a></li><li><a href="/note/javascript/性能优化.html" class="sidebar-link">性能优化</a></li><li><a href="/note/javascript/ajax.html" class="sidebar-link">ajax</a></li><li><a href="/note/javascript/js-web-API.html" class="sidebar-link">js-web-API</a></li><li><a href="/note/javascript/linux.html" class="active sidebar-link">linux</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/javascript/linux.html#linux-简单操作" class="sidebar-link">linux 简单操作</a></li></ul></li><li><a href="/note/javascript/前端笔记.html" class="sidebar-link">前端笔记</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="linux-简单操作"><a href="#linux-简单操作" class="header-anchor">#</a> linux 简单操作</h2> <ul><li>登录：ssh work@192.168.2.123 回车输入密码登录</li> <li>查看文件夹：ls：查看文件平铺；ls -a: 查看所有文件，包括隐藏文件；ll：查看文件列表；</li> <li>创建文件夹：mkdir 文件夹名；查看文件夹中内容：ll 文件夹名；</li> <li>删除文件夹：rm -rf 文件夹名；</li> <li>修改文件名：mv 要修改的文件名 修改后的文件名；eg: mv index.html index1.html</li> <li>移动文件：mv 要移动的文件名 移动到的目录的地址；eg：mv bundle.js ../bundle.js(可以按 tab 键进行补全文件名)</li> <li>拷贝文件：cp 要拷贝的文件名 拷贝后的文件名；eg：cp a.js a1.js:将 a.js 拷贝为 a1.js；</li> <li>删除文件：rm 文件名；eg：rm a.js：删除 a.js 文件</li> <li>新建文件：1. touch 文件名；eg: touch d.js; 2. vi 文件名；eg: vi d.js：新建一个 d.js 文件，随即打开 vim 编辑器可以进行编辑，点击 i 进行插入。点击 esc 退出编辑，然后输入:w 保存，然后输入 q ，退出编辑；</li> <li>查看文件内容：1. 使用 vi 文件名，或者 vim 文件名；eg：vi d.js ,如果要打开的文件没有，就会进入编辑模式；2. cat 文件名：打印文件中所有内容；3. head 文件名：只打印文件的前面部分，4. tail 文件名：打印文件最后几行内容；</li> <li>查找文件中的内容：grep 需要查找的内容 要查找的文件名；eg：grep &quot;babel&quot; package.json</li> <li>vim 编辑器：i 键是插入内容，通过上下左右进行切换插入的位置。:q! 为强制退出。</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note/javascript/js-web-API.html" class="prev">
+        js-web-API
+      </a></span> <span class="next"><a href="/note/javascript/前端笔记.html">
+        前端笔记
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/note/assets/js/app.c5584eb9.js" defer></script><script src="/note/assets/js/2.06f73c5a.js" defer></script><script src="/note/assets/js/32.3a53bd93.js" defer></script>
+  </body>
+</html>
