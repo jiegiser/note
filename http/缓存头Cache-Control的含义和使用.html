@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>缓存头 Cache-Control 的含义和使用 | 学习笔记</title>
+    <meta name="description" content="学习笔记">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/note/assets/css/0.styles.cddcced0.css" as="style"><link rel="preload" href="/note/assets/js/app.e69a173d.js" as="script"><link rel="preload" href="/note/assets/js/2.ec9171e6.js" as="script"><link rel="preload" href="/note/assets/js/40.1a1a5c29.js" as="script"><link rel="prefetch" href="/note/assets/js/10.5bf1528f.js"><link rel="prefetch" href="/note/assets/js/11.5059eafe.js"><link rel="prefetch" href="/note/assets/js/12.c80fc5ad.js"><link rel="prefetch" href="/note/assets/js/13.48708b91.js"><link rel="prefetch" href="/note/assets/js/14.e13178fa.js"><link rel="prefetch" href="/note/assets/js/15.39f1120d.js"><link rel="prefetch" href="/note/assets/js/16.6136b5fe.js"><link rel="prefetch" href="/note/assets/js/17.0bd435cb.js"><link rel="prefetch" href="/note/assets/js/18.1bb66bd6.js"><link rel="prefetch" href="/note/assets/js/19.b1f601c2.js"><link rel="prefetch" href="/note/assets/js/20.b164a762.js"><link rel="prefetch" href="/note/assets/js/21.674ed5f8.js"><link rel="prefetch" href="/note/assets/js/22.da0462b1.js"><link rel="prefetch" href="/note/assets/js/23.cbe37ca9.js"><link rel="prefetch" href="/note/assets/js/24.c3fa5822.js"><link rel="prefetch" href="/note/assets/js/25.f8d23d25.js"><link rel="prefetch" href="/note/assets/js/26.625d6396.js"><link rel="prefetch" href="/note/assets/js/27.4c682313.js"><link rel="prefetch" href="/note/assets/js/28.b4723a08.js"><link rel="prefetch" href="/note/assets/js/29.2e284427.js"><link rel="prefetch" href="/note/assets/js/3.92fbb907.js"><link rel="prefetch" href="/note/assets/js/30.b3e4e490.js"><link rel="prefetch" href="/note/assets/js/31.987b4848.js"><link rel="prefetch" href="/note/assets/js/32.3febff27.js"><link rel="prefetch" href="/note/assets/js/33.6befd163.js"><link rel="prefetch" href="/note/assets/js/34.677cbd2f.js"><link rel="prefetch" href="/note/assets/js/35.e9ac5c3b.js"><link rel="prefetch" href="/note/assets/js/36.26642be2.js"><link rel="prefetch" href="/note/assets/js/37.090108cf.js"><link rel="prefetch" href="/note/assets/js/38.5126296c.js"><link rel="prefetch" href="/note/assets/js/39.36afef8c.js"><link rel="prefetch" href="/note/assets/js/4.06a34a82.js"><link rel="prefetch" href="/note/assets/js/41.e47b2c6f.js"><link rel="prefetch" href="/note/assets/js/42.26ac301c.js"><link rel="prefetch" href="/note/assets/js/43.49c0d4a4.js"><link rel="prefetch" href="/note/assets/js/44.631fc59d.js"><link rel="prefetch" href="/note/assets/js/45.23091e60.js"><link rel="prefetch" href="/note/assets/js/46.b8105d16.js"><link rel="prefetch" href="/note/assets/js/47.21481ad4.js"><link rel="prefetch" href="/note/assets/js/48.d3beb163.js"><link rel="prefetch" href="/note/assets/js/49.e429288d.js"><link rel="prefetch" href="/note/assets/js/5.130dcd9b.js"><link rel="prefetch" href="/note/assets/js/50.d7c60929.js"><link rel="prefetch" href="/note/assets/js/51.73a83f0a.js"><link rel="prefetch" href="/note/assets/js/52.d9b39557.js"><link rel="prefetch" href="/note/assets/js/53.037baa66.js"><link rel="prefetch" href="/note/assets/js/54.ed0bcb89.js"><link rel="prefetch" href="/note/assets/js/55.6f5e8951.js"><link rel="prefetch" href="/note/assets/js/56.93472a92.js"><link rel="prefetch" href="/note/assets/js/57.2d59c093.js"><link rel="prefetch" href="/note/assets/js/58.dacfba53.js"><link rel="prefetch" href="/note/assets/js/59.12b893fd.js"><link rel="prefetch" href="/note/assets/js/6.742dafc7.js"><link rel="prefetch" href="/note/assets/js/60.f8e269db.js"><link rel="prefetch" href="/note/assets/js/61.ca250344.js"><link rel="prefetch" href="/note/assets/js/62.5c9cd545.js"><link rel="prefetch" href="/note/assets/js/63.8b9aa25b.js"><link rel="prefetch" href="/note/assets/js/64.5a7747c5.js"><link rel="prefetch" href="/note/assets/js/65.751cbbdb.js"><link rel="prefetch" href="/note/assets/js/66.c5ce9bd6.js"><link rel="prefetch" href="/note/assets/js/67.73295e5f.js"><link rel="prefetch" href="/note/assets/js/68.0f09df25.js"><link rel="prefetch" href="/note/assets/js/69.79e6fce3.js"><link rel="prefetch" href="/note/assets/js/7.63365698.js"><link rel="prefetch" href="/note/assets/js/70.c0a45ad0.js"><link rel="prefetch" href="/note/assets/js/71.6a903de1.js"><link rel="prefetch" href="/note/assets/js/72.7679eb4f.js"><link rel="prefetch" href="/note/assets/js/73.246112a7.js"><link rel="prefetch" href="/note/assets/js/74.9decc885.js"><link rel="prefetch" href="/note/assets/js/75.b8ebb879.js"><link rel="prefetch" href="/note/assets/js/76.29babbcd.js"><link rel="prefetch" href="/note/assets/js/77.312ebab5.js"><link rel="prefetch" href="/note/assets/js/78.e0bad4b6.js"><link rel="prefetch" href="/note/assets/js/79.4a199750.js"><link rel="prefetch" href="/note/assets/js/8.50f7c868.js"><link rel="prefetch" href="/note/assets/js/80.65f4d75b.js"><link rel="prefetch" href="/note/assets/js/81.ea4ee54b.js"><link rel="prefetch" href="/note/assets/js/82.f54a0261.js"><link rel="prefetch" href="/note/assets/js/83.c0ecde51.js"><link rel="prefetch" href="/note/assets/js/84.14a4678e.js"><link rel="prefetch" href="/note/assets/js/85.d414e8ab.js"><link rel="prefetch" href="/note/assets/js/86.57e7247f.js"><link rel="prefetch" href="/note/assets/js/87.f740cf1a.js"><link rel="prefetch" href="/note/assets/js/88.1bc2ae96.js"><link rel="prefetch" href="/note/assets/js/89.e26c19a2.js"><link rel="prefetch" href="/note/assets/js/9.75bbe7fc.js">
+    <link rel="stylesheet" href="/note/assets/css/0.styles.cddcced0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div><div class="nav-item"><a href="/note/Interview/forEach-forIn-forOf-map之间的区别.html" class="nav-link">
+  Interview
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div><div class="nav-item"><a href="/note/Interview/forEach-forIn-forOf-map之间的区别.html" class="nav-link">
+  Interview
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/note/http/HTTP协议基础.html" class="sidebar-link">HTTP协议基础</a></li><li><a href="/note/http/URI、URL、URN.html" class="sidebar-link">什么是：URI、URL、URN</a></li><li><a href="/note/http/http三次握手.html" class="sidebar-link">http三次握手</a></li><li><a href="/note/http/CORS跨域请求的限制与解决.html" class="sidebar-link">CORS跨域请求的限制与解决</a></li><li><a href="/note/http/缓存头Cache-Control的含义和使用.html" class="active sidebar-link">缓存头Cache-Control的含义和使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/http/缓存头Cache-Control的含义和使用.html#特性" class="sidebar-link">特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/http/缓存头Cache-Control的含义和使用.html#可缓存性" class="sidebar-link">可缓存性</a></li><li class="sidebar-sub-header"><a href="/note/http/缓存头Cache-Control的含义和使用.html#到期" class="sidebar-link">到期</a></li><li class="sidebar-sub-header"><a href="/note/http/缓存头Cache-Control的含义和使用.html#重新验证" class="sidebar-link">重新验证</a></li><li class="sidebar-sub-header"><a href="/note/http/缓存头Cache-Control的含义和使用.html#其他" class="sidebar-link">其他</a></li><li class="sidebar-sub-header"><a href="/note/http/缓存头Cache-Control的含义和使用.html#node-实践" class="sidebar-link">node 实践</a></li></ul></li></ul></li><li><a href="/note/http/缓存验证Last-Modified和Etag的使用.html" class="sidebar-link">缓存验证Last-Modified和Etag的使用</a></li><li><a href="/note/http/cookie和session.html" class="sidebar-link">cookie和session</a></li><li><a href="/note/http/HTTP长连接.html" class="sidebar-link">HTTP长连接</a></li><li><a href="/note/http/数据协商.html" class="sidebar-link">数据协商</a></li><li><a href="/note/http/Redirect.html" class="sidebar-link">Redirect</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="缓存头-cache-control-的含义和使用"><a href="#缓存头-cache-control-的含义和使用" class="header-anchor">#</a> 缓存头 Cache-Control 的含义和使用</h1> <h2 id="特性"><a href="#特性" class="header-anchor">#</a> 特性</h2> <h3 id="可缓存性"><a href="#可缓存性" class="header-anchor">#</a> 可缓存性</h3> <ul><li>public：http 请求返回的过程中设置 Cache-Control 为 public，代表这个 http 请求他返回的内容所经过的任何路径当中包括一些中间的 http 的代理服务器以及发出请求的客户端浏览器他都可以对返回内容缓存操作（也就是说 http 请求经过的地方都可以进行缓存）。</li> <li>private：http 请求返回的过程中设置 Cache-Control 为 private，代表发起请求的浏览器可以进行缓存。</li> <li>no-cache：http 请求返回的过程中设置 Cache-Control 为 no-cache，任何节点都不进行缓存（本地可以进行缓存，但是缓存需要服务器端验证之后才可以使用）。</li></ul> <h3 id="到期"><a href="#到期" class="header-anchor">#</a> 到期</h3> <ul><li><p>max-age = <seconds>
+就是设置缓存什么时候到期；
+seconds 代表缓存的时间，</seconds></p></li> <li><p>s-maxage=<seconds></seconds></p></li></ul> <p>代替 max-age ，但是只有在代理服务器里面才会生效；也就是说浏览器还是会读取 max-age 作为缓存的到期时间。如果在代理服务器中如果同时设置了 max-age 和 s-maxage；他会读取 s-maxage，因为这个 s-maxage 配置项是专门为代理服务器设置的。</p> <ul><li>max-stale=<seconds></seconds></li></ul> <p>如果返回的 max-stale 过期了，并且有设置 max-stale；发起请求的客户端只要在 max-stale 时间内，仍然可以使用过期的缓存。在浏览器中这个请求时没有用的，这个是在发起端进行设置。</p> <h3 id="重新验证"><a href="#重新验证" class="header-anchor">#</a> 重新验证</h3> <ul><li>must-revalidate</li></ul> <p>如果我们设置了 max-age 的缓存中，并且已经过期了；我们必须向原服务端重新发送请求，然后重新获取数据，再来验证这个内容到底是不是真的过期了；而不能直接使用缓存。</p> <ul><li>proxy-revalidate</li></ul> <p>跟 must-revalidate 的功能类型，只不过 proxy-revalidate 用在缓存服务器当中的，指定缓存服务器必须在过期的时候，要在原服务器上请求一遍。而不是直接使用过期的缓存。</p> <h3 id="其他"><a href="#其他" class="header-anchor">#</a> 其他</h3> <ul><li>no-store：本地和代理服务器本地不可以存储缓存，每次请求都需要从服务器请求数据；</li> <li>no-transform：主要用在代理服务器中；设置代理服务器不要改变从服务器获取的数据（如果请求的数据较大代理服务器可能会对数据进行压缩等操作）\</li></ul> <h3 id="node-实践"><a href="#node-实践" class="header-anchor">#</a> node 实践</h3> <p>cache-Control 可以设置多个，用逗号隔开。如果设置了相同的那么后面的会覆盖前面的。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span>url <span class="token operator">===</span> <span class="token string">'/script.js'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> html <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'test.html'</span><span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">'Content-Type'</span><span class="token operator">:</span> <span class="token string">'text/javascript'</span><span class="token punctuation">,</span>
+      <span class="token string">'cache-Control'</span><span class="token operator">:</span> <span class="token string">'max-age=20, public, max-age=30'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'console.log(&quot;loaded&quot;)'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">8888</span><span class="token punctuation">)</span>
+</code></pre></div><p>我们发现一个问题，如果设置了 max-age ，在客户端请求时会对数据进行缓存，但是如果在缓存时间内，服务端修改了数据，就会导致请求的数据还是原来缓存的数据，不会拿到新的数据。我们可以通过打包 js 等静态资源文件使用 hash 来命名文件，hash 是根据文件内容生成，如果文件内容没有改变，hash 不会发生改变。这样 url 会随着文件内容发生变化，发送的请求就会根据文件内容变化，如果变化就生成一个新的请求；这样就达到了更新缓存的目的。这也是为什么打包后的文件会有很长一串的命名，是一种刷新缓存的方案。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新:</span> <span class="time">7/1/2020, 9:55:05 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note/http/CORS跨域请求的限制与解决.html" class="prev">
+        CORS跨域请求的限制与解决
+      </a></span> <span class="next"><a href="/note/http/缓存验证Last-Modified和Etag的使用.html">
+        缓存验证Last-Modified和Etag的使用
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/note/assets/js/app.e69a173d.js" defer></script><script src="/note/assets/js/2.ec9171e6.js" defer></script><script src="/note/assets/js/40.1a1a5c29.js" defer></script>
+  </body>
+</html>
