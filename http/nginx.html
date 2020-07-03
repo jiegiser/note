@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nginx | 学习笔记</title>
+    <meta name="description" content="学习笔记">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/note/assets/css/0.styles.cddcced0.css" as="style"><link rel="preload" href="/note/assets/js/app.0b535214.js" as="script"><link rel="preload" href="/note/assets/js/2.09d6086b.js" as="script"><link rel="preload" href="/note/assets/js/11.c4bac938.js" as="script"><link rel="prefetch" href="/note/assets/js/10.d8146bf0.js"><link rel="prefetch" href="/note/assets/js/12.85b0169b.js"><link rel="prefetch" href="/note/assets/js/13.1df7381e.js"><link rel="prefetch" href="/note/assets/js/14.a161f615.js"><link rel="prefetch" href="/note/assets/js/15.6a4c902c.js"><link rel="prefetch" href="/note/assets/js/16.fce98c77.js"><link rel="prefetch" href="/note/assets/js/17.46eec69c.js"><link rel="prefetch" href="/note/assets/js/18.a8b57a55.js"><link rel="prefetch" href="/note/assets/js/19.0e826489.js"><link rel="prefetch" href="/note/assets/js/20.25bd3b95.js"><link rel="prefetch" href="/note/assets/js/21.b0aa2abc.js"><link rel="prefetch" href="/note/assets/js/22.b8644c0a.js"><link rel="prefetch" href="/note/assets/js/23.6f4ad934.js"><link rel="prefetch" href="/note/assets/js/24.924dc47a.js"><link rel="prefetch" href="/note/assets/js/25.f5e24f8c.js"><link rel="prefetch" href="/note/assets/js/26.40b9c960.js"><link rel="prefetch" href="/note/assets/js/27.9d94fb97.js"><link rel="prefetch" href="/note/assets/js/28.e73c0df2.js"><link rel="prefetch" href="/note/assets/js/29.82b0ceba.js"><link rel="prefetch" href="/note/assets/js/3.fa5fd6d3.js"><link rel="prefetch" href="/note/assets/js/30.998d1e68.js"><link rel="prefetch" href="/note/assets/js/31.9bba29d7.js"><link rel="prefetch" href="/note/assets/js/32.4dc197f6.js"><link rel="prefetch" href="/note/assets/js/33.4f60efe1.js"><link rel="prefetch" href="/note/assets/js/34.b2eb0456.js"><link rel="prefetch" href="/note/assets/js/35.8a63f984.js"><link rel="prefetch" href="/note/assets/js/36.c9b763d6.js"><link rel="prefetch" href="/note/assets/js/37.a12a7ad5.js"><link rel="prefetch" href="/note/assets/js/38.c9e7a377.js"><link rel="prefetch" href="/note/assets/js/39.be36454c.js"><link rel="prefetch" href="/note/assets/js/4.605c4778.js"><link rel="prefetch" href="/note/assets/js/40.71e23f41.js"><link rel="prefetch" href="/note/assets/js/41.0d5209d0.js"><link rel="prefetch" href="/note/assets/js/42.5f108576.js"><link rel="prefetch" href="/note/assets/js/43.a50ba246.js"><link rel="prefetch" href="/note/assets/js/44.18847e5b.js"><link rel="prefetch" href="/note/assets/js/45.54d742f4.js"><link rel="prefetch" href="/note/assets/js/46.8cb06210.js"><link rel="prefetch" href="/note/assets/js/47.39158bcc.js"><link rel="prefetch" href="/note/assets/js/48.34965431.js"><link rel="prefetch" href="/note/assets/js/49.8b738663.js"><link rel="prefetch" href="/note/assets/js/5.ad285c46.js"><link rel="prefetch" href="/note/assets/js/50.0e7d6cfd.js"><link rel="prefetch" href="/note/assets/js/51.e23fd037.js"><link rel="prefetch" href="/note/assets/js/52.1488fad8.js"><link rel="prefetch" href="/note/assets/js/53.04ba76a7.js"><link rel="prefetch" href="/note/assets/js/54.4a34ec43.js"><link rel="prefetch" href="/note/assets/js/55.87c44fea.js"><link rel="prefetch" href="/note/assets/js/56.bc77f446.js"><link rel="prefetch" href="/note/assets/js/57.7f16f6ae.js"><link rel="prefetch" href="/note/assets/js/58.96a3facf.js"><link rel="prefetch" href="/note/assets/js/59.060e3b84.js"><link rel="prefetch" href="/note/assets/js/6.b3509b1b.js"><link rel="prefetch" href="/note/assets/js/60.1736b834.js"><link rel="prefetch" href="/note/assets/js/61.2f4ea8e8.js"><link rel="prefetch" href="/note/assets/js/62.a177b464.js"><link rel="prefetch" href="/note/assets/js/63.a4b84bd9.js"><link rel="prefetch" href="/note/assets/js/64.ac8f77d7.js"><link rel="prefetch" href="/note/assets/js/65.ce87cb16.js"><link rel="prefetch" href="/note/assets/js/66.a5d5db90.js"><link rel="prefetch" href="/note/assets/js/67.c5bc6188.js"><link rel="prefetch" href="/note/assets/js/68.2abe3f26.js"><link rel="prefetch" href="/note/assets/js/69.ea3c1e48.js"><link rel="prefetch" href="/note/assets/js/7.f5aceaa2.js"><link rel="prefetch" href="/note/assets/js/70.f9c35f98.js"><link rel="prefetch" href="/note/assets/js/71.9f645543.js"><link rel="prefetch" href="/note/assets/js/72.4644953f.js"><link rel="prefetch" href="/note/assets/js/73.e802907b.js"><link rel="prefetch" href="/note/assets/js/74.04469ada.js"><link rel="prefetch" href="/note/assets/js/75.b339d25d.js"><link rel="prefetch" href="/note/assets/js/76.ee9f0aeb.js"><link rel="prefetch" href="/note/assets/js/77.5f0c1034.js"><link rel="prefetch" href="/note/assets/js/78.0662d122.js"><link rel="prefetch" href="/note/assets/js/79.458144bf.js"><link rel="prefetch" href="/note/assets/js/8.2fdf7025.js"><link rel="prefetch" href="/note/assets/js/80.29415748.js"><link rel="prefetch" href="/note/assets/js/81.82bbfe47.js"><link rel="prefetch" href="/note/assets/js/82.9aa92922.js"><link rel="prefetch" href="/note/assets/js/83.5e20b18f.js"><link rel="prefetch" href="/note/assets/js/84.ad1603e3.js"><link rel="prefetch" href="/note/assets/js/85.077837d9.js"><link rel="prefetch" href="/note/assets/js/86.fc367b7a.js"><link rel="prefetch" href="/note/assets/js/87.1d942e5d.js"><link rel="prefetch" href="/note/assets/js/88.04cb899a.js"><link rel="prefetch" href="/note/assets/js/89.a665af9d.js"><link rel="prefetch" href="/note/assets/js/9.10240f9f.js"><link rel="prefetch" href="/note/assets/js/90.f95b5b06.js"><link rel="prefetch" href="/note/assets/js/91.3da49386.js"><link rel="prefetch" href="/note/assets/js/92.a6dfa424.js"><link rel="prefetch" href="/note/assets/js/93.fc00c927.js"><link rel="prefetch" href="/note/assets/js/94.cceb4fbe.js">
+    <link rel="stylesheet" href="/note/assets/css/0.styles.cddcced0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div><div class="nav-item"><a href="/note/Interview/forEach-forIn-forOf-map之间的区别.html" class="nav-link">
+  Interview
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div><div class="nav-item"><a href="/note/Interview/forEach-forIn-forOf-map之间的区别.html" class="nav-link">
+  Interview
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/note/http/HTTP协议基础.html" class="sidebar-link">HTTP协议基础</a></li><li><a href="/note/http/URI、URL、URN.html" class="sidebar-link">什么是：URI、URL、URN</a></li><li><a href="/note/http/http三次握手.html" class="sidebar-link">http三次握手</a></li><li><a href="/note/http/CORS跨域请求的限制与解决.html" class="sidebar-link">CORS跨域请求的限制与解决</a></li><li><a href="/note/http/缓存头Cache-Control的含义和使用.html" class="sidebar-link">缓存头Cache-Control的含义和使用</a></li><li><a href="/note/http/缓存验证Last-Modified和Etag的使用.html" class="sidebar-link">缓存验证Last-Modified和Etag的使用</a></li><li><a href="/note/http/cookie和session.html" class="sidebar-link">cookie和session</a></li><li><a href="/note/http/HTTP长连接.html" class="sidebar-link">HTTP长连接</a></li><li><a href="/note/http/数据协商.html" class="sidebar-link">数据协商</a></li><li><a href="/note/http/Redirect.html" class="sidebar-link">Redirect</a></li><li><a href="/note/http/CSP-内容安全策略.html" class="sidebar-link">CSP-内容安全策略</a></li><li><a href="/note/http/nginx.html" class="active sidebar-link">nginx</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/http/nginx.html#nginx" class="sidebar-link">nginx</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/http/nginx.html#mime-types" class="sidebar-link">mime.types</a></li><li class="sidebar-sub-header"><a href="/note/http/nginx.html#多站点的配置" class="sidebar-link">多站点的配置</a></li><li class="sidebar-sub-header"><a href="/note/http/nginx.html#配置-nginx-缓存" class="sidebar-link">配置 nginx 缓存</a></li></ul></li></ul></li><li><a href="/note/http/HTTPS解析.html" class="sidebar-link">HTTPS解析</a></li><li><a href="/note/http/使用Nginx部署HTTPS服务.html" class="sidebar-link">使用Nginx部署HTTPS服务</a></li><li><a href="/note/http/HTTP2的优势和Nginx配置HTTP2的简单使用.html" class="sidebar-link">HTTP2的优势和Nginx配置HTTP2的简单使用</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="nginx"><a href="#nginx" class="header-anchor">#</a> nginx</h2> <p>nginx 基本配置都是在安装目录下的 conf/nginx.conf 文件中。</p> <h3 id="mime-types"><a href="#mime-types" class="header-anchor">#</a> mime.types</h3> <p>看下面的默认配置：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>http <span class="token punctuation">{</span>
+    include       mime.types<span class="token punctuation">;</span> // 可以单独配置文件
+<span class="token punctuation">}</span>
+</code></pre></div><p>MIME-type 和 Content-Type 的关系：
+当 web 服务器收到静态的资源文件请求时，依据请求文件的后缀名在服务器的 MIME 配置文件中找到对应的 MIME Type，再根据 MIME Type 设置 HTTP Response 的Content-Type，然后浏览器根据 Content-Type 的值处理文件。</p> <p>什么是 MIME-TYPE：
+为什么这么说呢？首先，我们要了解浏览器是如何处理内容的。在浏览器中显示的内容有 HTML、有 XML、有 GIF、还有 Flash ...
+那么，浏览器是如何区分它们，绝对什么内容用什么形式来显示呢？答案是 MIME Type，也就是该资源的媒体类型。</p> <p>媒体类型通常是通过 HTTP 协议，由 Web 服务器告知浏览器的，更准确地说，是通过 Content-Type 来表示的，例如:
+Content-Type: text/HTML
+表示内容是 text/HTML 类型，也就是超文本文件。为什么是“text/HTML”而不是“HTML/text”或者别的什么？MIME Type 不是个人指定的，是经过 ietf 组织协商，以 RFC 的形式作为建议的标准发布在网上的，大多数的 Web 服务器和用户代理都会支持这个规范 (顺便说一句，Email 附件的类型也是通过 MIME Type 指定的)。
+通常只有一些在互联网上获得广泛应用的格式才会获得一个 MIME Type，如果是某个客户端自己定义的格式，一般只能以 application/x- 开头。
+XHTML 正是一个获得广泛应用的格式，因此，在 RFC 3236 中，说明了 XHTML 格式文件的 MIME Type 应该是 application/xHTML+XML。
+当然，处理本地的文件，在没有人告诉浏览器某个文件的 MIME Type 的情况下，浏览器也会做一些默认的处理，这可能和你在操作系统中给文件配置的 MIME Type 有关。比如在 Windows 下，打开注册表的“HKEY_LOCAL_MACHINESOFTWAREClassesMIMEDatabaseContent Type”主键，你可以看到所有 MIME Type 的配置信息。</p> <h3 id="多站点的配置"><a href="#多站点的配置" class="header-anchor">#</a> 多站点的配置</h3> <p>配置站点自然是在 nginx.conf 文件内，但是，不利于维护，所以利用 include 在别处创建一个文件夹，专门收集站点的配置；比如我有两个站点需要配置，在 conf 文件夹下新建一个 servers 由于放置站点的配置；并增加 test.conf 以及 test2.conf，然后在 nginx.conf 文件内，新增配置：他会读取所有 server 文件夹下的 conf 结尾的配置。</p> <p><img src="/note/assets/img/nginx1.fa145cc4.png" alt="在这里插入图片描述"></p> <div class="language-shell extra-class"><pre class="language-shell"><code>http <span class="token punctuation">{</span>
+    include       mime.types<span class="token punctuation">;</span>
+    include       servers/*.conf<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>test.conf 中的内容：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>    <span class="token comment"># 表示要启动一个服务</span>
+    server <span class="token punctuation">{</span>
+        listen       <span class="token number">9999</span><span class="token punctuation">;</span> <span class="token comment"># 服务监听的端口</span>
+        server_name  localhost<span class="token punctuation">;</span> <span class="token comment"># 浏览器访问的 host name</span>
+    <span class="token comment"># 要代理的路由</span>
+		location / <span class="token punctuation">{</span>
+      <span class="token comment"># 匹配到 localhost:9999/ 代理到下面的地址</span>
+		  proxy_pass http://localhost:8888<span class="token punctuation">;</span>
+      proxy_set_header Host <span class="token variable">$host</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+    <span class="token comment"># 匹配到 localhost:9999/api/ 代理到下面的地址</span>
+		location /api/ <span class="token punctuation">{</span>
+		  proxy_pass http://localhost:8000<span class="token punctuation">;</span>
+		  proxy_set_header Host <span class="token variable">$host</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+        error_page   <span class="token number">500</span> <span class="token number">502</span> <span class="token number">503</span> <span class="token number">504</span>  /50x.html<span class="token punctuation">;</span>
+        location <span class="token operator">=</span> /50x.html <span class="token punctuation">{</span>
+            root   html<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><p>注意这里的 proxy_set_header Host $host; 他的意思是设置 nginx 发送代理请求时候请求的 host 设置为浏览器请求的 host 而不是 nginx 默认设置的 proxy_pass 的 host，比如我们配置的 proxy_pass http://localhost:8888; 如果在服务器端获取 host，是获取到 127.0.0.1:8888，而服务器端想到的是真正的浏览器发送请求的 host，可以设置 proxy_set_header Host $host; $host 是 nginx 中的一个变量，他是每个请求带过来的 host。</p> <h3 id="配置-nginx-缓存"><a href="#配置-nginx-缓存" class="header-anchor">#</a> 配置 nginx 缓存</h3> <h4 id="配置"><a href="#配置" class="header-anchor">#</a> 配置</h4> <p>在 test.conf 添加下面的配置：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>    <span class="token comment"># 新建缓存配置项</span>
+    proxy_cache_path cache <span class="token assign-left variable">levels</span><span class="token operator">=</span><span class="token number">1</span>:2 <span class="token assign-left variable">keys_zone</span><span class="token operator">=</span>my_cache:10m<span class="token punctuation">;</span>
+    <span class="token comment"># 表示要启动一个服务</span>
+    server <span class="token punctuation">{</span>
+        listen       <span class="token number">9999</span><span class="token punctuation">;</span> <span class="token comment"># 服务监听的端口</span>
+        server_name  localhost<span class="token punctuation">;</span> <span class="token comment"># 浏览器访问的 host name</span>
+    <span class="token comment"># 要代理的路由</span>
+		location / <span class="token punctuation">{</span>
+      <span class="token comment"># 匹配到 localhost:9999/ 代理到下面的地址</span>
+		  proxy_pass http://localhost:8888<span class="token punctuation">;</span>
+      <span class="token comment"># 使用缓存配置</span>
+      proxy_cache my_cache<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>proxy_cache_path cache levels=1:2 keys_zone=my_cache:10m</p> <p>首先 proxy_cache_path 是缓存选项的配置，cache 是缓存文件的存放路径（相对路径）；levels 是否要创建二级文件夹，因为 cache 可以用在不同的站点缓存，如果都存放在 cache 文件夹中，没有子目录，随着缓存的越来越多，查找缓存的速度也会越来越慢；所以要新建一个二级文件夹。keys_zone 存储大小以及存储的缓存的名字。</p> <h4 id="验证缓存"><a href="#验证缓存" class="header-anchor">#</a> 验证缓存</h4> <p>新建一个 node 服务：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token function-variable function">wait</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">second</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> second <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span>url <span class="token operator">===</span> <span class="token string">'/'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> html <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'test.html'</span><span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">'Content-Type'</span><span class="token operator">:</span> <span class="token string">'text/html'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>html<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span>url <span class="token operator">===</span> <span class="token string">'/data'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    res<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">'Cache-Control'</span><span class="token operator">:</span> <span class="token string">'max-age=20'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token function">wait</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'success'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">8888</span><span class="token punctuation">)</span>
+</code></pre></div><p>我们对 '/data' 接口进行了缓存设置 'Cache-Control': 'max-age=20' ，然后使用 nginx 代理服务代理接口：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>    proxy_cache_path cache <span class="token assign-left variable">levels</span><span class="token operator">=</span><span class="token number">1</span>:2 <span class="token assign-left variable">keys_zone</span><span class="token operator">=</span>my_cache:10m<span class="token punctuation">;</span>
+    <span class="token comment"># 表示要启动一个服务</span>
+    server <span class="token punctuation">{</span>
+        listen       <span class="token number">9999</span><span class="token punctuation">;</span> <span class="token comment"># 服务监听的端口</span>
+        server_name  localhost<span class="token punctuation">;</span> <span class="token comment"># 浏览器访问的 host name</span>
+    <span class="token comment"># 要代理的路由</span>
+		location / <span class="token punctuation">{</span>
+      proxy_cache my_cache<span class="token punctuation">;</span>
+      <span class="token comment"># 匹配到 localhost:9999/ 代理到下面的地址</span>
+		  proxy_pass http://localhost:8888<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+</code></pre></div><p>然后第一次请求时候，会等待两秒显示 success ，如果下次请求，代理服务器已经对数据进行了缓存，直接会显示出来，这时候打开其他浏览器，之前并没有访问过这个地址， success 也会直接出来。说明 代理服务器缓存配置生效了；</p> <h4 id="代理服务器-s-maxage-的配置"><a href="#代理服务器-s-maxage-的配置" class="header-anchor">#</a> 代理服务器 s-maxage 的配置</h4> <p>可以看到只设置了 max-age=2 为两秒，但是两秒后刷新页面还是请求很快，是因为 s-maxage=20 只有在代理服务器里面才会生效；也就是说浏览器还是会读取 max-age 作为缓存的到期时间。如果在代理服务器中如果同时设置了 max-age 和 s-maxage；他会读取 s-maxage，因为这个 s-maxage 配置项是专门为代理服务器设置的。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">const</span> <span class="token function-variable function">wait</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">second</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> second <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+
+http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span>url <span class="token operator">===</span> <span class="token string">'/'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> html <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'test.html'</span><span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">'Content-Type'</span><span class="token operator">:</span> <span class="token string">'text/html'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>html<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span>url <span class="token operator">===</span> <span class="token string">'/data'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    res<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">'Cache-Control'</span><span class="token operator">:</span> <span class="token string">'max-age=2; s-maxage=20; private'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token function">wait</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'success'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">8888</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="代理服务器-private-的配置"><a href="#代理服务器-private-的配置" class="header-anchor">#</a> 代理服务器 private 的配置</h4> <p>private：http 请求返回的过程中设置 Cache-Control 为 private，代表发起请求的浏览器可以进行缓存。实际操作中可以会体会到5秒以后，重新进行请求，还是等待两秒显示 success；</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">const</span> <span class="token function-variable function">wait</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">second</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> second <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+
+http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span>url <span class="token operator">===</span> <span class="token string">'/'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> html <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'test.html'</span><span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">'Content-Type'</span><span class="token operator">:</span> <span class="token string">'text/html'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>html<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span>url <span class="token operator">===</span> <span class="token string">'/data'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    res<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">'Cache-Control'</span><span class="token operator">:</span> <span class="token string">'max-age=5; s-maxage=20; private'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token function">wait</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'success'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">8888</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="代理服务器-vary-的配置"><a href="#代理服务器-vary-的配置" class="header-anchor">#</a> 代理服务器 vary 的配置</h4> <p>vary 是判断如果是一样的头信息，就进行返回缓存的结果。
+使用场景：我们使用了服务器端缓存，我们通过 User-Agent 进行返回缓存的数据；如果头信息相同就进行返回缓存结果。或者 Content-language 根据不同的语言返回缓存结果。
+下面例子中，如果之前加载过 X-Test-Cache : 1，下次加载的时候会直接读取缓存。
+我们就可以限制不仅 url 相同，如果头信息相同才会进行缓存。如果指定的头信息不一样，不使用缓存。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token function-variable function">wait</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">second</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> second <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span>url <span class="token operator">===</span> <span class="token string">'/'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> html <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'test.html'</span><span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">'Content-Type'</span><span class="token operator">:</span> <span class="token string">'text/html'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>html<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span>url <span class="token operator">===</span> <span class="token string">'/data'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    res<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">'Cache-Control'</span><span class="token operator">:</span> <span class="token string">'s-maxage=20'</span><span class="token punctuation">,</span>
+      <span class="token string">'Vary'</span><span class="token operator">:</span> <span class="token string">'X-Test-Cache'</span> <span class="token comment">// 发送请求的时候只有指定的 X-Test-Cache 是相同的情况下，才会使用缓存</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token function">wait</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'success'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">8888</span><span class="token punctuation">)</span>
+
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>this is content
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>data<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>click me<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">var</span> index <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">function</span> <span class="token function">doRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> data <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">)</span>
+    data<span class="token punctuation">.</span>innerText <span class="token operator">=</span> <span class="token string">''</span>
+    <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">'/data'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'X-Test-Cache'</span><span class="token operator">:</span> index<span class="token operator">++</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> res<span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">text</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      data<span class="token punctuation">.</span>innerText <span class="token operator">=</span> text
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">doRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新:</span> <span class="time">7/3/2020, 3:20:54 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note/http/CSP-内容安全策略.html" class="prev">
+        CSP-内容安全策略
+      </a></span> <span class="next"><a href="/note/http/HTTPS解析.html">
+        HTTPS解析
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/note/assets/js/app.0b535214.js" defer></script><script src="/note/assets/js/2.09d6086b.js" defer></script><script src="/note/assets/js/11.c4bac938.js" defer></script>
+  </body>
+</html>
