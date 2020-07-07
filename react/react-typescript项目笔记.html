@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>UI 库 | 学习笔记</title>
+    <meta name="description" content="学习笔记">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/note/assets/css/0.styles.cddcced0.css" as="style"><link rel="preload" href="/note/assets/js/app.1bffe1c8.js" as="script"><link rel="preload" href="/note/assets/js/2.fb5099ba.js" as="script"><link rel="preload" href="/note/assets/js/84.d290314b.js" as="script"><link rel="prefetch" href="/note/assets/js/10.5a702a06.js"><link rel="prefetch" href="/note/assets/js/100.11301f52.js"><link rel="prefetch" href="/note/assets/js/11.8d8247aa.js"><link rel="prefetch" href="/note/assets/js/12.24347b67.js"><link rel="prefetch" href="/note/assets/js/13.e49951dd.js"><link rel="prefetch" href="/note/assets/js/14.c5da57e3.js"><link rel="prefetch" href="/note/assets/js/15.f2022c0b.js"><link rel="prefetch" href="/note/assets/js/16.aa83e2bd.js"><link rel="prefetch" href="/note/assets/js/17.787483ca.js"><link rel="prefetch" href="/note/assets/js/18.be36daed.js"><link rel="prefetch" href="/note/assets/js/19.6ba8fb7a.js"><link rel="prefetch" href="/note/assets/js/20.04241f83.js"><link rel="prefetch" href="/note/assets/js/21.0d1559c1.js"><link rel="prefetch" href="/note/assets/js/22.d5891251.js"><link rel="prefetch" href="/note/assets/js/23.878ad24e.js"><link rel="prefetch" href="/note/assets/js/24.991f218e.js"><link rel="prefetch" href="/note/assets/js/25.882e192c.js"><link rel="prefetch" href="/note/assets/js/26.3e5e3369.js"><link rel="prefetch" href="/note/assets/js/27.64478911.js"><link rel="prefetch" href="/note/assets/js/28.65538994.js"><link rel="prefetch" href="/note/assets/js/29.2fa84a0f.js"><link rel="prefetch" href="/note/assets/js/3.b43f7817.js"><link rel="prefetch" href="/note/assets/js/30.a59500db.js"><link rel="prefetch" href="/note/assets/js/31.4922002f.js"><link rel="prefetch" href="/note/assets/js/32.5deb8254.js"><link rel="prefetch" href="/note/assets/js/33.9349c4a8.js"><link rel="prefetch" href="/note/assets/js/34.529b0cfc.js"><link rel="prefetch" href="/note/assets/js/35.14e1e5bf.js"><link rel="prefetch" href="/note/assets/js/36.e811fc0c.js"><link rel="prefetch" href="/note/assets/js/37.ecea5c55.js"><link rel="prefetch" href="/note/assets/js/38.2cc3a443.js"><link rel="prefetch" href="/note/assets/js/39.ef972771.js"><link rel="prefetch" href="/note/assets/js/4.0e84597c.js"><link rel="prefetch" href="/note/assets/js/40.625b5831.js"><link rel="prefetch" href="/note/assets/js/41.b01b4224.js"><link rel="prefetch" href="/note/assets/js/42.63c40aa3.js"><link rel="prefetch" href="/note/assets/js/43.c529cdcc.js"><link rel="prefetch" href="/note/assets/js/44.e624dbe1.js"><link rel="prefetch" href="/note/assets/js/45.882b8c57.js"><link rel="prefetch" href="/note/assets/js/46.b8231b0c.js"><link rel="prefetch" href="/note/assets/js/47.7fbb23e6.js"><link rel="prefetch" href="/note/assets/js/48.afb77602.js"><link rel="prefetch" href="/note/assets/js/49.18aba076.js"><link rel="prefetch" href="/note/assets/js/5.916eec2b.js"><link rel="prefetch" href="/note/assets/js/50.e978eab3.js"><link rel="prefetch" href="/note/assets/js/51.18e2dd0d.js"><link rel="prefetch" href="/note/assets/js/52.cbd3d808.js"><link rel="prefetch" href="/note/assets/js/53.cb5766bc.js"><link rel="prefetch" href="/note/assets/js/54.77bff142.js"><link rel="prefetch" href="/note/assets/js/55.7d38da74.js"><link rel="prefetch" href="/note/assets/js/56.81b7fe76.js"><link rel="prefetch" href="/note/assets/js/57.1fcf0efd.js"><link rel="prefetch" href="/note/assets/js/58.27f06492.js"><link rel="prefetch" href="/note/assets/js/59.a87f9f10.js"><link rel="prefetch" href="/note/assets/js/6.e660b529.js"><link rel="prefetch" href="/note/assets/js/60.42338a03.js"><link rel="prefetch" href="/note/assets/js/61.a5d447ef.js"><link rel="prefetch" href="/note/assets/js/62.e6e027f7.js"><link rel="prefetch" href="/note/assets/js/63.feb3efa5.js"><link rel="prefetch" href="/note/assets/js/64.d252aea2.js"><link rel="prefetch" href="/note/assets/js/65.a577f1aa.js"><link rel="prefetch" href="/note/assets/js/66.ce6566e2.js"><link rel="prefetch" href="/note/assets/js/67.5a61296a.js"><link rel="prefetch" href="/note/assets/js/68.1ece01e8.js"><link rel="prefetch" href="/note/assets/js/69.6d9cd4b3.js"><link rel="prefetch" href="/note/assets/js/7.207a3630.js"><link rel="prefetch" href="/note/assets/js/70.5c053ab8.js"><link rel="prefetch" href="/note/assets/js/71.9e4eb77e.js"><link rel="prefetch" href="/note/assets/js/72.3407bf6c.js"><link rel="prefetch" href="/note/assets/js/73.2e5dc319.js"><link rel="prefetch" href="/note/assets/js/74.5d29dd72.js"><link rel="prefetch" href="/note/assets/js/75.e195c3cd.js"><link rel="prefetch" href="/note/assets/js/76.0b6b4e6a.js"><link rel="prefetch" href="/note/assets/js/77.b48e72b9.js"><link rel="prefetch" href="/note/assets/js/78.024d115d.js"><link rel="prefetch" href="/note/assets/js/79.49d3b00d.js"><link rel="prefetch" href="/note/assets/js/8.1528c538.js"><link rel="prefetch" href="/note/assets/js/80.2e524d52.js"><link rel="prefetch" href="/note/assets/js/81.859d10c3.js"><link rel="prefetch" href="/note/assets/js/82.f583d568.js"><link rel="prefetch" href="/note/assets/js/83.46f81add.js"><link rel="prefetch" href="/note/assets/js/85.fe2c493b.js"><link rel="prefetch" href="/note/assets/js/86.93c0199b.js"><link rel="prefetch" href="/note/assets/js/87.1351fe33.js"><link rel="prefetch" href="/note/assets/js/88.97c3973e.js"><link rel="prefetch" href="/note/assets/js/89.f99fcb8b.js"><link rel="prefetch" href="/note/assets/js/9.caa8ce24.js"><link rel="prefetch" href="/note/assets/js/90.d7397015.js"><link rel="prefetch" href="/note/assets/js/91.9bebad82.js"><link rel="prefetch" href="/note/assets/js/92.e604c059.js"><link rel="prefetch" href="/note/assets/js/93.551e7b67.js"><link rel="prefetch" href="/note/assets/js/94.c0b0f989.js"><link rel="prefetch" href="/note/assets/js/95.dfd9d829.js"><link rel="prefetch" href="/note/assets/js/96.0d6a87f1.js"><link rel="prefetch" href="/note/assets/js/97.db27d722.js"><link rel="prefetch" href="/note/assets/js/98.8d849b21.js"><link rel="prefetch" href="/note/assets/js/99.d8dfd186.js">
+    <link rel="stylesheet" href="/note/assets/css/0.styles.cddcced0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div><div class="nav-item"><a href="/note/Interview/forEach-forIn-forOf-map之间的区别.html" class="nav-link">
+  Interview
+</a></div><div class="nav-item"><a href="/note/perfOptimization/资源合并与压缩.html" class="nav-link">
+  web 性能优化
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div><div class="nav-item"><a href="/note/Interview/forEach-forIn-forOf-map之间的区别.html" class="nav-link">
+  Interview
+</a></div><div class="nav-item"><a href="/note/perfOptimization/资源合并与压缩.html" class="nav-link">
+  web 性能优化
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/note/react/react基础.html" class="sidebar-link">react基础</a></li><li><a href="/note/react/jsx.html" class="sidebar-link">jsx</a></li><li><a href="/note/react/redux.html" class="sidebar-link">redux</a></li><li><a href="/note/react/react-redux.html" class="sidebar-link">react-redux</a></li><li><a href="/note/react/react-hooks.html" class="sidebar-link">react-hooks</a></li><li><a href="/note/react/other.html" class="sidebar-link">项目笔记</a></li><li><a href="/note/react/React中的路由传参.html" class="sidebar-link">React中的路由传参</a></li><li><a href="/note/react/react-typescript项目笔记.html" class="active sidebar-link">react-typescript项目笔记</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#ui-库" class="sidebar-link">UI 库</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#scss-中的-import" class="sidebar-link">scss 中的 import</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#使用-classnames-库" class="sidebar-link">使用 classnames 库</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#使用联合类型合并-dom-原生属性以及新增属性-使用-partial-将属性变为可选属性" class="sidebar-link">使用联合类型合并 DOM 原生属性以及新增属性;使用 Partial 将属性变为可选属性</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#scss-中的-each-、maps" class="sidebar-link">scss 中的 @each 、Maps</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#增加测试用例" class="sidebar-link">增加测试用例</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#使用-testing-library-工具进行测试-react-组件库相关用例" class="sidebar-link">使用 testing-library 工具进行测试 react 组件库相关用例</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#如果-ts-提示一个变量有两种类型报错" class="sidebar-link">如果 ts 提示一个变量有两种类型报错</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#type" class="sidebar-link">type</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#测试中的-beforeeach-钩子函数" class="sidebar-link">测试中的 beforeEach 钩子函数</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#jest-测试中的-cleanup" class="sidebar-link">jest 测试中的 cleanup</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#将属性混入到实例中" class="sidebar-link">将属性混入到实例中</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#css-中的-scope-伪类" class="sidebar-link">css 中的 :scope 伪类</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#测试代码中解决异步问题" class="sidebar-link">测试代码中解决异步问题</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#css-中-display-以及-react-中的动画" class="sidebar-link">css 中 display 以及 react 中的动画</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#storybook-的使用" class="sidebar-link">storybook 的使用</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#storybook-addons-info-插件的使用" class="sidebar-link">storybook/addons-info 插件的使用</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#react-docgen" class="sidebar-link">react-docgen</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#ts-的-omit" class="sidebar-link">ts 的 Omit</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#指定运行测试用例" class="sidebar-link">指定运行测试用例</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#fetch" class="sidebar-link">Fetch</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#mock-server" class="sidebar-link">mock server</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#usestate-更新数组对象" class="sidebar-link">useState 更新数组对象</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#jest-mock-一个库" class="sidebar-link">jest mock 一个库</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#jest-测试-是否包含某些特定的属性" class="sidebar-link">jest 测试 是否包含某些特定的属性</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#js-模块化" class="sidebar-link">js 模块化</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#创建组件库模块入口文件" class="sidebar-link">创建组件库模块入口文件</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#发布-npm-包" class="sidebar-link">发布 npm 包</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#ci-持续集成、cd-持续交付、持续部署" class="sidebar-link">CI - 持续集成、CD - 持续交付、持续部署</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#使用-travis-自动运行测试" class="sidebar-link">使用 travis 自动运行测试</a></li><li class="sidebar-sub-header"><a href="/note/react/react-typescript项目笔记.html#使用-travis-自动发布文档页面" class="sidebar-link">使用 travis 自动发布文档页面</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="ui-库"><a href="#ui-库" class="header-anchor">#</a> UI 库</h2> <blockquote><p>https://create-react-app.dev/docs/setting-up-your-editor/</p></blockquote> <blockquote><p>https://usehooks.com/page/2</p></blockquote> <h3 id="scss-中的-import"><a href="#scss-中的-import" class="header-anchor">#</a> scss 中的 import</h3> <p>css 中的 import 命令，每次调用的时候，都会创建一个额外的 http 请求。但是 scss 的 import 是将文件包含在 css 中，不需要额外的 http 请求。我们以 _ 开头定义文件， scss 是不会将这些文件编译到 css 文件中；没法编译成单独的 css 文件，只能被导入；但是我们在导入这些文件的时候，不需要添加下划线。</p> <div class="language-css extra-class"><pre class="language-css"><code>// config
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;variables&quot;</span><span class="token punctuation">;</span></span>
+
+// layout
+@import <span class="token string">&quot;reboot&quot;</span>
+</code></pre></div><p>然后在 index.tsx 中进行引入我们的初始化样式：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token string">'./styles/index.scss'</span><span class="token punctuation">;</span>
+</code></pre></div><p>Sass 作用域是从上到下的，在 button 的样式中引用了 variables 中定义的变量，就要放在下面：</p> <div class="language-css extra-class"><pre class="language-css"><code>// config
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;variables&quot;</span><span class="token punctuation">;</span></span>
+
+// layout
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;reboot&quot;</span><span class="token punctuation">;</span></span>
+
+// button
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;../components/Button/style&quot;</span><span class="token punctuation">;</span></span>
+</code></pre></div><h3 id="使用-classnames-库"><a href="#使用-classnames-库" class="header-anchor">#</a> 使用 classnames 库</h3> <p>安装 npm install classnames --save; npm install @types/classnames --save
+使用：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> classNames <span class="token keyword">from</span> <span class="token string">'classnames'</span>
+<span class="token comment">// 默认有 btn 类以及外部传入的 className</span>
+<span class="token keyword">const</span> classes <span class="token operator">=</span> <span class="token function">classNames</span><span class="token punctuation">(</span><span class="token string">'btn'</span><span class="token punctuation">,</span> className<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">btn-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>btnType<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token operator">:</span> btnType<span class="token punctuation">,</span>
+  <span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">btn-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>size<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token operator">:</span> size<span class="token punctuation">,</span>
+  <span class="token string">'disabled'</span><span class="token operator">:</span> <span class="token punctuation">(</span>btnType <span class="token operator">===</span> ButtonType<span class="token punctuation">.</span>Link<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> disabled
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">return</span> <span class="token punctuation">(</span>
+<span class="token operator">&lt;</span>a
+  className <span class="token operator">=</span> <span class="token punctuation">{</span> classes <span class="token punctuation">}</span>
+  href<span class="token operator">=</span><span class="token punctuation">{</span>href<span class="token punctuation">}</span>
+  <span class="token comment">// 其他属性</span>
+  <span class="token punctuation">{</span><span class="token operator">...</span>restProps<span class="token punctuation">}</span>
+<span class="token operator">&gt;</span>
+  <span class="token punctuation">{</span> children <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+</code></pre></div><h3 id="使用联合类型合并-dom-原生属性以及新增属性-使用-partial-将属性变为可选属性"><a href="#使用联合类型合并-dom-原生属性以及新增属性-使用-partial-将属性变为可选属性" class="header-anchor">#</a> 使用联合类型合并 DOM 原生属性以及新增属性;使用 Partial 将属性变为可选属性</h3> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">BaseButtionProps</span> <span class="token punctuation">{</span>
+  className<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  disabled<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+  size<span class="token operator">?</span><span class="token operator">:</span> ButtonSize<span class="token punctuation">;</span>
+  btnType<span class="token operator">?</span><span class="token operator">:</span> ButtonType<span class="token punctuation">;</span>
+  children<span class="token operator">:</span> React<span class="token punctuation">.</span>ReactNode<span class="token punctuation">;</span>
+  href<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 联合类型</span>
+<span class="token keyword">type</span> NativeButtonProps <span class="token operator">=</span> BaseButtionProps <span class="token operator">&amp;</span> React<span class="token punctuation">.</span>ButtonHTMLAttributes<span class="token operator">&lt;</span>HTMLElement<span class="token operator">&gt;</span>
+<span class="token keyword">type</span> AnchorButtonProps <span class="token operator">=</span> BaseButtionProps <span class="token operator">&amp;</span> React<span class="token punctuation">.</span>AnchorHTMLAttributes<span class="token operator">&lt;</span>HTMLElement<span class="token operator">&gt;</span>
+<span class="token comment">// 两种类型的按钮 a 或者 button 的属性不一定两种都需要，需要变为可选属性，使用 Partial</span>
+<span class="token keyword">export</span> <span class="token keyword">type</span> ButtonProps <span class="token operator">=</span> Partial<span class="token operator">&lt;</span>NativeButtonProps <span class="token operator">&amp;</span> AnchorButtonProps<span class="token operator">&gt;</span>
+</code></pre></div><h3 id="scss-中的-each-、maps"><a href="#scss-中的-each-、maps" class="header-anchor">#</a> scss 中的 @each 、Maps</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token property"><span class="token variable">$sizes</span></span><span class="token punctuation">:</span> 40px<span class="token punctuation">,</span> 50px<span class="token punctuation">,</span> 80px<span class="token punctuation">;</span>
+<span class="token keyword">@each</span> <span class="token selector"><span class="token variable">$size</span> in <span class="token variable">$sizes</span> </span><span class="token punctuation">{</span>
+  <span class="token comment">// 注意这里选择器的名称要访问变量需要使用 #{} 来包裹</span>
+  <span class="token selector">.icon-<span class="token variable">#{$size}</span> </span><span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token variable">$size</span><span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token variable">$size</span><span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token variable">$size</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Maps 类似 js 中的 Object，键值对。使用圆括号来创建</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token property"><span class="token variable">$icons</span></span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token string">&quot;eye&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;\f112&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;start&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;\f12e&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;stop&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;\f12f&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">@each</span> <span class="token selector"><span class="token variable">$name</span>, <span class="token variable">$glyph</span> in <span class="token variable">$icons</span> </span><span class="token punctuation">{</span>
+  <span class="token selector">.icon-<span class="token variable">#{$name}</span>:before </span><span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;Icon Font&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token variable">$glyph</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="增加测试用例"><a href="#增加测试用例" class="header-anchor">#</a> 增加测试用例</h3> <p>新建 jest.test.js ,react 框架中包含 jest 工具。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 一个用例。每个用例测试一个独立的功能点</span>
+<span class="token comment">// 第一个参数为用例的名称，第二个是用例的逻辑，一个回调函数</span>
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'test common matcher'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span>not<span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'test to be true or false'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBeTruthy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBeFalsy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'test number'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBeGreaterThan</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBeLessThan</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'test object'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// toBe 是完全相同 toEqual 是值相同</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'jiegiser'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toEqual</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token operator">:</span> <span class="token string">'jiegiser'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>然后运行命令 npx jest jest.test.js，可以添加 --watch 命令，让他一直运行：npx jest jest.test.js --watch</p> <h3 id="使用-testing-library-工具进行测试-react-组件库相关用例"><a href="#使用-testing-library-工具进行测试-react-组件库相关用例" class="header-anchor">#</a> 使用 testing-library 工具进行测试 react 组件库相关用例</h3> <p>react-script 3.3.0 版本已经将 testing-library 添加了依赖，如果低于这个版本的需要自己安装，运行命令
+npm install --save-dev @testing-library/react 这个只是针对类型的断言，还有一个 @testing-library/jest-dom
+是针对 dom 元素的断言，也可以进行安装，新版本的同样已经添加了依赖对于这个库；npm install --save-dev @testing-library/jest-dom；
+在新版本中会有一个 setupTests.ts 文件，每当运行 test 或者 npm run test 的时候会先运行这个文件，这个文件可以存放测试的通用的内容；</p> <p>下面是给 button 组件的测试用例：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> render<span class="token punctuation">,</span> fireEvent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@testing-library/react'</span>
+<span class="token keyword">import</span> Button<span class="token punctuation">,</span> <span class="token punctuation">{</span> ButtonProps<span class="token punctuation">,</span> ButtonSize<span class="token punctuation">,</span> ButtonType <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./button'</span>
+<span class="token keyword">const</span> defaultProps <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 测试函数是否被调用到</span>
+  onClick<span class="token operator">:</span> jest<span class="token punctuation">.</span><span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> testTypes<span class="token operator">:</span> ButtonProps <span class="token operator">=</span> <span class="token punctuation">{</span>
+  btnType<span class="token operator">:</span> ButtonType<span class="token punctuation">.</span>Primary<span class="token punctuation">,</span>
+  size<span class="token operator">:</span> ButtonSize<span class="token punctuation">.</span>Large<span class="token punctuation">,</span>
+  className<span class="token operator">:</span> <span class="token string">'klass'</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> disabledProps<span class="token operator">:</span> ButtonProps <span class="token operator">=</span> <span class="token punctuation">{</span>
+  disabled<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// 测试 disabled 状态下是否执行 click 事件</span>
+  onClick<span class="token operator">:</span> jest<span class="token punctuation">.</span><span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// test('our first react test case', () =&gt; {</span>
+<span class="token comment">//   // 渲染组件</span>
+<span class="token comment">//   const wrapper = render(&lt;Button&gt;Nice&lt;/Button&gt;)</span>
+<span class="token comment">//   const element = wrapper.queryByText('Nice')</span>
+<span class="token comment">//   // 判断按钮是否存在</span>
+<span class="token comment">//   expect(element).toBeTruthy()</span>
+<span class="token comment">//   // 判断组件是否在文档中</span>
+<span class="token comment">//   expect(element).toBeInTheDocument()</span>
+<span class="token comment">// })</span>
+
+<span class="token comment">// 对测试用例进行分类</span>
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'test Button component'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 第一个参数为描述</span>
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'shoule render the correct default button'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 渲染组件</span>
+    <span class="token keyword">const</span> wrapper <span class="token operator">=</span> <span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>Button <span class="token punctuation">{</span><span class="token operator">...</span>defaultProps<span class="token punctuation">}</span><span class="token operator">&gt;</span>Nice<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> element <span class="token operator">=</span> wrapper<span class="token punctuation">.</span><span class="token function">getByText</span><span class="token punctuation">(</span><span class="token string">'Nice'</span><span class="token punctuation">)</span>  <span class="token keyword">as</span> HTMLButtonElement
+    <span class="token comment">// 判断组件是否在文档中</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBeInTheDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment">// 测试是否是一个 button</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>element<span class="token punctuation">.</span>tagName<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toEqual</span><span class="token punctuation">(</span><span class="token string">'BUTTON'</span><span class="token punctuation">)</span>
+    <span class="token comment">// 测试类是否存在</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toHaveClass</span><span class="token punctuation">(</span><span class="token string">'btn btn-default'</span><span class="token punctuation">)</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>element<span class="token punctuation">.</span>disabled<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBeFalsy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment">// 模拟点击事件</span>
+    fireEvent<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span>
+    <span class="token comment">// onClick 方法被调用到</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>defaultProps<span class="token punctuation">.</span>onClick<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toHaveBeenCalled</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'shoule render the correct component based on different props'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 渲染组件</span>
+    <span class="token keyword">const</span> wrapper <span class="token operator">=</span> <span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>Button <span class="token punctuation">{</span><span class="token operator">...</span>testTypes<span class="token punctuation">}</span><span class="token operator">&gt;</span>Nice<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> element <span class="token operator">=</span> wrapper<span class="token punctuation">.</span><span class="token function">getByText</span><span class="token punctuation">(</span><span class="token string">'Nice'</span><span class="token punctuation">)</span>
+    <span class="token comment">// 判断组件是否在文档中</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBeInTheDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment">// 测试传入的 props</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toHaveClass</span><span class="token punctuation">(</span><span class="token string">'btn-primary btn-lg klass'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should render a link when btnType equals link and href is provided'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 渲染组件</span>
+    <span class="token keyword">const</span> wrapper <span class="token operator">=</span> <span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>Button btnType<span class="token operator">=</span><span class="token punctuation">{</span>ButtonType<span class="token punctuation">.</span>Link<span class="token punctuation">}</span> href<span class="token operator">=</span><span class="token string">&quot;http://dddd.com&quot;</span><span class="token operator">&gt;</span>Link<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> element <span class="token operator">=</span> wrapper<span class="token punctuation">.</span><span class="token function">getByText</span><span class="token punctuation">(</span><span class="token string">'Link'</span><span class="token punctuation">)</span>
+    <span class="token comment">// 判断组件是否在文档中</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBeInTheDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment">// 测试是否是一个 a 标签</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>element<span class="token punctuation">.</span>tagName<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toEqual</span><span class="token punctuation">(</span><span class="token string">'A'</span><span class="token punctuation">)</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toHaveClass</span><span class="token punctuation">(</span><span class="token string">'btn btn-link'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should render disabled button when disabled set to true'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 渲染组件</span>
+    <span class="token keyword">const</span> wrapper <span class="token operator">=</span> <span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>Button <span class="token punctuation">{</span><span class="token operator">...</span>disabledProps<span class="token punctuation">}</span><span class="token operator">&gt;</span>Nice<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> element <span class="token operator">=</span> wrapper<span class="token punctuation">.</span><span class="token function">getByText</span><span class="token punctuation">(</span><span class="token string">'Nice'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> HTMLButtonElement
+    <span class="token comment">// 判断组件是否在文档中</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBeInTheDocument</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>element<span class="token punctuation">.</span>disabled<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBeTruthy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    fireEvent<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span>
+    <span class="token comment">// 按钮事件没有执行</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>disabledProps<span class="token punctuation">.</span>onClick<span class="token punctuation">)</span><span class="token punctuation">.</span>not<span class="token punctuation">.</span><span class="token function">toHaveBeenCalled</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="如果-ts-提示一个变量有两种类型报错"><a href="#如果-ts-提示一个变量有两种类型报错" class="header-anchor">#</a> 如果 ts 提示一个变量有两种类型报错</h3> <p>如果提示报错，需要进行判断：</p> <div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">const</span> passedContext<span class="token operator">:</span> IMenuContext <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">// currentActive 可能为 number 或者 undefined ，这里需要做一个判断</span>
+    index<span class="token operator">:</span> currentActive <span class="token operator">?</span> currentActive <span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    onSelect<span class="token operator">:</span> handleClick
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="type"><a href="#type" class="header-anchor">#</a> type</h3> <p>type 类型，可以类似 Enum 类型使用：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> MenuMode <span class="token operator">=</span> <span class="token string">'horizontal'</span> <span class="token operator">|</span> <span class="token string">'vertial'</span>
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">MenuProps</span> <span class="token punctuation">{</span>
+  mode<span class="token operator">?</span><span class="token operator">:</span> MenuMode
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="测试中的-beforeeach-钩子函数"><a href="#测试中的-beforeeach-钩子函数" class="header-anchor">#</a> 测试中的 beforeEach 钩子函数</h3> <p>如果我们写一个测试用例的时候，每个 case 中都需要一个相同的变量，我们可以将变量放在 beforeEach 函数中：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">let</span> wrapper<span class="token operator">:</span> RenderResult<span class="token punctuation">,</span> menuElement<span class="token operator">:</span> HTMLElement<span class="token punctuation">,</span> activeElement<span class="token operator">:</span> HTMLElement<span class="token punctuation">,</span> disabledElement<span class="token operator">:</span> HTMLElement
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'test Menu and MenuItem component'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 每个 case 执行的时候都会首先进入这个函数，公用的属性以及方法可以写在这里</span>
+  <span class="token function">beforeEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    wrapper <span class="token operator">=</span> <span class="token function">render</span><span class="token punctuation">(</span><span class="token function">generateMenu</span><span class="token punctuation">(</span>testProps<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token comment">// 取 Menu 最外层的元素，需要给 Menu 添加一个 data-testid 属性</span>
+    menuElement <span class="token operator">=</span> wrapper<span class="token punctuation">.</span><span class="token function">getByTestId</span><span class="token punctuation">(</span><span class="token string">'test-menu'</span><span class="token punctuation">)</span>
+    <span class="token comment">// 也可以这样</span>
+    wrapper<span class="token punctuation">.</span>container<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">'jiegiser-menu'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="jest-测试中的-cleanup"><a href="#jest-测试中的-cleanup" class="header-anchor">#</a> jest 测试中的 cleanup</h3> <p>使用 cleanup 可以清除之前 case 渲染的的 dom 元素，比如我们在 beforeEach 中渲染的元素。
+其他的用例在调用 beforeEach 中渲染的元素，会自动执行 cleanup 方法。</p> <h3 id="将属性混入到实例中"><a href="#将属性混入到实例中" class="header-anchor">#</a> 将属性混入到实例中</h3> <p>遍历 this.props.children 使用 React.Children.map，复制属性 React.cloneElement 方法</p> <div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">const</span> <span class="token function-variable function">renderChildren</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> React<span class="token punctuation">.</span>Children<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>children<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">child<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> childElement <span class="token operator">=</span> child <span class="token keyword">as</span> React<span class="token punctuation">.</span>FunctionComponentElement<span class="token operator">&lt;</span>MenuItemProps<span class="token operator">&gt;</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> displayName <span class="token punctuation">}</span> <span class="token operator">=</span> childElement<span class="token punctuation">.</span><span class="token keyword">type</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>displayName <span class="token operator">===</span> <span class="token string">'MenuItem'</span> <span class="token operator">||</span> displayName <span class="token operator">===</span> <span class="token string">'SubMenu'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// return child</span>
+        <span class="token keyword">return</span> React<span class="token punctuation">.</span><span class="token function">cloneElement</span><span class="token punctuation">(</span>childElement<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          index<span class="token operator">:</span> index<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">&quot;Warning: Menu has a child which is not a MenuItem component&quot;</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="css-中的-scope-伪类"><a href="#css-中的-scope-伪类" class="header-anchor">#</a> css 中的 :scope 伪类</h3> <p>:scope 属于 CSS 伪类，它表示作为选择器要匹配的参考点的元素。当需要获取已检索到的的直接后代元素时，:scope 伪类很有用。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> context <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'context'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> selected <span class="token operator">=</span> context<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">':scope &gt; div'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'results'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>selected<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">element</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">'#'</span> <span class="token operator">+</span> element<span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">', '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>context<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>element-1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>element-1.1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>element-1.2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>element-2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>element-2.1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+    Selected elements ids :
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>results<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>结果：
+Selected elements ids : #element-1, #element-2</p> <h3 id="测试代码中解决异步问题"><a href="#测试代码中解决异步问题" class="header-anchor">#</a> 测试代码中解决异步问题</h3> <p>如果我们写的代码中有异步操作，直接写 case 会不通过，我们需要引入 wait 方法：
+我们的代码中有异步操作：</p> <div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">const</span> <span class="token function-variable function">handleMouse</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e<span class="token operator">:</span> React<span class="token punctuation">.</span>MouseEvent<span class="token punctuation">,</span> toggle<span class="token operator">:</span> <span class="token builtin">boolean</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span>
+    e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    timer <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">setOpen</span><span class="token punctuation">(</span>toggle<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> render<span class="token punctuation">,</span> RenderResult<span class="token punctuation">,</span> fireEvent<span class="token punctuation">,</span> wait <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@testing-library/react'</span>
+<span class="token keyword">let</span> wrapper<span class="token operator">:</span> RenderResult<span class="token punctuation">,</span> menuElement<span class="token operator">:</span> HTMLElement<span class="token punctuation">,</span> activeElement<span class="token operator">:</span> HTMLElement<span class="token punctuation">,</span> disabledElement<span class="token operator">:</span> HTMLElement
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'test Menu and MenuItem component'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should show dropdown items when hover on subMenu'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// queryByText 会返回 HTMLElement 或者 none</span>
+    <span class="token function">expect</span><span class="token punctuation">(</span>wrapper<span class="token punctuation">.</span><span class="token function">queryByText</span><span class="token punctuation">(</span><span class="token string">'drop1'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>not<span class="token punctuation">.</span><span class="token function">toBeVisible</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> dropdownElement <span class="token operator">=</span> wrapper<span class="token punctuation">.</span><span class="token function">getByText</span><span class="token punctuation">(</span><span class="token string">'dropdown'</span><span class="token punctuation">)</span>
+    fireEvent<span class="token punctuation">.</span><span class="token function">mouseEnter</span><span class="token punctuation">(</span>dropdownElement<span class="token punctuation">)</span>
+    <span class="token keyword">await</span> <span class="token function">wait</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">expect</span><span class="token punctuation">(</span>wrapper<span class="token punctuation">.</span><span class="token function">queryByText</span><span class="token punctuation">(</span><span class="token string">'drop1'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBeVisible</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="css-中-display-以及-react-中的动画"><a href="#css-中-display-以及-react-中的动画" class="header-anchor">#</a> css 中 display 以及 react 中的动画</h3> <p>css 中的 display: none 到 display: block 的变化中添加 translate 是不起作用的;所以我们在设置一个元素从无到有的渐变只能通过 opacity 属性来实现，但是这个属性只是设置元素的透明度，元素本身还是显示在那里，存在于 dom 结构中。这时候我们可以借助 react 的一些动画实现的库，这里使用 react-transition-group ，他在元素从无到有的生命周期上添加了 class 来控制动画；</p> <blockquote><p>transition 属性不会继承</p></blockquote> <h3 id="storybook-的使用"><a href="#storybook-的使用" class="header-anchor">#</a> storybook 的使用</h3> <p>首先进行安装：npx -p @storybook/cli sb init</p> <blockquote><p>https://storybook.js.org/docs/configurations/typescript-config/</p></blockquote> <p>首先配置 storybook 的 ts 开发环境：</p> <ol><li>修改 storybook 的配置文件：</li></ol> <p>修改 .storybook 下的 main.js 文件
+只需要将 stories.js 修改为 stories.tsx</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  stories<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'../src/**/*.stories.tsx'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  addons<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'@storybook/preset-create-react-app'</span><span class="token punctuation">,</span>
+    <span class="token string">'@storybook/addon-actions'</span><span class="token punctuation">,</span>
+    <span class="token string">'@storybook/addon-links'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>然后将 src/stories 下面的所有文件都修改为 tsx 后缀的文件就可以了。</p> <p>如果需要加载全局样式：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// '../src/styles/index.scss' 直接在这里配置即可</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  stories<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'../src/**/*.stories.tsx'</span><span class="token punctuation">,</span> <span class="token string">'../src/styles/index.scss'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  addons<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'@storybook/preset-create-react-app'</span><span class="token punctuation">,</span>
+    <span class="token string">'@storybook/addon-actions'</span><span class="token punctuation">,</span>
+    <span class="token string">'@storybook/addon-links'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>增加自己的 story，在自己的组件新建一个 button.stories.tsx 文件：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> storiesOf <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@storybook/react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> action <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@storybook/addon-actions'</span>
+
+<span class="token keyword">import</span> Button <span class="token keyword">from</span> <span class="token string">'./button'</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">defaultButton</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>Button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token function">action</span><span class="token punctuation">(</span><span class="token string">'clicked'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token keyword">default</span> button<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+<span class="token comment">// 第一个参数为左侧菜单父级菜单名， 第二个参数为固定参数 module</span>
+<span class="token function">storiesOf</span><span class="token punctuation">(</span><span class="token string">'Button Component'</span><span class="token punctuation">,</span> <span class="token keyword">module</span><span class="token punctuation">)</span>
+<span class="token comment">// 给父级菜单添加子级菜单，也就是添加组件</span>
+<span class="token comment">// 第一个参数为菜单名，第二个参数为一个函数，返回组件</span>
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'默认 Button'</span><span class="token punctuation">,</span> defaultButton<span class="token punctuation">)</span>
+</code></pre></div><p>storybook 添加装饰器，比如我们可以设置我们组件显示的外面的样式：
+通过 addDecorator(CenterDecorator) 方法进行添加装饰器。</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> storiesOf <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@storybook/react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> action <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@storybook/addon-actions'</span>
+
+<span class="token keyword">import</span> Button <span class="token keyword">from</span> <span class="token string">'./button'</span>
+
+<span class="token keyword">const</span> styles<span class="token operator">:</span> React<span class="token punctuation">.</span>CSSProperties <span class="token operator">=</span> <span class="token punctuation">{</span>
+  textAlign<span class="token operator">:</span> <span class="token string">'center'</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> <span class="token function-variable function">CenterDecorator</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">storyFn<span class="token operator">:</span> <span class="token builtin">any</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+<span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token function">storyFn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">defaultButton</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>Button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token function">action</span><span class="token punctuation">(</span><span class="token string">'clicked'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token keyword">default</span> button<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">buttonWithSize</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Button size<span class="token operator">=</span><span class="token string">&quot;lg&quot;</span><span class="token operator">&gt;</span> large button <span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Button size<span class="token operator">=</span><span class="token string">&quot;sm&quot;</span><span class="token operator">&gt;</span> small button <span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">buttonWithType</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Button btnType<span class="token operator">=</span><span class="token string">&quot;primary&quot;</span><span class="token operator">&gt;</span> primary button <span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Button btnType<span class="token operator">=</span><span class="token string">&quot;danger&quot;</span><span class="token operator">&gt;</span> danger button <span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Button btnType<span class="token operator">=</span><span class="token string">&quot;link&quot;</span> href<span class="token operator">=</span><span class="token string">&quot;https://baidu.com&quot;</span><span class="token operator">&gt;</span> link button <span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+<span class="token comment">// 第一个参数为左侧菜单父级菜单名， 第二个参数为固定参数 module</span>
+<span class="token function">storiesOf</span><span class="token punctuation">(</span><span class="token string">'Button Component'</span><span class="token punctuation">,</span> <span class="token keyword">module</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">addDecorator</span><span class="token punctuation">(</span>CenterDecorator<span class="token punctuation">)</span>
+<span class="token comment">// 给父级菜单添加子级菜单，也就是添加组件</span>
+<span class="token comment">// 第一个参数为菜单名，第二个参数为一个函数，返回组件</span>
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'默认 Button'</span><span class="token punctuation">,</span> defaultButton<span class="token punctuation">)</span>
+</code></pre></div><p>如果需要全局添加，可以在 .storybook 中新建 preview.js :</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// './Decorator/Center'</span>
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+
+<span class="token keyword">const</span> styles<span class="token operator">:</span> React<span class="token punctuation">.</span>CSSProperties <span class="token operator">=</span> <span class="token punctuation">{</span>
+  textAlign<span class="token operator">:</span> <span class="token string">'center'</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> <span class="token function-variable function">CenterDecorator</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">storyFn<span class="token operator">:</span> any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+<span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token function">storyFn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> CenterDecorator
+
+<span class="token comment">// preview.js</span>
+<span class="token keyword">import</span> CenterDecorator <span class="token keyword">from</span> <span class="token string">'./Decorator/Center'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> addDecorator <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@storybook/react'</span><span class="token punctuation">;</span>
+<span class="token function">addDecorator</span><span class="token punctuation">(</span>CenterDecorator<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>更多 addons ：https://storybook.js.org/addons/
+https://storybook.js.org/docs/addons/introduction/#1-decorators</p></blockquote> <h3 id="storybook-addons-info-插件的使用"><a href="#storybook-addons-info-插件的使用" class="header-anchor">#</a> storybook/addons-info 插件的使用</h3> <p>这个插件就是显示组件的一些信息，还可以进行复制组件代码，首先进行安装：
+npm i -D @storybook/addon-info 支持 ts： npm install --save @types/storybook__addon-info</p> <blockquote><p>https://github.com/storybookjs/storybook/tree/release/3.4/addons/info
+使用：</p></blockquote> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> storiesOf <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@storybook/react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> action <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@storybook/addon-actions'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> withInfo <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@storybook/addon-info'</span>
+<span class="token keyword">import</span> Button <span class="token keyword">from</span> <span class="token string">'./button'</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">defaultButton</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>Button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token function">action</span><span class="token punctuation">(</span><span class="token string">'clicked'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token keyword">default</span> button<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span>
+<span class="token function">storiesOf</span><span class="token punctuation">(</span><span class="token string">'Button Component'</span><span class="token punctuation">,</span> <span class="token keyword">module</span><span class="token punctuation">)</span>
+  <span class="token comment">// 使用</span>
+  <span class="token punctuation">.</span><span class="token function">addDecorator</span><span class="token punctuation">(</span>withInfo<span class="token punctuation">)</span>
+  <span class="token comment">// 修改属性--直接链式操作</span>
+  <span class="token punctuation">.</span><span class="token function">addParameters</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    info<span class="token operator">:</span> <span class="token string">'this is a very niece component'</span><span class="token punctuation">,</span>
+    inline<span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'默认 Button'</span><span class="token punctuation">,</span> defaultButton<span class="token punctuation">)</span>
+</code></pre></div><p>注意他的 info 属性支持很多语法，比如 markdown 语法，以及可以进行写脚本：</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token punctuation">.</span><span class="token function">addDecorator</span><span class="token punctuation">(</span>withInfo<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">addParameters</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    info<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+      this is a very niece component
+      ### this is a header
+      ~~~js
+        const a = 'hello'
+      ~~~
+    </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    inline<span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>也可以在 add 方法的第三个参数添加属性信息：</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'不同尺寸的 Button'</span><span class="token punctuation">,</span> buttonWithSize<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    inline<span class="token operator">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="react-docgen"><a href="#react-docgen" class="header-anchor">#</a> react-docgen</h3> <p>一个文档生成器，根据组件的一些属性，生成表格；
+首先需要改造自己的组件，将一些属性通过 import 的方法进行引入：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 通过 import 的方式导出所有属性</span>
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token constant">FC</span><span class="token punctuation">,</span> ButtonHTMLAttributes<span class="token punctuation">,</span> AnchorHTMLAttributes<span class="token punctuation">,</span> ReactNode <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token comment">// 需要将自己的组件导出</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> Button<span class="token operator">:</span> <span class="token constant">FC</span><span class="token operator">&lt;</span>ButtonProps<span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+<span class="token comment">// 注意这里需要添加一个分号</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> Button<span class="token punctuation">;</span>
+</code></pre></div><p>在 webpack.config.js 中添加：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> config <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  config<span class="token punctuation">.</span>module<span class="token punctuation">.</span>rules<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    test<span class="token operator">:</span> <span class="token regex">/\.tsx?$/</span><span class="token punctuation">,</span>
+    use<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        loader<span class="token operator">:</span> require<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">&quot;babel-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        options<span class="token operator">:</span> <span class="token punctuation">{</span>
+          presets<span class="token operator">:</span> <span class="token punctuation">[</span>require<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">&quot;babel-preset-react-app&quot;</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// 添加 loader </span>
+      <span class="token punctuation">{</span>
+        loader<span class="token operator">:</span> require<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">&quot;react-docgen-typescript-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        options<span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 去掉原生属性的添加</span>
+          shouldExtractLiteralValuesFromEnum<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token comment">// 这里是过滤不添加 react 中的一些属性</span>
+          <span class="token function-variable function">propFilter</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">prop</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>prop<span class="token punctuation">.</span>parent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">return</span> <span class="token operator">!</span>prop<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>fileName<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token string">'node_modules'</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> <span class="token boolean">true</span>            
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  config<span class="token punctuation">.</span>resolve<span class="token punctuation">.</span>extensions<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">&quot;.ts&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.tsx&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> config<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>我们发现我们导出的表格的属性并没有一些说明以及注释，需要使用 jsDoc 的模式来进行对 js进行注释，这样注释内容会被解析并展示出来：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token constant">FC</span><span class="token punctuation">,</span> ButtonHTMLAttributes<span class="token punctuation">,</span> AnchorHTMLAttributes<span class="token punctuation">,</span> ReactNode <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">interface</span> <span class="token class-name">BaseButtionProps</span> <span class="token punctuation">{</span>
+  <span class="token comment">/**设置 Button 的样式 */</span>
+  className<span class="token operator">?</span><span class="token operator">:</span> string<span class="token punctuation">;</span>
+  <span class="token comment">/**设置 Button 是否被禁用 */</span>
+  disabled<span class="token operator">?</span><span class="token operator">:</span> boolean<span class="token punctuation">;</span>
+  <span class="token comment">/**设置 Button 的尺寸 */</span>
+  size<span class="token operator">?</span><span class="token operator">:</span> ButtonSize<span class="token punctuation">;</span>
+  <span class="token comment">/**设置 Button 的类型 */</span>
+  btnType<span class="token operator">?</span><span class="token operator">:</span> ButtonType<span class="token punctuation">;</span>
+  children<span class="token operator">:</span> ReactNode<span class="token punctuation">;</span>
+  <span class="token comment">/**设置链接 Button 的地址，仅在 btnType 为 link 有用 */</span>
+  href<span class="token operator">?</span><span class="token operator">:</span> string
+<span class="token punctuation">}</span>
+<span class="token comment">/**
+ * 页面中最常用的按钮元素，适合于完成特定的交互
+ * 
+ * &gt; ### 引用方法
+ *   
+ * ~~~js
+ * import { Button } from 'jiegiserUI'
+ * ~~~
+ * @param props 
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> Button<span class="token operator">:</span> <span class="token constant">FC</span><span class="token operator">&lt;</span>ButtonProps<span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Button<span class="token punctuation">;</span>
+</code></pre></div><h3 id="ts-的-omit"><a href="#ts-的-omit" class="header-anchor">#</a> ts 的 Omit</h3> <p>Omit 是用来移除或者忽略接口中的一个属性：</p> <p>比如我们自定义的组件有一个 size 属性，但是我们还需要给用户去自定义更多的 html 原生的更多属性，所以需要继承 InputHTMLAttributes， 但是该属性有一个 size 属性，所以这个时候我们需要忽略这个属性，或者修改我们自身定义的属性名：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token comment">// Omit 第一个参数是 interface ，第二个是需要忽略的属性名</span>
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">InputProps</span> <span class="token keyword">extends</span> <span class="token class-name">Omit</span><span class="token operator">&lt;</span>InputHTMLAttributes<span class="token operator">&lt;</span>HTMLElement<span class="token operator">&gt;</span><span class="token punctuation">,</span> <span class="token string">'size'</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  size<span class="token operator">?</span><span class="token operator">:</span> InputSize
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="指定运行测试用例"><a href="#指定运行测试用例" class="header-anchor">#</a> 指定运行测试用例</h3> <p>可以使用命令  npm test -- -t &quot;auto&quot; 来只运行指定的测试用例，注意如果测试用例为 autoComplete.test.tsx，就写成 npm test -- -t &quot;auto&quot; 是可以匹配到的。</p> <h3 id="fetch"><a href="#fetch" class="header-anchor">#</a> Fetch</h3> <p>缺点：</p> <ul><li>只对网路请求报错，对 400，500 都当做成功的请求</li> <li>默认不会带 cookie</li> <li>不支持 abort，不支持超时控制</li> <li>没有办法原生检测请求的进度</li></ul> <h3 id="mock-server"><a href="#mock-server" class="header-anchor">#</a> mock server</h3> <ul><li>https://jsonplaceholder.typicode.com/</li> <li>https://designer.mocky.io/design</li></ul> <h3 id="usestate-更新数组对象"><a href="#usestate-更新数组对象" class="header-anchor">#</a> useState 更新数组对象</h3> <p>我们一般使用 useState 更新数据时，直接使用它返回的第二个方法参数进行修改；因为这个方法更新数据是一个异步的过程；
+我们如果想要实时获取更新后的数据，可以在第二个方法中，传入一个函数进行修改：
+注意更新的时候是返回一个新的对象，而不是对原有的进行修改。</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">const</span> <span class="token punctuation">[</span> fileList<span class="token punctuation">,</span> setFileList<span class="token punctuation">]</span> <span class="token operator">=</span> useState<span class="token operator">&lt;</span>UploadFile<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment">// setFileList</span>
+<span class="token function">updateFileList</span><span class="token punctuation">(</span>_file<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  percent<span class="token operator">:</span> percentage<span class="token punctuation">,</span>
+  status<span class="token operator">:</span> <span class="token string">'uploading'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// 如果直接使用 setFileList 更新数据，获取到的是最后一次更新的结果</span>
+<span class="token comment">// _file.percent = percentage</span>
+<span class="token comment">// _file.status = 'uploading'</span>
+<span class="token comment">// setFileList([_file])</span>
+
+<span class="token comment">// {...file, ...updateobj} 返回替换属性后的新的对象</span>
+<span class="token comment">// 第一个参数为需要更新的文件，第二个参数是需要更新的属性， partial 的意思是更新的属性为 UploadFile 中的可选的一些属性，并不是所有的都更新</span>
+<span class="token keyword">const</span> <span class="token function-variable function">updateFileList</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">updateFile<span class="token operator">:</span> UploadFile<span class="token punctuation">,</span> updateobj<span class="token operator">:</span> Partial<span class="token operator">&lt;</span>UploadFile<span class="token operator">&gt;</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">setFileList</span><span class="token punctuation">(</span><span class="token parameter">prevList</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> prevList<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">file</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>file<span class="token punctuation">.</span>uid <span class="token operator">===</span> updateFile<span class="token punctuation">.</span>uid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token operator">...</span>file<span class="token punctuation">,</span> <span class="token operator">...</span>updateobj<span class="token punctuation">}</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> file
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="jest-mock-一个库"><a href="#jest-mock-一个库" class="header-anchor">#</a> jest mock 一个库</h3> <p>比如我们 mock 一下 axios 库：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">'axios'</span>
+<span class="token comment">// 将 axios 转换为测试的mocke对象</span>
+<span class="token keyword">const</span> mockedAxios <span class="token operator">=</span> axios <span class="token keyword">as</span> jest<span class="token punctuation">.</span>Mocked<span class="token operator">&lt;</span><span class="token keyword">typeof</span> axios<span class="token operator">&gt;</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'test upload component'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'upload process should works file'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 第一种方法</span>
+    <span class="token comment">// mockedAxios.post.mockImplementation(() =&gt; {</span>
+    <span class="token comment">//   return Promise.resolve({'data': 'cool'})</span>
+    <span class="token comment">// })</span>
+    <span class="token comment">// 第二种方法</span>
+    mockedAxios<span class="token punctuation">.</span>post<span class="token punctuation">.</span><span class="token function">mockResolvedValue</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'data'</span><span class="token operator">:</span> <span class="token string">'cool'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="jest-测试-是否包含某些特定的属性"><a href="#jest-测试-是否包含某些特定的属性" class="header-anchor">#</a> jest 测试 是否包含某些特定的属性</h3> <p>我们在写测试的时候，不一定需要测试一个属性中所有的属性是否存在，只需要测试某些特定的属性是否存在：可以使用 expect.objectContaining 以及 toHaveBeenCalledWith 结合使用：</p> <div class="language-ts extra-class"><pre class="language-ts"><code>    <span class="token function">expect</span><span class="token punctuation">(</span>testProps<span class="token punctuation">.</span>onRemove<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toHaveBeenCalledWith</span><span class="token punctuation">(</span>expect<span class="token punctuation">.</span><span class="token function">objectContaining</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      raw<span class="token operator">:</span> testFile<span class="token punctuation">,</span>
+      status<span class="token operator">:</span> <span class="token string">'success'</span><span class="token punctuation">,</span>
+      name<span class="token operator">:</span> <span class="token string">'test.png'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="js-模块化"><a href="#js-模块化" class="header-anchor">#</a> js 模块化</h3> <p>以前的 js 就是通过引入不同的文件，到后来通过自执行函数，来定义全局变量，到现在的 commjs、amd、es6 module：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// common.js</span>
+<span class="token keyword">const</span> bar <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./bar'</span><span class="token punctuation">)</span>
+<span class="token comment">// 模块产出</span>
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// AMD -- 使用 require.js 才能在浏览器运行</span>
+<span class="token function">define</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">require</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 通过相对路径获得依赖模块</span>
+  <span class="token keyword">const</span> bar <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./bar'</span><span class="token punctuation">)</span>
+  <span class="token comment">// 模块产出</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// es6 module</span>
+<span class="token comment">// 通过相对路径获得依赖模块</span>
+<span class="token keyword">import</span> bar <span class="token operator">=</span> <span class="token keyword">from</span> <span class="token string">'./bar'</span>
+<span class="token comment">// 模块产出</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="创建组件库模块入口文件"><a href="#创建组件库模块入口文件" class="header-anchor">#</a> 创建组件库模块入口文件</h3> <p>webpack 支持 package.json 中的 module 字段，这样就可以启用 tree shake 机制。我们的项目默认入口文件是 index.tsx 。修改：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> library <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@fortawesome/fontawesome-svg-core'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> fas <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@fortawesome/free-solid-svg-icons'</span>
+library<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>fas<span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span> <span class="token keyword">default</span> <span class="token keyword">as</span> Button <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./components/Button'</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> <span class="token keyword">default</span> <span class="token keyword">as</span> Menu <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./components/Menu'</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> <span class="token keyword">default</span> <span class="token keyword">as</span> AutoComplete <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./components/AutoComplete'</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> <span class="token keyword">default</span> <span class="token keyword">as</span> Icon <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./components/Icon'</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> <span class="token keyword">default</span> <span class="token keyword">as</span> Input <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./components/Input'</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> <span class="token keyword">default</span> <span class="token keyword">as</span> Progress <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./components/Progress'</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> <span class="token keyword">default</span> <span class="token keyword">as</span> Transition <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./components/Transition'</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> <span class="token keyword">default</span> <span class="token keyword">as</span> Upload <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./components/Upload'</span>
+
+</code></pre></div><p>这里有一些问题，比如，我们的 menu 组件我们新建了一个 index.tsx 文件用于导出组件：
+因为这个组件有两个子组件，也是在 Menu 组件里面使用，所以将 Item 以及 SubItem 组件导出为 Menu 组件的属性，类似 Menu.item 这样使用</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> <span class="token constant">FC</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> Menu<span class="token punctuation">,</span> <span class="token punctuation">{</span> MenuProps <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./menu'</span>
+<span class="token keyword">import</span> SubMenu<span class="token punctuation">,</span> <span class="token punctuation">{</span> SubMenuProps <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./subMenu'</span> 
+<span class="token keyword">import</span> MenuItem<span class="token punctuation">,</span> <span class="token punctuation">{</span> MenuItemProps <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./menuItem'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">type</span> IMenuComponent <span class="token operator">=</span> <span class="token constant">FC</span><span class="token operator">&lt;</span>MenuProps<span class="token operator">&gt;</span> <span class="token operator">&amp;</span> <span class="token punctuation">{</span>
+  Item<span class="token operator">:</span> <span class="token constant">FC</span><span class="token operator">&lt;</span>MenuItemProps<span class="token operator">&gt;</span><span class="token punctuation">,</span>
+  SubItem<span class="token operator">:</span> <span class="token constant">FC</span><span class="token operator">&lt;</span>SubMenuProps<span class="token operator">&gt;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> TransMenu <span class="token operator">=</span> Menu <span class="token keyword">as</span> IMenuComponent
+
+TransMenu<span class="token punctuation">.</span>Item <span class="token operator">=</span> MenuItem
+TransMenu<span class="token punctuation">.</span>SubItem <span class="token operator">=</span> SubMenu
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> TransMenu
+</code></pre></div><p>在根路径下面新建一个 tsconfig.build.json 文件，用于配置打包环境的 ts 配置：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;compilerOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;outDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;build&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 编译好的文件输出路径</span>
+    <span class="token property">&quot;module&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esnext&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 输出的 mudule 类型</span>
+    <span class="token property">&quot;target&quot;</span><span class="token operator">:</span> <span class="token string">&quot;es5&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 确定编译后的 es 版本</span>
+    <span class="token property">&quot;declaration&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 对每一个 ts 文件生成 .d.ts 类型注释文件</span>
+    <span class="token property">&quot;jsx&quot;</span><span class="token operator">:</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 指定 jsx 的类型</span>
+    <span class="token property">&quot;moduleResolution&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Node&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 配置模块的加载方式</span>
+    <span class="token property">&quot;allowSyntheticDefaultImports&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// 支持 default import 方式</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 需要编译的文件</span>
+  <span class="token property">&quot;include&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;src&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// 不编译的文件</span>
+  <span class="token property">&quot;exclude&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;src/**/*.test.tsx&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;src/**/*.stories.tsx&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>然后在 package.json 中添加编译 ts ，可以指定 ts config 文件：</p> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;build-ts&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tsc -p tsconfig.build.json&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><p>处理我们的 scss 文件：在 package.json 中添加编译 scss ：</p> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run build-ts &amp;&amp; npm run build-css&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build-ts&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tsc -p tsconfig.build.json&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build-css&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node-sass ./src/styles/index.scss ./build/index.css&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><p>我们发现每次进行进行打包的时候，都需要手动删除一次 build 文件夹，我们可以使用功能 rimraf 库，每次在打包之前进行删除这个文件夹，首先进行安装：npm install --save-dev rimraf@3.0.1；然后在 package.json 中添加删除 build 文件夹的命令：</p> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;clean&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rimraf ./build&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run clean &amp;&amp; npm run build-ts &amp;&amp; npm run build-css&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><h3 id="发布-npm-包"><a href="#发布-npm-包" class="header-anchor">#</a> 发布 npm 包</h3> <p>发布包首先需要登录，登录有两种方式，一种是我们直接在 npm 官网去登录，另一种是使用命令行登录：首先输入命令 npm whoami 来检测是否登录；这里主要注意的是要查看一下你本地配置的 npm 的源有没有被修改，npm config ls 如果修改成了淘宝的镜像，那登录不了，可以修改回来。然后使用 npm adduser 进行登录或者注册；</p> <p>修改 package.json 文件：
+主要修改 private 为 false（不是一个私有的包）；增加入口文件：main、module、types 选项；
+对于版本号，具体可以查看这个语义化版本的规范：https://semver.org/lang/zh-CN/</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;jiegiserui&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.1.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;React components library&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;jiegiser&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;private&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dist/index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;module&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dist/index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;types&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dist/index.d.ts&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MIT&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;Component&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;UI&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;React&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;hoempage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://github.com/jiegiser/jiegiserui&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;repository&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;git&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://github.com/jiegiser/jiegiserui&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 代表哪些文件上传到 npm 中，如果不写，会默认使用 .gitignore 文件里面的内容；</span>
+  <span class="token property">&quot;files&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;dist&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;clean&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rimraf ./dist&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run clean &amp;&amp; npm run build-ts &amp;&amp; npm run build-css&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build-ts&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tsc -p tsconfig.build.json&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build-css&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node-sass ./src/styles/index.scss ./dist/index.css&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 添加生命周期函数，在发布之前运行 build</span>
+    <span class="token property">&quot;prepublish&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run build&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>精简项目依赖：</p> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;@fortawesome/fontawesome-svg-core&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.2.28&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@fortawesome/free-solid-svg-icons&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.13.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@fortawesome/react-fontawesome&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^0.1.9&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;axios&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^0.19.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;classnames&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.2.6&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-transition-group&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.3.0&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 项目必须依赖的库，写在这里就为了避免用户安装了组件库之后，存在两个 react 版本 react hooks 会报错，</span>
+  <span class="token property">&quot;peerDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;react&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&gt;= 16.8.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-dom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&gt;= 16.8.0&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;@storybook/addon-actions&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.2.8&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@storybook/addon-info&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.2.8&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@storybook/addon-links&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.2.8&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@storybook/addons&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.2.8&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@storybook/react&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.2.8&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@types/react-transition-group&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.2.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@testing-library/jest-dom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.2.4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@testing-library/react&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^9.5.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@testing-library/user-event&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.2.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@types/classnames&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.2.10&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@types/jest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^24.9.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@types/node&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^12.12.42&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@types/react&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^16.9.35&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@types/react-dom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^16.9.8&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@types/storybook__addon-info&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.2.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-docgen-typescript-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.7.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;rimraf&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;node-sass&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.14.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^16.13.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-dom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^16.13.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-scripts&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3.4.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;typescript&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.7.5&quot;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>在项目打包发布时候添加 eslit 检查以及 test 的测试，防止将有 bug 的代码发布到 npm 上，首先添加一个 eslint 检查的命令：</p> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;lint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eslint --ext js,ts,tsx src --max-warnings 5&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>添加测试的时候，我们不能使用自带的 test 命令，因为那个命令不能很好的反馈测试结果，他是一个可交互的命令行，可以设置 CI 为 true 让所有测试返回结果：
+https://create-react-app.dev/docs/running-tests/#continuous-integration 但是，需要在不同的系统设置。我们可以使用 cross-env (跨平台设置环境变量) 库来解决这个问题；首先进行安装 npm install cross-env --save-dev；然后添加命令：</p> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;test:onwatch&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cross-env CI=true react-scripts test&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 添加生命周期函数，在发布之前运行 eslint 检查以及 test 然后运行 build</span>
+    <span class="token property">&quot;prepublishOnly&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run test:nowatch &amp;&amp; npm run lint &amp;&amp; npm run build&quot;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>使用 husky 库来进行 pre-commit 阶段做代码检查，它会在我们项目根目录下面的 .git/hooks 文件夹下面创建 pre-commit、pre-push 等 hooks。这些 hooks 可以让我们直接在 package.json 的 script 里运行我们想要在某个 hook 阶段执行的命令。
+安装： npm install husky --save-dev，同样设置在代码提交之前检查 test 以及 eslint 是否通过，在 package.json 中添加配置：</p> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;husky&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;hooks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;pre-commit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run test:nowatch &amp;&amp; npm run lint&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="ci-持续集成、cd-持续交付、持续部署"><a href="#ci-持续集成、cd-持续交付、持续部署" class="header-anchor">#</a> CI - 持续集成、CD - 持续交付、持续部署</h3> <h4 id="ci-持续集成"><a href="#ci-持续集成" class="header-anchor">#</a> CI - 持续集成</h4> <ul><li>频繁的将代码集成到主干（master）</li> <li>快速发现错误</li> <li>防止分支大幅偏离主干</li></ul> <h4 id="cd-持续交付、持续部署"><a href="#cd-持续交付、持续部署" class="header-anchor">#</a> CD - 持续交付、持续部署</h4> <ul><li>频繁的将软件的新版本，交付给质量团队或者用户</li> <li>代码通过评审以后，自动部署到生产环境</li></ul> <h3 id="使用-travis-自动运行测试"><a href="#使用-travis-自动运行测试" class="header-anchor">#</a> 使用 travis 自动运行测试</h3> <blockquote><p>https://docs.travis-ci.com/user/languages/javascript-with-nodejs/</p></blockquote> <p>新建 .travis.yml 文件，添加下面的配置：
+添加 cache 选项是因为，每次进行集成 npm install or npm ci ，设置缓存，下次就不需要重新安装所有的依赖。</p> <div class="language-shell extra-class"><pre class="language-shell"><code>language: node_js
+node_js:
+  - <span class="token string">&quot;stable&quot;</span>
+cache:
+  directories:
+  - node_modules
+</code></pre></div><h3 id="使用-travis-自动发布文档页面"><a href="#使用-travis-自动发布文档页面" class="header-anchor">#</a> 使用 travis 自动发布文档页面</h3> <p>在新增 .travis.yml 文件，下面配置：</p> <p>注意还需要设置 github token，在 github 中生成一个 token，然后填到 travis 中设置环境变量。</p> <div class="language-shell extra-class"><pre class="language-shell"><code>script:
+  - <span class="token function">npm</span> run build-storybook
+deploy:
+  provider: pages
+  skip_cleanup: <span class="token boolean">true</span>
+  github_token: <span class="token variable">$github_token</span>
+  local_dir: storybook-static // 需要上传的文件夹
+  on:
+    branch: master
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新:</span> <span class="time">7/7/2020, 1:59:49 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note/react/React中的路由传参.html" class="prev">
+        React中的路由传参
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/note/assets/js/app.1bffe1c8.js" defer></script><script src="/note/assets/js/2.fb5099ba.js" defer></script><script src="/note/assets/js/84.d290314b.js" defer></script>
+  </body>
+</html>
