@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>函数定义 | 学习笔记</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="学习笔记">
+    <link rel="preload" href="/note/assets/css/0.styles.c9d983ba.css" as="style"><link rel="preload" href="/note/assets/js/app.4a81cf7e.js" as="script"><link rel="preload" href="/note/assets/js/2.d72a34db.js" as="script"><link rel="preload" href="/note/assets/js/37.be22c1d8.js" as="script"><link rel="prefetch" href="/note/assets/js/10.69568fb6.js"><link rel="prefetch" href="/note/assets/js/100.d65cf12f.js"><link rel="prefetch" href="/note/assets/js/101.c38e8c02.js"><link rel="prefetch" href="/note/assets/js/102.d222e6f7.js"><link rel="prefetch" href="/note/assets/js/103.d7190053.js"><link rel="prefetch" href="/note/assets/js/104.eb2a9758.js"><link rel="prefetch" href="/note/assets/js/105.cd6c7ef9.js"><link rel="prefetch" href="/note/assets/js/106.a3a6a5cd.js"><link rel="prefetch" href="/note/assets/js/107.cb914867.js"><link rel="prefetch" href="/note/assets/js/108.f9d07f46.js"><link rel="prefetch" href="/note/assets/js/109.65dfcd59.js"><link rel="prefetch" href="/note/assets/js/11.2c931bd0.js"><link rel="prefetch" href="/note/assets/js/110.3acdbff9.js"><link rel="prefetch" href="/note/assets/js/111.497aa699.js"><link rel="prefetch" href="/note/assets/js/112.b6c8d309.js"><link rel="prefetch" href="/note/assets/js/12.7ffd7d3a.js"><link rel="prefetch" href="/note/assets/js/13.f78f1e2a.js"><link rel="prefetch" href="/note/assets/js/14.bc299296.js"><link rel="prefetch" href="/note/assets/js/15.c2e1a704.js"><link rel="prefetch" href="/note/assets/js/16.15196aa4.js"><link rel="prefetch" href="/note/assets/js/17.8691503d.js"><link rel="prefetch" href="/note/assets/js/18.d358ccd4.js"><link rel="prefetch" href="/note/assets/js/19.11d582e9.js"><link rel="prefetch" href="/note/assets/js/20.5a8df566.js"><link rel="prefetch" href="/note/assets/js/21.3727e2a1.js"><link rel="prefetch" href="/note/assets/js/22.9af53c01.js"><link rel="prefetch" href="/note/assets/js/23.7bd28ae7.js"><link rel="prefetch" href="/note/assets/js/24.d1909f52.js"><link rel="prefetch" href="/note/assets/js/25.7b91542d.js"><link rel="prefetch" href="/note/assets/js/26.ab6b1c32.js"><link rel="prefetch" href="/note/assets/js/27.baa16163.js"><link rel="prefetch" href="/note/assets/js/28.306546e9.js"><link rel="prefetch" href="/note/assets/js/29.afa461c8.js"><link rel="prefetch" href="/note/assets/js/3.5b9b19f2.js"><link rel="prefetch" href="/note/assets/js/30.4a152406.js"><link rel="prefetch" href="/note/assets/js/31.089c9e28.js"><link rel="prefetch" href="/note/assets/js/32.7e6d5d9c.js"><link rel="prefetch" href="/note/assets/js/33.4a91a2df.js"><link rel="prefetch" href="/note/assets/js/34.672e223a.js"><link rel="prefetch" href="/note/assets/js/35.ed02a3bb.js"><link rel="prefetch" href="/note/assets/js/36.1a641b30.js"><link rel="prefetch" href="/note/assets/js/38.a1bf450e.js"><link rel="prefetch" href="/note/assets/js/39.0cac1d79.js"><link rel="prefetch" href="/note/assets/js/4.8da6e675.js"><link rel="prefetch" href="/note/assets/js/40.cf56a801.js"><link rel="prefetch" href="/note/assets/js/41.739cd2a5.js"><link rel="prefetch" href="/note/assets/js/42.dc911239.js"><link rel="prefetch" href="/note/assets/js/43.07ca4c51.js"><link rel="prefetch" href="/note/assets/js/44.3cab069e.js"><link rel="prefetch" href="/note/assets/js/45.cfed1da3.js"><link rel="prefetch" href="/note/assets/js/46.15e7d6d4.js"><link rel="prefetch" href="/note/assets/js/47.554a3904.js"><link rel="prefetch" href="/note/assets/js/48.2692b2d9.js"><link rel="prefetch" href="/note/assets/js/49.eb74efd1.js"><link rel="prefetch" href="/note/assets/js/5.0bd1278b.js"><link rel="prefetch" href="/note/assets/js/50.8593c455.js"><link rel="prefetch" href="/note/assets/js/51.4465f73f.js"><link rel="prefetch" href="/note/assets/js/52.f854cdc6.js"><link rel="prefetch" href="/note/assets/js/53.a05eed99.js"><link rel="prefetch" href="/note/assets/js/54.22502a25.js"><link rel="prefetch" href="/note/assets/js/55.2f4982f9.js"><link rel="prefetch" href="/note/assets/js/56.eefa09d7.js"><link rel="prefetch" href="/note/assets/js/57.f0573069.js"><link rel="prefetch" href="/note/assets/js/58.544bcd52.js"><link rel="prefetch" href="/note/assets/js/59.5ffad429.js"><link rel="prefetch" href="/note/assets/js/6.5a7930fb.js"><link rel="prefetch" href="/note/assets/js/60.27fdb214.js"><link rel="prefetch" href="/note/assets/js/61.f302941e.js"><link rel="prefetch" href="/note/assets/js/62.9f607078.js"><link rel="prefetch" href="/note/assets/js/63.88aea7a8.js"><link rel="prefetch" href="/note/assets/js/64.3b1a24e0.js"><link rel="prefetch" href="/note/assets/js/65.ce04ce85.js"><link rel="prefetch" href="/note/assets/js/66.df8dc245.js"><link rel="prefetch" href="/note/assets/js/67.f5b77722.js"><link rel="prefetch" href="/note/assets/js/68.02a9205e.js"><link rel="prefetch" href="/note/assets/js/69.8d2ab6ed.js"><link rel="prefetch" href="/note/assets/js/7.55d5eabf.js"><link rel="prefetch" href="/note/assets/js/70.fc1d80f7.js"><link rel="prefetch" href="/note/assets/js/71.96048a75.js"><link rel="prefetch" href="/note/assets/js/72.50e54041.js"><link rel="prefetch" href="/note/assets/js/73.ad8ec048.js"><link rel="prefetch" href="/note/assets/js/74.04b78e1d.js"><link rel="prefetch" href="/note/assets/js/75.a688d940.js"><link rel="prefetch" href="/note/assets/js/76.51489cbc.js"><link rel="prefetch" href="/note/assets/js/77.37621158.js"><link rel="prefetch" href="/note/assets/js/78.83545867.js"><link rel="prefetch" href="/note/assets/js/79.62b957a4.js"><link rel="prefetch" href="/note/assets/js/8.c08d2892.js"><link rel="prefetch" href="/note/assets/js/80.3046a22a.js"><link rel="prefetch" href="/note/assets/js/81.e8fd59de.js"><link rel="prefetch" href="/note/assets/js/82.0350755d.js"><link rel="prefetch" href="/note/assets/js/83.e2ef8cf4.js"><link rel="prefetch" href="/note/assets/js/84.8a80de8f.js"><link rel="prefetch" href="/note/assets/js/85.432a7c8d.js"><link rel="prefetch" href="/note/assets/js/86.7aa786f0.js"><link rel="prefetch" href="/note/assets/js/87.03f34828.js"><link rel="prefetch" href="/note/assets/js/88.fec9aad4.js"><link rel="prefetch" href="/note/assets/js/89.2ac338e6.js"><link rel="prefetch" href="/note/assets/js/9.df59bf2d.js"><link rel="prefetch" href="/note/assets/js/90.3023a72a.js"><link rel="prefetch" href="/note/assets/js/91.a28f900c.js"><link rel="prefetch" href="/note/assets/js/92.3039a7c1.js"><link rel="prefetch" href="/note/assets/js/93.cc1e8fbb.js"><link rel="prefetch" href="/note/assets/js/94.ac810577.js"><link rel="prefetch" href="/note/assets/js/95.48245522.js"><link rel="prefetch" href="/note/assets/js/96.1a8c3bce.js"><link rel="prefetch" href="/note/assets/js/97.40bd8db5.js"><link rel="prefetch" href="/note/assets/js/98.c0cb3c81.js"><link rel="prefetch" href="/note/assets/js/99.4b03b8ba.js">
+    <link rel="stylesheet" href="/note/assets/css/0.styles.c9d983ba.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div><div class="nav-item"><a href="/note/Interview/forEach-forIn-forOf-map之间的区别.html" class="nav-link">
+  Interview
+</a></div><div class="nav-item"><a href="/note/gisAlgorithm/数据结构-矢量.html" class="nav-link">
+  gis 算法
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div><div class="nav-item"><a href="/note/Interview/forEach-forIn-forOf-map之间的区别.html" class="nav-link">
+  Interview
+</a></div><div class="nav-item"><a href="/note/gisAlgorithm/数据结构-矢量.html" class="nav-link">
+  gis 算法
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/note/Interview/forEach-forIn-forOf-map之间的区别.html" class="sidebar-link">forEach、for in、for of、map之间的区别</a></li><li><a href="/note/Interview/数据类型.html" class="sidebar-link">数据类型</a></li><li><a href="/note/Interview/操作符.html" class="sidebar-link">操作符</a></li><li><a href="/note/Interview/变量、作用域和内存.html" class="sidebar-link">变量、作用域和内存</a></li><li><a href="/note/Interview/引用类型.html" class="sidebar-link">引用类型</a></li><li><a href="/note/Interview/对象的创建模式.html" class="sidebar-link">对象的创建模式</a></li><li><a href="/note/Interview/继承.html" class="sidebar-link">继承</a></li><li><a href="/note/Interview/函数表达式.html" class="active sidebar-link">函数表达式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/Interview/函数表达式.html#函数定义" class="sidebar-link">函数定义</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/Interview/函数表达式.html#函数声明" class="sidebar-link">函数声明</a></li><li class="sidebar-sub-header"><a href="/note/Interview/函数表达式.html#函数表达式" class="sidebar-link">函数表达式</a></li></ul></li><li class="sidebar-sub-header"><a href="/note/Interview/函数表达式.html#递归" class="sidebar-link">递归</a></li><li class="sidebar-sub-header"><a href="/note/Interview/函数表达式.html#闭包" class="sidebar-link">闭包</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="函数定义"><a href="#函数定义" class="header-anchor">#</a> 函数定义</h2> <h3 id="函数声明"><a href="#函数声明" class="header-anchor">#</a> 函数声明</h3> <p>关于函数声明，一个重要的特性就是函数声明提升。意思是在执行代码之前会先读取函数声明。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 可以执行</span>
+<span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">function</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'hi'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="函数表达式"><a href="#函数表达式" class="header-anchor">#</a> 函数表达式</h3> <p>这种创建的函数也叫匿名函数；函数表达式与其他表达式一样，在使用前必须先赋值。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">functionName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 错误：函数还不存在</span>
+<span class="token keyword">var</span> <span class="token function-variable function">functionName</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">arg0<span class="token punctuation">,</span> arg1<span class="token punctuation">,</span> arg2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 函数体</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="递归"><a href="#递归" class="header-anchor">#</a> 递归</h2> <p>就是在一个函数中通过函数名调用自身，下面代码实现一个经典的阶乘：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">factorial</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num <span class="token operator">*</span> <span class="token function">factorial</span><span class="token punctuation">(</span>num <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> anotherFactorial <span class="token operator">=</span> factorial
+factorial <span class="token operator">=</span> <span class="token keyword">null</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">anotherFactorial</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// anotherFactorial 中的引用函数 factorial 已经变成了 null</span>
+</code></pre></div><p>函数中的 arguments.callee 是一个指向正在执行的函数的指针，因此可以用它来实现对函数的递归调用：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">factorial</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num <span class="token operator">*</span> arguments<span class="token punctuation">.</span><span class="token function">callee</span><span class="token punctuation">(</span>num <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> anotherFactorial <span class="token operator">=</span> factorial
+factorial <span class="token operator">=</span> <span class="token keyword">null</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">anotherFactorial</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 24</span>
+</code></pre></div><p>在严格模式下不能通过脚本方格纹 arguments.callee，访问这个属性会导致错误，可以使用一个命名函数表达式来达成相同的效果：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> factorial <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num <span class="token operator">*</span> <span class="token function">f</span><span class="token punctuation">(</span>num <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>上面代码创建了一个名为 f() 的命名函数表达式，然后将它赋值给变量 factorial，即便把函数赋值给另一个变量，函数的名字 f 仍然有效，所以递归调用照样能正确完成。</p> <h2 id="闭包"><a href="#闭包" class="header-anchor">#</a> 闭包</h2> <p>闭包是指有权访问另一个函数作用域中的变量的函数，创建闭包的常见方式，就是在也给函数内部创建另一个函数：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">createComparisonFunction</span><span class="token punctuation">(</span><span class="token parameter">propertyName</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">object1<span class="token punctuation">,</span> object2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 访问另一个函数作用域中的变量</span>
+    <span class="token keyword">var</span> value1 <span class="token operator">=</span> object1<span class="token punctuation">[</span>propertyName<span class="token punctuation">]</span>
+    <span class="token keyword">var</span> value2 <span class="token operator">=</span> object2<span class="token punctuation">[</span>propertyName<span class="token punctuation">]</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>value1 <span class="token operator">&lt;</span> value2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>value1 <span class="token operator">&gt;</span> value2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新:</span> <span class="time">9/4/2020, 8:30:07 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note/Interview/继承.html" class="prev">
+        继承
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/note/assets/js/app.4a81cf7e.js" defer></script><script src="/note/assets/js/2.d72a34db.js" defer></script><script src="/note/assets/js/37.be22c1d8.js" defer></script>
+  </body>
+</html>
