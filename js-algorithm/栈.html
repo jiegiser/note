@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>栈 | 学习笔记</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="学习笔记">
+    
+    <link rel="preload" href="/note/assets/css/0.styles.cdc363cf.css" as="style"><link rel="preload" href="/note/assets/js/app.9f6f6b83.js" as="script"><link rel="preload" href="/note/assets/js/2.eb60b352.js" as="script"><link rel="preload" href="/note/assets/js/114.0fc7dc69.js" as="script"><link rel="prefetch" href="/note/assets/js/10.15d72139.js"><link rel="prefetch" href="/note/assets/js/100.90c9cae1.js"><link rel="prefetch" href="/note/assets/js/101.6338022b.js"><link rel="prefetch" href="/note/assets/js/102.b5a1681a.js"><link rel="prefetch" href="/note/assets/js/103.b0543cab.js"><link rel="prefetch" href="/note/assets/js/104.f363766f.js"><link rel="prefetch" href="/note/assets/js/105.779533d1.js"><link rel="prefetch" href="/note/assets/js/106.f571e1a3.js"><link rel="prefetch" href="/note/assets/js/107.4a6bebe3.js"><link rel="prefetch" href="/note/assets/js/108.a95caea5.js"><link rel="prefetch" href="/note/assets/js/109.e97455cb.js"><link rel="prefetch" href="/note/assets/js/11.9fac0661.js"><link rel="prefetch" href="/note/assets/js/110.7a4f3074.js"><link rel="prefetch" href="/note/assets/js/111.6a48c34a.js"><link rel="prefetch" href="/note/assets/js/112.dfba18c7.js"><link rel="prefetch" href="/note/assets/js/113.be795534.js"><link rel="prefetch" href="/note/assets/js/115.f4cceb48.js"><link rel="prefetch" href="/note/assets/js/116.0071bfc3.js"><link rel="prefetch" href="/note/assets/js/117.6305eb3a.js"><link rel="prefetch" href="/note/assets/js/118.8613dce4.js"><link rel="prefetch" href="/note/assets/js/119.45204da4.js"><link rel="prefetch" href="/note/assets/js/12.2f68e40b.js"><link rel="prefetch" href="/note/assets/js/120.2ab6de59.js"><link rel="prefetch" href="/note/assets/js/121.d02e09fd.js"><link rel="prefetch" href="/note/assets/js/122.4d128118.js"><link rel="prefetch" href="/note/assets/js/123.c1e58666.js"><link rel="prefetch" href="/note/assets/js/124.ec53b27f.js"><link rel="prefetch" href="/note/assets/js/125.2067d5a6.js"><link rel="prefetch" href="/note/assets/js/126.8a03c67c.js"><link rel="prefetch" href="/note/assets/js/127.e36a44ef.js"><link rel="prefetch" href="/note/assets/js/128.1431c73e.js"><link rel="prefetch" href="/note/assets/js/129.499b3442.js"><link rel="prefetch" href="/note/assets/js/13.2a6bba80.js"><link rel="prefetch" href="/note/assets/js/130.0a4af258.js"><link rel="prefetch" href="/note/assets/js/131.a9f3fd3a.js"><link rel="prefetch" href="/note/assets/js/132.0caff550.js"><link rel="prefetch" href="/note/assets/js/133.66a253c2.js"><link rel="prefetch" href="/note/assets/js/134.98d4a479.js"><link rel="prefetch" href="/note/assets/js/135.019d72f2.js"><link rel="prefetch" href="/note/assets/js/136.07e542dc.js"><link rel="prefetch" href="/note/assets/js/137.ad05a9d0.js"><link rel="prefetch" href="/note/assets/js/138.43ae0924.js"><link rel="prefetch" href="/note/assets/js/139.2bb98429.js"><link rel="prefetch" href="/note/assets/js/14.bc93b82f.js"><link rel="prefetch" href="/note/assets/js/140.4fe25d23.js"><link rel="prefetch" href="/note/assets/js/141.df172f4d.js"><link rel="prefetch" href="/note/assets/js/142.5a1d129c.js"><link rel="prefetch" href="/note/assets/js/143.73292b72.js"><link rel="prefetch" href="/note/assets/js/144.68fa7c3f.js"><link rel="prefetch" href="/note/assets/js/145.9c689264.js"><link rel="prefetch" href="/note/assets/js/146.1f3dcd05.js"><link rel="prefetch" href="/note/assets/js/147.00a2066d.js"><link rel="prefetch" href="/note/assets/js/148.d06c9878.js"><link rel="prefetch" href="/note/assets/js/149.13ff441f.js"><link rel="prefetch" href="/note/assets/js/15.22444a43.js"><link rel="prefetch" href="/note/assets/js/150.c116ac84.js"><link rel="prefetch" href="/note/assets/js/151.8e7760b4.js"><link rel="prefetch" href="/note/assets/js/152.96d26c0e.js"><link rel="prefetch" href="/note/assets/js/16.f6518fa0.js"><link rel="prefetch" href="/note/assets/js/17.3abbffc1.js"><link rel="prefetch" href="/note/assets/js/18.c508fcf2.js"><link rel="prefetch" href="/note/assets/js/19.d65585d9.js"><link rel="prefetch" href="/note/assets/js/20.dbe2d6b7.js"><link rel="prefetch" href="/note/assets/js/21.1fa71f56.js"><link rel="prefetch" href="/note/assets/js/22.e5a737e9.js"><link rel="prefetch" href="/note/assets/js/23.43f101bc.js"><link rel="prefetch" href="/note/assets/js/24.de901d9a.js"><link rel="prefetch" href="/note/assets/js/25.2eb86d03.js"><link rel="prefetch" href="/note/assets/js/26.f4f331e0.js"><link rel="prefetch" href="/note/assets/js/27.d84aeb28.js"><link rel="prefetch" href="/note/assets/js/28.b3b4af0a.js"><link rel="prefetch" href="/note/assets/js/29.63488287.js"><link rel="prefetch" href="/note/assets/js/3.d79da86b.js"><link rel="prefetch" href="/note/assets/js/30.147f1c54.js"><link rel="prefetch" href="/note/assets/js/31.e0190beb.js"><link rel="prefetch" href="/note/assets/js/32.633efc01.js"><link rel="prefetch" href="/note/assets/js/33.f4ab8c21.js"><link rel="prefetch" href="/note/assets/js/34.705e4a83.js"><link rel="prefetch" href="/note/assets/js/35.f2b6c466.js"><link rel="prefetch" href="/note/assets/js/36.58b30f73.js"><link rel="prefetch" href="/note/assets/js/37.cc6db1bf.js"><link rel="prefetch" href="/note/assets/js/38.19310edf.js"><link rel="prefetch" href="/note/assets/js/39.678793cc.js"><link rel="prefetch" href="/note/assets/js/4.9313523d.js"><link rel="prefetch" href="/note/assets/js/40.22cae92f.js"><link rel="prefetch" href="/note/assets/js/41.48d17944.js"><link rel="prefetch" href="/note/assets/js/42.c71e5032.js"><link rel="prefetch" href="/note/assets/js/43.3fbeb02c.js"><link rel="prefetch" href="/note/assets/js/44.8f29720b.js"><link rel="prefetch" href="/note/assets/js/45.829d56fa.js"><link rel="prefetch" href="/note/assets/js/46.b79288a1.js"><link rel="prefetch" href="/note/assets/js/47.3f4f224c.js"><link rel="prefetch" href="/note/assets/js/48.b5cdbf88.js"><link rel="prefetch" href="/note/assets/js/49.fa897d78.js"><link rel="prefetch" href="/note/assets/js/5.644e7d45.js"><link rel="prefetch" href="/note/assets/js/50.f465f9b5.js"><link rel="prefetch" href="/note/assets/js/51.ece3390c.js"><link rel="prefetch" href="/note/assets/js/52.856dfbc6.js"><link rel="prefetch" href="/note/assets/js/53.5414a912.js"><link rel="prefetch" href="/note/assets/js/54.52112ec9.js"><link rel="prefetch" href="/note/assets/js/55.11ad03da.js"><link rel="prefetch" href="/note/assets/js/56.578c8b97.js"><link rel="prefetch" href="/note/assets/js/57.265107db.js"><link rel="prefetch" href="/note/assets/js/58.9aa5a136.js"><link rel="prefetch" href="/note/assets/js/59.b0d42a88.js"><link rel="prefetch" href="/note/assets/js/6.71081769.js"><link rel="prefetch" href="/note/assets/js/60.3103ab2e.js"><link rel="prefetch" href="/note/assets/js/61.62f9bd9b.js"><link rel="prefetch" href="/note/assets/js/62.2050c62b.js"><link rel="prefetch" href="/note/assets/js/63.a68ea9ff.js"><link rel="prefetch" href="/note/assets/js/64.537c7537.js"><link rel="prefetch" href="/note/assets/js/65.c0ac9a12.js"><link rel="prefetch" href="/note/assets/js/66.97874983.js"><link rel="prefetch" href="/note/assets/js/67.31fbcf12.js"><link rel="prefetch" href="/note/assets/js/68.3a9f6401.js"><link rel="prefetch" href="/note/assets/js/69.59fdb1cf.js"><link rel="prefetch" href="/note/assets/js/7.0cb8399d.js"><link rel="prefetch" href="/note/assets/js/70.6c3fdc4a.js"><link rel="prefetch" href="/note/assets/js/71.a9fc280c.js"><link rel="prefetch" href="/note/assets/js/72.5e732f39.js"><link rel="prefetch" href="/note/assets/js/73.57a2682c.js"><link rel="prefetch" href="/note/assets/js/74.1ec99866.js"><link rel="prefetch" href="/note/assets/js/75.efab2890.js"><link rel="prefetch" href="/note/assets/js/76.9ff07c34.js"><link rel="prefetch" href="/note/assets/js/77.0251a99f.js"><link rel="prefetch" href="/note/assets/js/78.83f3216b.js"><link rel="prefetch" href="/note/assets/js/79.37ba3e9c.js"><link rel="prefetch" href="/note/assets/js/8.aff6ab16.js"><link rel="prefetch" href="/note/assets/js/80.c8537837.js"><link rel="prefetch" href="/note/assets/js/81.2c5af525.js"><link rel="prefetch" href="/note/assets/js/82.01a6bd4f.js"><link rel="prefetch" href="/note/assets/js/83.059bf7b7.js"><link rel="prefetch" href="/note/assets/js/84.e92e020f.js"><link rel="prefetch" href="/note/assets/js/85.443e8ca9.js"><link rel="prefetch" href="/note/assets/js/86.4e59e65d.js"><link rel="prefetch" href="/note/assets/js/87.afa03142.js"><link rel="prefetch" href="/note/assets/js/88.2685fb1a.js"><link rel="prefetch" href="/note/assets/js/89.67767bc9.js"><link rel="prefetch" href="/note/assets/js/9.ab7718a2.js"><link rel="prefetch" href="/note/assets/js/90.9dbb6bf7.js"><link rel="prefetch" href="/note/assets/js/91.8ea2d8f8.js"><link rel="prefetch" href="/note/assets/js/92.0bd61c49.js"><link rel="prefetch" href="/note/assets/js/93.2219c2e0.js"><link rel="prefetch" href="/note/assets/js/94.cb664385.js"><link rel="prefetch" href="/note/assets/js/95.97e14430.js"><link rel="prefetch" href="/note/assets/js/96.fa4e9622.js"><link rel="prefetch" href="/note/assets/js/97.b07f0101.js"><link rel="prefetch" href="/note/assets/js/98.deae1a48.js"><link rel="prefetch" href="/note/assets/js/99.69f5ef82.js">
+    <link rel="stylesheet" href="/note/assets/css/0.styles.cdc363cf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note/" class="home-link router-link-active"><!----> <span class="site-name">学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div><div class="nav-item"><a href="/note/Interview/forEach-forIn-forOf-map之间的区别.html" class="nav-link">
+  Interview
+</a></div><div class="nav-item"><a href="/note/gisAlgorithm/数据结构-矢量.html" class="nav-link">
+  gis 算法
+</a></div><div class="nav-item"><a href="/note/graphics/图形学基础.html" class="nav-link">
+  图形学相关
+</a></div><div class="nav-item"><a href="/note/js-algorithm/栈.html" class="nav-link">
+  算法与数据结构
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div><div class="nav-item"><a href="/note/Interview/forEach-forIn-forOf-map之间的区别.html" class="nav-link">
+  Interview
+</a></div><div class="nav-item"><a href="/note/gisAlgorithm/数据结构-矢量.html" class="nav-link">
+  gis 算法
+</a></div><div class="nav-item"><a href="/note/graphics/图形学基础.html" class="nav-link">
+  图形学相关
+</a></div><div class="nav-item"><a href="/note/js-algorithm/栈.html" class="nav-link">
+  算法与数据结构
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/note/js-algorithm/栈.html" class="active sidebar-link">栈</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/js-algorithm/栈.html#栈" class="sidebar-link">栈</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/js-algorithm/栈.html#基本用法" class="sidebar-link">基本用法</a></li><li class="sidebar-sub-header"><a href="/note/js-algorithm/栈.html#使用场景" class="sidebar-link">使用场景</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="栈"><a href="#栈" class="header-anchor">#</a> 栈</h2> <h3 id="基本用法"><a href="#基本用法" class="header-anchor">#</a> 基本用法</h3> <ul><li>一个后进先出的数据结构；</li> <li>Array 模拟；push 以及 pop 方法模拟；</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> stack <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+<span class="token comment">// 入栈</span>
+stack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+stack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 出栈 - 移除数组的最后一项</span>
+<span class="token keyword">const</span> item1 <span class="token operator">=</span> stack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> item2 <span class="token operator">=</span> stack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="使用场景"><a href="#使用场景" class="header-anchor">#</a> 使用场景</h3> <ul><li>需要后进先出的场景</li> <li>比如：十进制转二进制、判断字符串的括号是否有效、函数调用堆栈。</li></ul> <h4 id="判断字符串的括号是否有效"><a href="#判断字符串的括号是否有效" class="header-anchor">#</a> 判断字符串的括号是否有效：</h4> <div class="language-shell extra-class"><pre class="language-shell"><code>给定一个只包括 <span class="token string">'('</span>，<span class="token string">')'</span>，<span class="token string">'{'</span>，<span class="token string">'}'</span>，<span class="token string">'['</span>，<span class="token string">']'</span> 的字符串，判断字符串是否有效。
+
+有效字符串需满足：
+
+左括号必须用相同类型的右括号闭合。
+左括号必须以正确的顺序闭合。
+注意空字符串可被认为是有效字符串。
+
+</code></pre></div><blockquote><p>链接：https://leetcode-cn.com/problems/valid-parentheses</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {string} s
+ * @return {boolean}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">isValid</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>s<span class="token punctuation">.</span>length <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">}</span>
+    <span class="token keyword">const</span> stack <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> s<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> c <span class="token operator">=</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>c <span class="token operator">===</span> <span class="token string">'('</span> <span class="token operator">||</span> c <span class="token operator">===</span> <span class="token string">'['</span> <span class="token operator">||</span> c <span class="token operator">===</span> <span class="token string">'{'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            stack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 获取栈顶元素</span>
+            <span class="token keyword">const</span> t <span class="token operator">=</span> stack<span class="token punctuation">[</span>stack<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>
+                <span class="token punctuation">(</span>t <span class="token operator">===</span> <span class="token string">'('</span> <span class="token operator">&amp;&amp;</span> c <span class="token operator">===</span> <span class="token string">')'</span><span class="token punctuation">)</span> <span class="token operator">||</span>
+                <span class="token punctuation">(</span>t <span class="token operator">===</span> <span class="token string">'{'</span> <span class="token operator">&amp;&amp;</span> c <span class="token operator">===</span> <span class="token string">'}'</span><span class="token punctuation">)</span> <span class="token operator">||</span>
+                <span class="token punctuation">(</span>t <span class="token operator">===</span> <span class="token string">'['</span> <span class="token operator">&amp;&amp;</span> c <span class="token operator">===</span> <span class="token string">']'</span><span class="token punctuation">)</span>
+            <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                stack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token boolean">false</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> stack<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="从十进制到二进制"><a href="#从十进制到二进制" class="header-anchor">#</a> 从十进制到二进制</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">decimalToBinary</span><span class="token punctuation">(</span><span class="token parameter">decNumber</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> remStack <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token keyword">let</span> number <span class="token operator">=</span> decNumber
+  <span class="token keyword">let</span> rem
+  <span class="token keyword">let</span> binaryString <span class="token operator">=</span> <span class="token string">''</span>
+
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>number <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    rem <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>number <span class="token operator">%</span> <span class="token number">2</span><span class="token punctuation">)</span>
+    remStack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>rem<span class="token punctuation">)</span>
+    number <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>number <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">while</span><span class="token punctuation">(</span>remStack<span class="token punctuation">.</span>length <span class="token operator">!==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    binaryString <span class="token operator">+=</span> remStack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> binaryString
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token function">decimalToBinary</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span> <span class="token comment">// '0101'</span>
+</code></pre></div><h4 id="进制转换算法"><a href="#进制转换算法" class="header-anchor">#</a> 进制转换算法</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span>  <span class="token function">baseConverter</span><span class="token punctuation">(</span><span class="token parameter">decNumber<span class="token punctuation">,</span> base</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> remStack <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token keyword">const</span> digits <span class="token operator">=</span> <span class="token string">'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'</span>
+  <span class="token keyword">let</span> number <span class="token operator">=</span> decNumber
+  <span class="token keyword">let</span> rem
+  <span class="token keyword">let</span> baseString <span class="token operator">=</span> <span class="token string">''</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span>base <span class="token operator">&gt;=</span> <span class="token number">2</span> <span class="token operator">&amp;&amp;</span> base <span class="token operator">&lt;=</span> <span class="token number">36</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">''</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>number <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    rem <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>number <span class="token operator">%</span> base<span class="token punctuation">)</span>
+    remStack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>rem<span class="token punctuation">)</span>
+    number <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>number <span class="token operator">/</span> base<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>remStack<span class="token punctuation">.</span>length <span class="token operator">!==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    baseString <span class="token operator">+=</span> digits<span class="token punctuation">[</span>remStack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> baseString
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新:</span> <span class="time">11/20/2020, 10:21:21 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/note/assets/js/app.9f6f6b83.js" defer></script><script src="/note/assets/js/2.eb60b352.js" defer></script><script src="/note/assets/js/114.0fc7dc69.js" defer></script>
+  </body>
+</html>
