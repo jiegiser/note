@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>性能优化指标 | note</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="note">
+    
+    <link rel="preload" href="/note/assets/css/0.styles.12c78510.css" as="style"><link rel="preload" href="/note/assets/js/app.45ce0796.js" as="script"><link rel="preload" href="/note/assets/js/3.97d6d69f.js" as="script"><link rel="preload" href="/note/assets/js/90.2283617d.js" as="script"><link rel="prefetch" href="/note/assets/js/10.a73b2426.js"><link rel="prefetch" href="/note/assets/js/100.df4db744.js"><link rel="prefetch" href="/note/assets/js/101.df883ef8.js"><link rel="prefetch" href="/note/assets/js/102.8b299cd1.js"><link rel="prefetch" href="/note/assets/js/103.9927526e.js"><link rel="prefetch" href="/note/assets/js/104.1e0127ef.js"><link rel="prefetch" href="/note/assets/js/105.1f3f30bf.js"><link rel="prefetch" href="/note/assets/js/106.611f01d3.js"><link rel="prefetch" href="/note/assets/js/107.59c4a70e.js"><link rel="prefetch" href="/note/assets/js/108.cf262223.js"><link rel="prefetch" href="/note/assets/js/109.e6cafbe4.js"><link rel="prefetch" href="/note/assets/js/11.7191701d.js"><link rel="prefetch" href="/note/assets/js/110.b1649d70.js"><link rel="prefetch" href="/note/assets/js/111.24c80c93.js"><link rel="prefetch" href="/note/assets/js/112.2c2c0139.js"><link rel="prefetch" href="/note/assets/js/113.015ecc4b.js"><link rel="prefetch" href="/note/assets/js/114.70ef2974.js"><link rel="prefetch" href="/note/assets/js/115.f104dcf5.js"><link rel="prefetch" href="/note/assets/js/116.44cfdbd8.js"><link rel="prefetch" href="/note/assets/js/117.6b775c63.js"><link rel="prefetch" href="/note/assets/js/118.2e90bd2c.js"><link rel="prefetch" href="/note/assets/js/119.191b49d4.js"><link rel="prefetch" href="/note/assets/js/12.824a87bb.js"><link rel="prefetch" href="/note/assets/js/120.cbe9abe6.js"><link rel="prefetch" href="/note/assets/js/121.adb4435c.js"><link rel="prefetch" href="/note/assets/js/122.816005c8.js"><link rel="prefetch" href="/note/assets/js/123.2fb771d0.js"><link rel="prefetch" href="/note/assets/js/124.e69fc95c.js"><link rel="prefetch" href="/note/assets/js/125.b36c24b5.js"><link rel="prefetch" href="/note/assets/js/126.254e5e33.js"><link rel="prefetch" href="/note/assets/js/127.edafe4b8.js"><link rel="prefetch" href="/note/assets/js/128.10840277.js"><link rel="prefetch" href="/note/assets/js/129.613dcc8d.js"><link rel="prefetch" href="/note/assets/js/13.79ae29c0.js"><link rel="prefetch" href="/note/assets/js/130.6fbd8e74.js"><link rel="prefetch" href="/note/assets/js/131.2a22dd1d.js"><link rel="prefetch" href="/note/assets/js/132.67fa2a38.js"><link rel="prefetch" href="/note/assets/js/133.205a6a48.js"><link rel="prefetch" href="/note/assets/js/134.cccf66f6.js"><link rel="prefetch" href="/note/assets/js/135.07b23c0f.js"><link rel="prefetch" href="/note/assets/js/136.5d72ec45.js"><link rel="prefetch" href="/note/assets/js/137.423e1037.js"><link rel="prefetch" href="/note/assets/js/138.590d11cc.js"><link rel="prefetch" href="/note/assets/js/139.7d7805c5.js"><link rel="prefetch" href="/note/assets/js/14.760d916b.js"><link rel="prefetch" href="/note/assets/js/140.c48d2c65.js"><link rel="prefetch" href="/note/assets/js/141.4adc7a01.js"><link rel="prefetch" href="/note/assets/js/142.cade442b.js"><link rel="prefetch" href="/note/assets/js/143.73f6db89.js"><link rel="prefetch" href="/note/assets/js/144.573be22f.js"><link rel="prefetch" href="/note/assets/js/145.625fe61c.js"><link rel="prefetch" href="/note/assets/js/146.20890574.js"><link rel="prefetch" href="/note/assets/js/147.384ab82d.js"><link rel="prefetch" href="/note/assets/js/148.009423d7.js"><link rel="prefetch" href="/note/assets/js/149.008dd102.js"><link rel="prefetch" href="/note/assets/js/15.5ae2c58a.js"><link rel="prefetch" href="/note/assets/js/150.6944878b.js"><link rel="prefetch" href="/note/assets/js/151.386d9ca0.js"><link rel="prefetch" href="/note/assets/js/152.1681df71.js"><link rel="prefetch" href="/note/assets/js/153.73b915a6.js"><link rel="prefetch" href="/note/assets/js/154.c3f82745.js"><link rel="prefetch" href="/note/assets/js/155.91a69273.js"><link rel="prefetch" href="/note/assets/js/156.5ef16d57.js"><link rel="prefetch" href="/note/assets/js/157.ea3756b2.js"><link rel="prefetch" href="/note/assets/js/158.b0b5ee0c.js"><link rel="prefetch" href="/note/assets/js/159.fac7d255.js"><link rel="prefetch" href="/note/assets/js/16.e6eb598a.js"><link rel="prefetch" href="/note/assets/js/160.b1a9621a.js"><link rel="prefetch" href="/note/assets/js/161.7ad183d0.js"><link rel="prefetch" href="/note/assets/js/162.baf166bc.js"><link rel="prefetch" href="/note/assets/js/163.c77f32e5.js"><link rel="prefetch" href="/note/assets/js/164.493ec550.js"><link rel="prefetch" href="/note/assets/js/165.40a222a2.js"><link rel="prefetch" href="/note/assets/js/166.149489f1.js"><link rel="prefetch" href="/note/assets/js/167.c0a0b6a9.js"><link rel="prefetch" href="/note/assets/js/168.90952d40.js"><link rel="prefetch" href="/note/assets/js/169.f406a5c0.js"><link rel="prefetch" href="/note/assets/js/17.1b2a4c4f.js"><link rel="prefetch" href="/note/assets/js/170.2afe874b.js"><link rel="prefetch" href="/note/assets/js/171.770c7586.js"><link rel="prefetch" href="/note/assets/js/172.5519c6f3.js"><link rel="prefetch" href="/note/assets/js/173.5c31f5d9.js"><link rel="prefetch" href="/note/assets/js/174.ec4c293f.js"><link rel="prefetch" href="/note/assets/js/175.9187087c.js"><link rel="prefetch" href="/note/assets/js/176.afce960f.js"><link rel="prefetch" href="/note/assets/js/177.5e756645.js"><link rel="prefetch" href="/note/assets/js/178.49195c89.js"><link rel="prefetch" href="/note/assets/js/179.e8c31fff.js"><link rel="prefetch" href="/note/assets/js/18.8a849043.js"><link rel="prefetch" href="/note/assets/js/180.65669685.js"><link rel="prefetch" href="/note/assets/js/181.a7f14a5f.js"><link rel="prefetch" href="/note/assets/js/182.f4c01ca4.js"><link rel="prefetch" href="/note/assets/js/183.82986458.js"><link rel="prefetch" href="/note/assets/js/184.4fb1b465.js"><link rel="prefetch" href="/note/assets/js/185.c2ab5ced.js"><link rel="prefetch" href="/note/assets/js/186.889b1442.js"><link rel="prefetch" href="/note/assets/js/187.97cb23df.js"><link rel="prefetch" href="/note/assets/js/188.1574fc0e.js"><link rel="prefetch" href="/note/assets/js/19.69cd2aeb.js"><link rel="prefetch" href="/note/assets/js/2.7be0b4f8.js"><link rel="prefetch" href="/note/assets/js/20.e97cbd69.js"><link rel="prefetch" href="/note/assets/js/21.57df090a.js"><link rel="prefetch" href="/note/assets/js/22.71e182d2.js"><link rel="prefetch" href="/note/assets/js/23.339adf48.js"><link rel="prefetch" href="/note/assets/js/24.08014aa1.js"><link rel="prefetch" href="/note/assets/js/25.8f28c0e0.js"><link rel="prefetch" href="/note/assets/js/26.0ded8cb6.js"><link rel="prefetch" href="/note/assets/js/27.eab74552.js"><link rel="prefetch" href="/note/assets/js/28.a3090b45.js"><link rel="prefetch" href="/note/assets/js/29.3dfdcb01.js"><link rel="prefetch" href="/note/assets/js/30.3418b3f4.js"><link rel="prefetch" href="/note/assets/js/31.2100ddeb.js"><link rel="prefetch" href="/note/assets/js/32.d5d68465.js"><link rel="prefetch" href="/note/assets/js/33.2f3bc23d.js"><link rel="prefetch" href="/note/assets/js/34.8e143b45.js"><link rel="prefetch" href="/note/assets/js/35.9d470c75.js"><link rel="prefetch" href="/note/assets/js/36.d68862ab.js"><link rel="prefetch" href="/note/assets/js/37.0280766f.js"><link rel="prefetch" href="/note/assets/js/38.b0e93df9.js"><link rel="prefetch" href="/note/assets/js/39.fb7be0c2.js"><link rel="prefetch" href="/note/assets/js/4.36d9f3e4.js"><link rel="prefetch" href="/note/assets/js/40.897f1a65.js"><link rel="prefetch" href="/note/assets/js/41.10b6229e.js"><link rel="prefetch" href="/note/assets/js/42.3d55aa18.js"><link rel="prefetch" href="/note/assets/js/43.9f38c2bc.js"><link rel="prefetch" href="/note/assets/js/44.d265b5a4.js"><link rel="prefetch" href="/note/assets/js/45.6dee53fd.js"><link rel="prefetch" href="/note/assets/js/46.47fbe162.js"><link rel="prefetch" href="/note/assets/js/47.2aef0d89.js"><link rel="prefetch" href="/note/assets/js/48.a1028f8f.js"><link rel="prefetch" href="/note/assets/js/49.4745149b.js"><link rel="prefetch" href="/note/assets/js/5.20e92e93.js"><link rel="prefetch" href="/note/assets/js/50.fba9f9c9.js"><link rel="prefetch" href="/note/assets/js/51.2e8463d2.js"><link rel="prefetch" href="/note/assets/js/52.ba72c4b7.js"><link rel="prefetch" href="/note/assets/js/53.b84d60a2.js"><link rel="prefetch" href="/note/assets/js/54.576f432b.js"><link rel="prefetch" href="/note/assets/js/55.dcba27c0.js"><link rel="prefetch" href="/note/assets/js/56.52acce09.js"><link rel="prefetch" href="/note/assets/js/57.313bfa90.js"><link rel="prefetch" href="/note/assets/js/58.c222f189.js"><link rel="prefetch" href="/note/assets/js/59.df788c64.js"><link rel="prefetch" href="/note/assets/js/6.96604859.js"><link rel="prefetch" href="/note/assets/js/60.166e3580.js"><link rel="prefetch" href="/note/assets/js/61.e305dc2a.js"><link rel="prefetch" href="/note/assets/js/62.d7cedba0.js"><link rel="prefetch" href="/note/assets/js/63.2d1d92a1.js"><link rel="prefetch" href="/note/assets/js/64.a452249f.js"><link rel="prefetch" href="/note/assets/js/65.d10e10f6.js"><link rel="prefetch" href="/note/assets/js/66.4444220e.js"><link rel="prefetch" href="/note/assets/js/67.12b8fc24.js"><link rel="prefetch" href="/note/assets/js/68.66a8dfa2.js"><link rel="prefetch" href="/note/assets/js/69.1177c887.js"><link rel="prefetch" href="/note/assets/js/7.7e2b002b.js"><link rel="prefetch" href="/note/assets/js/70.7caf27c2.js"><link rel="prefetch" href="/note/assets/js/71.abcc0f83.js"><link rel="prefetch" href="/note/assets/js/72.9eaa794d.js"><link rel="prefetch" href="/note/assets/js/73.4618837d.js"><link rel="prefetch" href="/note/assets/js/74.3ce7e474.js"><link rel="prefetch" href="/note/assets/js/75.23bf81c3.js"><link rel="prefetch" href="/note/assets/js/76.99c674bc.js"><link rel="prefetch" href="/note/assets/js/77.2ca0a359.js"><link rel="prefetch" href="/note/assets/js/78.00f68ef0.js"><link rel="prefetch" href="/note/assets/js/79.392418b9.js"><link rel="prefetch" href="/note/assets/js/8.7bb407ab.js"><link rel="prefetch" href="/note/assets/js/80.54e7a8fd.js"><link rel="prefetch" href="/note/assets/js/81.eca1c7fd.js"><link rel="prefetch" href="/note/assets/js/82.3f216fbb.js"><link rel="prefetch" href="/note/assets/js/83.965c2a88.js"><link rel="prefetch" href="/note/assets/js/84.c179ee45.js"><link rel="prefetch" href="/note/assets/js/85.55a9d420.js"><link rel="prefetch" href="/note/assets/js/86.95a4183b.js"><link rel="prefetch" href="/note/assets/js/87.8df2ead1.js"><link rel="prefetch" href="/note/assets/js/88.a6c09d13.js"><link rel="prefetch" href="/note/assets/js/89.30f93e16.js"><link rel="prefetch" href="/note/assets/js/9.5df7fdbd.js"><link rel="prefetch" href="/note/assets/js/91.fa6bda84.js"><link rel="prefetch" href="/note/assets/js/92.bdc5e944.js"><link rel="prefetch" href="/note/assets/js/93.52c4a300.js"><link rel="prefetch" href="/note/assets/js/94.192cd7ae.js"><link rel="prefetch" href="/note/assets/js/95.c6d2bf90.js"><link rel="prefetch" href="/note/assets/js/96.2ee71587.js"><link rel="prefetch" href="/note/assets/js/97.8105aaf1.js"><link rel="prefetch" href="/note/assets/js/98.eaabc1a8.js"><link rel="prefetch" href="/note/assets/js/99.d64513b6.js">
+    <link rel="stylesheet" href="/note/assets/css/0.styles.12c78510.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note/" class="home-link router-link-active"><!----> <span class="site-name">note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/angular/基础.html" class="nav-link">
+  angular
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/js-gc/数据类型.html" class="nav-link">
+  红宝书
+</a></div><div class="nav-item"><a href="/note/interview/forEach-forIn-forOf-map之间的区别.html" class="nav-link">
+  interview
+</a></div><div class="nav-item"><a href="/note/gisAlgorithm/数据结构-矢量.html" class="nav-link">
+  gis 算法
+</a></div><div class="nav-item"><a href="/note/graphics/图形学基础.html" class="nav-link">
+  图形学相关
+</a></div><div class="nav-item"><a href="/note/js-algorithm/栈.html" class="nav-link">
+  算法与数据结构
+</a></div><div class="nav-item"><a href="/note/PerformanceOptimization/指标以及工具.html" class="nav-link">
+  性能优化
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/css/css基础.html" class="nav-link">
+  css 相关
+</a></div><div class="nav-item"><a href="/note/javascript/知识体系.html" class="nav-link">
+  javascript
+</a></div><div class="nav-item"><a href="/note/js-patterns/代理模式.html" class="nav-link">
+  js 设计模式
+</a></div><div class="nav-item"><a href="/note/webpack/基础知识.html" class="nav-link">
+  webpack
+</a></div><div class="nav-item"><a href="/note/vue/相关笔记.html" class="nav-link">
+  vue
+</a></div><div class="nav-item"><a href="/note/react/react基础.html" class="nav-link">
+  react 相关
+</a></div><div class="nav-item"><a href="/note/angular/基础.html" class="nav-link">
+  angular
+</a></div><div class="nav-item"><a href="/note/http/HTTP协议基础.html" class="nav-link">
+  http
+</a></div><div class="nav-item"><a href="/note/node/基础知识.html" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/note/typescript/typescript基础语法.html" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/note/webgis/坐标系相关.html" class="nav-link">
+  webgis
+</a></div><div class="nav-item"><a href="/note/js-gc/数据类型.html" class="nav-link">
+  红宝书
+</a></div><div class="nav-item"><a href="/note/interview/forEach-forIn-forOf-map之间的区别.html" class="nav-link">
+  interview
+</a></div><div class="nav-item"><a href="/note/gisAlgorithm/数据结构-矢量.html" class="nav-link">
+  gis 算法
+</a></div><div class="nav-item"><a href="/note/graphics/图形学基础.html" class="nav-link">
+  图形学相关
+</a></div><div class="nav-item"><a href="/note/js-algorithm/栈.html" class="nav-link">
+  算法与数据结构
+</a></div><div class="nav-item"><a href="/note/PerformanceOptimization/指标以及工具.html" class="nav-link">
+  性能优化
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="性能优化指标"><a href="#性能优化指标" class="header-anchor">#</a> 性能优化指标</h2></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新:</span> <span class="time">6/21/2021, 1:13:48 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/note/assets/js/app.45ce0796.js" defer></script><script src="/note/assets/js/3.97d6d69f.js" defer></script><script src="/note/assets/js/90.2283617d.js" defer></script>
+  </body>
+</html>
